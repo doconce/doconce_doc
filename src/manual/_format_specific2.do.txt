@@ -1,0 +1,6 @@
+
+# #if FORMAT in ("latex", "pdflatex")
+# insert native LaTeX code for fancy table
+# #else
+# insert a DocOnce-formatted "inline" table
+# #endif
