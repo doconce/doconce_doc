@@ -148,3 +148,5 @@ _minted-*
 .*.copyright
 sphinx-rootdir
 
+# dependencies:
+src/quiz/sphinx-rs
