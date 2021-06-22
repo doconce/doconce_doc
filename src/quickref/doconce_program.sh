@@ -1,4 +1,4 @@
-DocOnce version 1.5.10 (from /home/amarin/doconce/lib)
+DocOnce version 1.5.11 (from /home/amarin/doconce/lib)
 Usage:
 doconce <command> [<argument>] <file>[.do.txt] [options]
 
