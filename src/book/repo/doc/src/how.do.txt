@@ -34,4 +34,4 @@ As a LaTeX writer, remember that white space counts in DocOnce syntax!
 Be extra careful with indentation of lists.
 
 Also remember that DocOnce avoids backslash in label, ref and cite,
-e.g., in references like cite{Chorin1968}.
+e.g. in references like cite{Chorin1968}.

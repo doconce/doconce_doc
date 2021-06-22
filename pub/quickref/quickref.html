@@ -161,7 +161,7 @@ MathJax.Hub.Config({
 </center>
 <br>
 <center>
-<h4>Apr 14, 2021</h4>
+<h4>Jun 22, 2021</h4>
 </center> <!-- date -->
 <br>
 
@@ -242,7 +242,7 @@ so you <em>must</em> use a text editor with monospace font.
 
 <h2 id="emacs-syntax-support" class="anchor">Emacs syntax support </h2>
 
-<p>The file <a href="https://github.com/doconce/doconce/blob/master/misc/.doconce-mode.el" target="_self">.doconce-mode.el</a>
+<p>The file <a href="https://github.com/doconce/doconce/tree/main/bundled/emacs_syntax/.doconce-mode.el" target="_self">.doconce-mode.el</a>
 in the DocOnce source distribution gives a "DocOnce Editing Mode" in
 Emacs. Store the raw version of the file in the home directory and add
 <code>(load-file &quot;~/.doconce-mode.el&quot;)</code> to the <code>.emacs</code> file.
@@ -254,7 +254,7 @@ provides a lot of shortcuts for setting up many elements in a document:
 
 <div class="row">
   <div class="col-xs-8">
-    <table class="table table-striped table-hover table-condensed">
+    <table class="dotable table-striped table-hover table-condensed">
 <thead>
 <tr><td align="center"><b>  Emacs key  </b></td> <td align="center"><b>                           Action                           </b></td> </tr>
 </thead>
@@ -309,7 +309,7 @@ way for each author.
 </p>
 
 <p>The date can be set as any text different from <code>today</code> if not the
-current date is wanted, e.g., <code>Feb 22, 2016</code>.
+current date is wanted, e.g. <code>Feb 22, 2016</code>.
 </p>
 
 The table of contents is removed by writing <code>TOC: off</code>.
@@ -323,7 +323,7 @@ of the <code>AUTHOR</code> command. The copyright syntax is
 
 <pre>{copyright,year1-year2|license}
 </pre>
-<p>and can be placed after the author or after an institution, e.g.,</p>
+<p>and can be placed after the author or after an institution, e.g. </p>
 
 <pre> AUTHOR: name Email: somename@adr.net {copyright,2006-present} at inst1
  AUTHOR: name {copyright} at inst1 {copyright}
@@ -347,7 +347,7 @@ The copyright must be identical for all authors and institutions.
 
 <div class="row">
   <div class="col-xs-9">
-    <table class="table table-striped table-hover table-condensed">
+    <table class="dotable table-striped table-hover table-condensed">
 <thead>
 <tr><td align="center"><b> Section type</b></td> <td align="center"><b>                              Syntax                             </b></td> </tr>
 </thead>
@@ -862,12 +862,12 @@ followed when translating the text to <code>sphinx</code>, <code>pandoc</code>,
  <li> Keep figure captions shorts as they are used as references in the Sphinx format. Avoid inline mathematics since Sphinx will strip it away in the figure reference. (Many writing styles encourage rich captions that explains everything about the figure; this work well only in the HTML and LaTeX formats.)</li>
  <li> You cannot use <code>subfigure</code> to combine several image files in one figure, but you can combine the files into one file using the <code>doconce combine_images</code> tool. Refer to individual image files in the caption or text by (e.g.) &quot;left&quot; and &quot;right&quot;, or &quot;upper left&quot;, &quot;lower right&quot;, etc.</li>
  <li> Footnotes can be used as usual in LaTeX, but some HTML formats are not able to display mathematics or inline verbatim or other formatted code (emphasis, boldface, color) in footnotes - keep that in mind.</li>
- <li> Use plain <code>cite</code> for references (e.g., <code>\citeauthor</code> has no counterpart in DocOnce). The bibliography must be prepared in the Publish format, but import from (clean) BibTeX is possible.</li>
+ <li> Use plain <code>cite</code> for references (e.g. <code>\citeauthor</code> has no counterpart in DocOnce). The bibliography must be prepared in the Publish format, but import from (clean) BibTeX is possible.</li>
  <li> Use <code>idx</code> for index entries, but put the definitions between paragraphs, not inside them (required by Sphinx).</li>
  <li> Use the <code>\bm</code> command (from the <code>bm</code> package, always included by DocOnce) for boldface in mathematics.</li>
  <li> Make sure all ordinary text starts in column 1 on each line. Equations can be indented. The <code>\begin{}</code> and <code>\end{}</code> directives should start in column 1.</li>
  <li> If you depend on various LaTeX environments for your writings, you have to give these up, or implement <em>user-defined environments</em> in DocOnce. For instance, examples are normally typeset as subsections in DocOnce, but can also utilize a user-defined example environment. Learn about the exercise support in DocOnce for typesetting exercises, problems, and projects.</li>
- <li> Learn about the preprocessors Preprocess and Mako - these are smart tools for, e.g., commenting out/in large portions of text and creating macros.</li>
+ <li> Learn about the preprocessors Preprocess and Mako - these are smart tools for, e.g. commenting out/in large portions of text and creating macros.</li>
  <li> Use <em>generalized references</em> when referring to companion documents that may later become part of this document (or migrated out of this document).</li>
  <li> Follow <a href="https://github.com/doconce/setup4book-doconce" target="_self">recommendations for DocOnce books</a> if you plan to write a book.</li>
 </ul>
@@ -888,7 +888,7 @@ of using Preprocess or Mako
 allows you to use advanced LaTeX features (or HTML features for the HTML formats)
 to fine tune the resulting
 document. More tuning can be done by automatic editing of the
-output file (e.g., <code>.tex</code> or <code>.html</code>) produced by DocOnce using
+output file (e.g. <code>.tex</code> or <code>.html</code>) produced by DocOnce using
 your own scripts or the <code>doconce replace</code> and <code>doconce subst</code> commands.
 </p>
 </div>
@@ -1024,7 +1024,7 @@ MOVIE: [http://vimeo.com/55562330, width=500 height=278] Vimeo movie.
 <p>The latter results in</p>
 
 <iframe width="500" height="278" src="https://player.vimeo.com/video/55562330" frameborder="0" allowfullscreen></iframe>
-<em>Vimeo movie.</em>
+<p><em>Vimeo movie.</em></p>
 <h2 id="tables" class="anchor">Tables </h2>
 
 <p>The table in the section <a href="#quick:sections">Section Types</a> was written with this
@@ -1175,173 +1175,13 @@ transforming a <code>.do.txt</code> file to some format. Here is the
 list of capabilities:
 </p>
 
-<pre>DocOnce version 1.5.8 (from /home/amarin/doconce/lib/doconce)
-Usage: doconce command [optional arguments]
-commands: help format find subst replace remove spellcheck apply_inline_edits capitalize change_encoding clean combine_images csv2table diff expand_commands expand_mako extract_exercises find_nonascii_chars fix_bibtex4publish gitdiff grab grep guess_encoding gwiki_figsubst html2doconce html_colorbullets jupyterbook include_map insertdocstr ipynb2doconce latex2doconce latex_dislikes latex_exercise_toc latex_footer latex_header latex_problems latin2html lightclean linkchecker list_fig_src_files list_labels makefile md2html md2latex old2new_format ptex2tex pygmentize ref_external remove_exercise_answers remove_inline_comments replace_from_file slides_beamer slides_html slides_markdown sphinx_dir sphinxfix_localURLs split_html split_rst teamod
+<pre>DocOnce version 1.5.10 (from /home/amarin/doconce/lib)
+Usage:
+doconce <command> [<argument>] <file>[.do.txt] [options]
 
-doconce format html|latex|pdflatex|rst|sphinx|plain|gwiki|mwiki|
-               cwiki|pandoc|st|epytext dofile 
-# transform doconce file to another format
 
-doconce subst [-s -m -x --restore] regex-pattern \ 
-        regex-replacement file1 file2 ... 
-# substitute a phrase by another using regular expressions (in this example -s is the re.DOTALL modifier, -m is the re.MULTILINE modifier, -x is the re.VERBOSE modifier, --restore copies backup files back again)
-
-doconce replace from-text to-text file1 file2 ...                      
-# replace a phrase by another literally (exact text substitution)
-
-doconce replace_from_file file-with-from-to-replacements file1 file2 ... 
-# replace using from and to phrases from file
-
-doconce find expression                                                
-# search for a (regular) expression in all .do.txt files in the current directory tree (useful when removing compilation errors)
-
-doconce include_map mydoc.do.txt                                       
-# print an overview of how various files are included in the root doc
-
-doconce expand_mako mako_code_file funcname file1 file2 ...            
-# replace all mako function calls by the `results of the calls
-
-doconce remove_inline_comments dofile                                  
-# remove all inline comments in a doconce file
-
-doconce apply_inline_edits                                             
-# apply all edits specified through inline comments
-
-doconce sphinx_dir copyright='John Doe' title='Long title' \
-        short_title=&quot;Short title&quot; version=0.1 intersphinx \
-        /path/to/mylogo.png dofile 
-# create a directory for the sphinx format (requires sphinx version >= 1.1)
-
-doconce format sphinx complete_file 
-doconce split_rst complete_file 
-doconce sphinx_dir complete_file 
-python automake_sphinx.py 
-# split a sphinx/rst file into parts according to !split commands
-
-doconce insertdocstr rootdir                                           
-# walk through a directory tree and insert doconce files as docstrings in *.p.py files
-
-doconce lightclean                                                     
-# remove all redundant files (keep source .do.txt and results: .pdf, .html, sphinx- dirs, .mwiki, .ipynb, etc.)
-
-doconce clean                                                          
-# remove all files that the doconce can regenerate
-
-doconce change_encoding utf-8 latin1 dofile                            
-# change encoding
-
-doconce guess_encoding filename                                        
-# guess the encoding in a text
-
-doconce find_nonascii_chars file1 file2 ...                            
-# find non-ascii characters in a file
-
-doconce split_html complete_file.html                                  
-# split an html file into parts according to !split commands
-
-doconce slides_html slide_type complete_file.html                      
-# create HTML slides from a (doconce) html file
-
-doconce slides_beamer complete_file.tex                                
-# create LaTeX Beamer slides from a (doconce) latex/pdflatex file
-
-doconce slides_markdown complete_file.md remark --slide_style=light    
-# create Remark slides from Markdown
-
-doconce html_colorbullets file1.html file2.html ...                    
-# replace bullets in lists by colored bullets
-
-doconce extract_exercises tmp_mako__mydoc                              
-# extract all exercises (projects and problems too)
-
-doconce grab --from[-] from-text [--to[-] to-text] file > result       
-# grab selected text from a file
-
-doconce remove --from[-] from-text [--to[-] to-text] file > result     
-# remove selected text from a file
-
-doconce grep FIGURE|MOVIE|CODE dofile                                  
-# list all figure, movie or included code files
-
-doconce spellcheck [-d .mydict.txt] *.do.txt                           
-# run spellcheck on a set of files
-
-doconce ptex2tex mydoc -DMINTED pycod=minted sys=Verbatim \
-        dat=\begin{quote}\begin{verbatim};\end{verbatim}\end{quote} 
-# transform ptex2tex files (.p.tex) to ordinary latex file and manage the code environments
-
-doconce md2html file.md                                                
-# make HTML file via pandoc from Markdown (.md) file
-
-doconce md2latex file.md                                               
-# make LaTeX file via pandoc from Markdown (.md) file
-
-doconce combine_images image1 image2 ... output_file                   
-# combine several images into one
-
-doconce latex_problems mydoc.log [overfull-hbox-limit]                 
-# report problems from a LaTeX .log file
-
-doconce list_fig_src_files *.do.txt                                    
-# list all figure files, movie files, and source code files needed
-
-doconce list_labels myfile                                             
-# list all labels in a document (for purposes of cleaning them up)
-
-doconce ref_external mydoc [pubfile]                                   
-# generate script for substituting generalized references
-
-doconce linkchecker *.html                                             
-# check all links in HTML files
-
-doconce capitalize [-d .mydict.txt] *.do.txt                           
-# change headings from &quot;This is a Heading&quot; to &quot;This is a heading&quot;
-
-doconce latex2doconce latexfile                                        
-# translate a latex document to doconce (requires usually manual fixing)
-
-doconce latex_dislikes latexfile                                       
-# check if there are problems with translating latex to doconce
-
-doconce ipynb2doconce notebookfile                                     
-# translate an IPython/Jupyter notebook to doconce
-
-doconce pygmentize myfile [pygments-style]                             
-# typeset a doconce document with pygments (for pretty print of doconce itself)
-
-doconce makefile docname doconcefile [html sphinx pdflatex ...]        
-# generate a make.py script for translating a doconce file to various formats
-
-doconce diff file1.do.txt file2.do.txt [diffprog]                      
-# find differences between two files (diffprog can be difflib, diff, pdiff, latexdiff, kdiff3, diffuse, ...)
-
-doconce gitdiff file1 file2 file3 ...                                  
-# find differences between the last two Git versions of several files
-
-doconce csv2table somefile.csv                                         
-# convert csv file to doconce table format
-
-doconce sphinxfix_local_URLs file.rst                                  
-# edit URLs to local files and place them in _static
-
-doconce latin2html file.html                                           
-# replace latex-1 (non-ascii) characters by html codes
-
-doconce fix_bibtex4publish file1.bib file2.bib ...                     
-# fix common problems in bibtex files for publish import
-
-doconce latex_header                                                   
-# print the header (preamble) for latex file
-
-doconce latex_footer                                                   
-# print the footer for latex files
-
-doconce expand_commands file1 file2 ...                                
-# expand short cut commands to full form in files
-
-doconce latex_exercise_toc myfile                                      
-# insert a table of exercises in a latex file myfile.p.tex
+Commands: 
+format jupyterbook ptex2tex slides_html slides_beamer slides_markdown split_html clean spellcheck grab grep find subst diff gitdiff replace remove replace_from_file extract_exercises remove_exercise_answers apply_inline_edits remove_inline_comments capitalize guess_encoding change_encoding combine_images expand_commands expand_mako find_nonascii_chars fix_bibtex4publish csv2table html2doconce ipynb2doconce md2html md2latex latex2doconce latex_dislikes include_map sphinx_dir split_rst insertdocstr lightclean gwiki_figsubst html_colorbullets latex_problems list_fig_src_files list_labels ref_external linkchecker pygmentize makefile sphinxfix_localURLs latin2html latex_header latex_footer latex_exercise_toc teamod
 </pre>
 <h2 id="exercises" class="anchor">Exercises </h2>
 
@@ -1539,5 +1379,4 @@ examine the DocOnce source and the <code>doc/src/make.sh</code> script).
 -->
 </body>
 </html>
-    
 

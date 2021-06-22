@@ -529,7 +529,7 @@ doconce format html trouble.do.txt --pygments_html_style=default --no_preprocess
               ('Exercises in the `Springer_sv` style looks strange',
                2,
                None,
-               'exercises-in-the-springer_sv-style-looks-strange'),
+               'exercises-in-the-springer-sv-style-looks-strange'),
               ('How to typeset papers with specified style files?',
                2,
                'trouble:latex:styles',
@@ -737,7 +737,7 @@ end of tocinfo -->
      <!-- navigation toc: --> <li><a href="#subexercises-subex-a-triggers-missing-number-treated-as-zero" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Subexercises (<code>subex{a)}</code>) triggers ``Missing number, treated as zero''</a></li>
      <!-- navigation toc: --> <li><a href="#page-numbers-appear-in-both-header-and-footer" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Page numbers appear in both header and footer</a></li>
      <!-- navigation toc: --> <li><a href="#links-in-the-table-of-contents-go-to-wrong-page" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Links in the table of contents go to wrong page</a></li>
-     <!-- navigation toc: --> <li><a href="#exercises-in-the-springer_sv-style-looks-strange" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Exercises in the <code>Springer_sv</code> style looks strange</a></li>
+     <!-- navigation toc: --> <li><a href="#exercises-in-the-springer-sv-style-looks-strange" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Exercises in the <code>Springer_sv</code> style looks strange</a></li>
      <!-- navigation toc: --> <li><a href="#trouble:latex:styles" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;How to typeset papers with specified style files?</a></li>
      <!-- navigation toc: --> <li><a href="#i-want-exercises-to-have-small-headings-not-subsections" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;I want exercises to have small headings (not subsections)</a></li>
      <!-- navigation toc: --> <li><a href="#gwiki" style="font-size: 80%;"><b>gwiki</b></a></li>
@@ -785,7 +785,7 @@ end of tocinfo -->
 </center>
 <br>
 <center>
-<h4>Apr 14, 2021</h4>
+<h4>Jun 22, 2021</h4>
 </center> <!-- date -->
 <br>
 
@@ -913,7 +913,7 @@ end of tocinfo -->
 <p><span class="tab"> <a href="#subexercises-subex-a-triggers-missing-number-treated-as-zero"> Subexercises (<code>subex{a)}</code>) triggers &quot;Missing number, treated as zero&quot; </a></p>
 <p><span class="tab"> <a href="#page-numbers-appear-in-both-header-and-footer"> Page numbers appear in both header and footer </a></p>
 <p><span class="tab"> <a href="#links-in-the-table-of-contents-go-to-wrong-page"> Links in the table of contents go to wrong page </a></p>
-<p><span class="tab"> <a href="#exercises-in-the-springer_sv-style-looks-strange"> Exercises in the <code>Springer_sv</code> style looks strange </a></p>
+<p><span class="tab"> <a href="#exercises-in-the-springer-sv-style-looks-strange"> Exercises in the <code>Springer_sv</code> style looks strange </a></p>
 <p><span class="tab"> <a href="#trouble:latex:styles"> How to typeset papers with specified style files? </a></p>
 <p><span class="tab"> <a href="#i-want-exercises-to-have-small-headings-not-subsections"> I want exercises to have small headings (not subsections) </a></p>
 <p><a href="#gwiki"> gwiki </a></p>
@@ -1284,7 +1284,7 @@ python automake_sphinx.py
 <p>Underscores in plain text are not tolerated by LaTeX, but works fine in
 other formats. In LaTeX, such underscores can give different obscure
 error messages, depending on the context. The remedy is to <em>typeset all
-words with underscores in inline verbatim</em>, e.g.,
+words with underscores in inline verbatim</em>, e.g. 
 </p>
 
 
@@ -1601,19 +1601,18 @@ otherwise it is a <code>\vspace{3mm}</code>. In HTML, <code>&lt;linebreak&gt;</c
 <p>More vertical space is obtained by repeated use of <code>&lt;linebreak&gt;</code>:</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">&lt;linebreak&gt;
 &lt;linebreak&gt;
 &lt;linebreak&gt;
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -1654,7 +1653,7 @@ typically contain the English word &quot;Figure&quot;. This must be fixed
 by auto-editing the output file after translation by <code>doconce format</code>.
 </p>
 
-<p>In LaTeX you can use your native language package, e.g.,</p>
+<p>In LaTeX you can use your native language package, e.g. </p>
 
 
 <!-- code=text (!bc sys) typeset with pygments style "default" -->
@@ -1684,18 +1683,17 @@ by auto-editing the output file after translation by <code>doconce format</code>
 <p>In other formats you have do more manual substitutions:</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">doconce replace Figure Figur mydoc.html
 doconce replace figure figur mydoc.html
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -1711,17 +1709,16 @@ doconce replace figure figur mydoc.html
 <p>or both in one command using regular expressions:</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">doconce stubst &#39;([Ff]igur)e&#39; &#39;\g&lt;1&gt;&#39; mydoc.html
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -1743,17 +1740,16 @@ If the spellcheck command is
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">doconce spellcheck mydoc
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -1773,27 +1769,26 @@ come from a syntax typo that has led to a strange word in the stripped
 version.
 </p>
 
-<p>Wrong typesetting of mathematics can lead to strange errors, e.g.,
+<p>Wrong typesetting of mathematics can lead to strange errors, e.g. 
 misspellings such as <code>iu</code> because of some math <code>f_iu_i</code> that is
 not properly typeset between dollar signs. Here are some useful grep
 commands to search for such errors:
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">grep --color=auto -E &#39;\biu\b&#39; tmp_stripped_mydoc.do.txt
 grep --color=auto -E &#39; iu&#39; tmp_stripped_mydoc.do.txt
 grep --color=auto -E &#39;iu &#39; tmp_stripped_mydoc.do.txt
 grep --color=auto -E &#39;iu&#39; tmp_stripped_mydoc.do.txt
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -1857,17 +1852,16 @@ correctly. Merge them into one common expression.
 
 <p>Links of the type</p>
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">see the &quot;examples directory&quot;: &quot;src/examples&quot;
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -1882,17 +1876,16 @@ correctly. Merge them into one common expression.
 
 <p>do not work well. You need to link to a specific HTML file:</p>
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">see the &quot;examples directory&quot;: &quot;src/examples/index.html&quot;
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -1917,17 +1910,16 @@ to move all files you link to if you move the primary <code>.html</code> file.
 in links are allowed if the whole link is typeset in verbatim:
 </p>
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">see the directory &quot;`examples`&quot;: &quot;src/examples/index.html&quot;.
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -1942,17 +1934,16 @@ in links are allowed if the whole link is typeset in verbatim:
 
 <p>However, the following will not be typeset correctly:</p>
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">see the &quot;`examples`&quot;: &quot;src/examples/index.html&quot; directory.
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -2024,17 +2015,16 @@ UTF-8 both for HTML and LaTeX.
 or with
 </p>
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">Terminal&gt; doconce guess_encoding myfile.do.txt
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -2051,18 +2041,17 @@ or with
 using either of the Unix commands
 </p>
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">Terminal&gt; doconce change_encoding latin1 utf-8 myfile.do.txt
 Terminal&gt; iconv -t utf-8 -f latin1 myfile.do.txt --output newfile
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -2120,17 +2109,16 @@ The remedy is to split the document into smaller pieces by inserting
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">!split
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -2155,17 +2143,16 @@ and double single quotes to typeset quotes, so the right form is
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">&quot;This is a ``link text&#39;&#39; to google&quot;: &quot;http://google.com&quot;.
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -2188,7 +2175,7 @@ and double single quotes to typeset quotes, so the right form is
 
 <ul>
  <li> Transform the DocOnce document to HTML, upload to Google Drive, right-click the file and open as Google Docs.</li>
- <li> It might be necessary to adjust formatting, e.g., insert an extra line between paragraphs.</li>
+ <li> It might be necessary to adjust formatting, e.g. insert an extra line between paragraphs.</li>
  <li> MathJax code is not converted to the Google Docs LaTeX counterpart and appears verbatim.</li>
  <li> Pygmentized computer code and admons look fine.</li>
 </ul>
@@ -2441,13 +2428,12 @@ to HTML, the JSON file may look like this:
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">{
     &quot;filename&quot; : &quot;mydoc&quot;,
     &quot;title&quot; : &quot;Title of the document&quot;,
@@ -2487,7 +2473,7 @@ to HTML, the JSON file may look like this:
 }
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -2517,7 +2503,7 @@ Some other points of importance:
 <ul>
  <li> The abstract requires a heading Summary or Abstract. This heading must be substitued by the appropriate word after translation.</li>
  <li> LaTeX files should make use of packages and options for the language in question such that LaTeX-generated headings get the right language-specific wording. Use <code>doconce replace</code> or <code>doconce search</code> modify the <code>.tex</code> file (see the Bash script referred to below for examples).</li>
- <li> Some DocOnce-generated headings are in English, e.g., &quot;Table of Contents&quot;, which must be edited by <code>doconce replace</code>.</li>
+ <li> Some DocOnce-generated headings are in English, e.g.  &quot;Table of Contents&quot;, which must be edited by <code>doconce replace</code>.</li>
  <li> For Sphinx output, two edits in files in the Sphinx root directory (<code>sphinx-rootdir</code> by default) are necessary (see Bash script below for examples on autoediting):</li>
 <ul>
    <li> Insert right language in <code>conf.py</code>: <code>language = 'nb_NO'</code> for Norwegian</li>
@@ -2825,13 +2811,12 @@ as demonstrated here:
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">!bc mcod
 %% Comment on the beginning of the line can be escaped by %%
 if a &gt; b
@@ -2841,7 +2826,7 @@ end
 !ec
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -3307,7 +3292,7 @@ text in a column, the <code>ltablex</code> package is automatically added by Doc
 <!-- #endif -->
 <h2 id="table-inside-user-defined-environment-does-not-work" class="anchor">Table inside user-defined environment does not work </h2>
 
-<p>If the table appears at the end of the environment (e.g., a theorem or
+<p>If the table appears at the end of the environment (e.g. a theorem or
 example environment), add a sentence between the table and
 the end-of-environment command.
 </p>
@@ -3454,7 +3439,7 @@ Terminal&gt; pdflatex -shell-escape mydoc
 <p>LaTeX requires prefixing underscores by a backslash. Either typeset
 words with underscores in inline verbatim text (so you do not need
 the backslash) or use the preprocessor
-to insert LaTeX-specific text with a backslash, e.g.,
+to insert LaTeX-specific text with a backslash, e.g. 
 </p>
 
 
@@ -3491,18 +3476,17 @@ my_word
 <p>Suppose you have a URL reference like</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">..which can be found in the file &quot;my_file.txt&quot;:
 &quot;http://some.where.net/web/dir/my_file.txt&quot;.
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -3522,18 +3506,17 @@ underscore is misleading in other formats.
 The remedy is to format the link text with inline verbatim tags (backticks):
 </p>
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">..which can be found in the file &quot;`my_file.txt`&quot;:
 &quot;http://some.where.net/web/dir/my_file.txt&quot;.
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -3552,17 +3535,16 @@ The remedy is to format the link text with inline verbatim tags (backticks):
 <p>A known problem is to have the word</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">\Verb
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -3905,17 +3887,16 @@ more compact:
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">\usepackage[compact]{titlesec}
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -4054,17 +4035,16 @@ restricted to LaTeX. See also the section <a href="#trouble:latex:envir:native">
 
 <p>If the problem is undefined control sequence involving</p>
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">\code{...}
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -4086,16 +4066,15 @@ that all inline verbatim text appears on the same line.
 <p>Make sure you have a <code>!split</code> before every slide heading.</p>
 <h2 id="inline-verbatim-gives-error" class="anchor">Inline verbatim gives error  </h2>
 
-<p>Check if the inline verbatim contains typical LaTeX commands, e.g.,</p>
+<p>Check if the inline verbatim contains typical LaTeX commands, e.g. </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">some text with `\usepackage{mypack}` is difficult because
 ptex2tex will replace this by \code{\usepackage{mypack}} and
 then replace this by
@@ -4104,7 +4083,7 @@ which is wrong because ptex2tex applies regex that don&#39;t
 capture the second }
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -4186,17 +4165,16 @@ elsewhere). Such automatic edits are useful if they are few.
 <p>There are comment lines with</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">--- begin preamble ---
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -4212,17 +4190,16 @@ elsewhere). Such automatic edits are useful if they are few.
 <p>and</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">--- end preamble ---
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -4310,17 +4287,16 @@ There is a special line in the <code>.tex</code> file,
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">%% insert custom LaTeX commands...
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -4562,7 +4538,7 @@ case there will never be page numbers in the footer).
 for the index by adding <code>\cleardoublepage\phantomsection</code> right before
 <code>\printindex</code>.  The same trick can be useful in other contexts.
 </p>
-<h2 id="exercises-in-the-springer_sv-style-looks-strange" class="anchor">Exercises in the <code>Springer_sv</code> style looks strange </h2>
+<h2 id="exercises-in-the-springer-sv-style-looks-strange" class="anchor">Exercises in the <code>Springer_sv</code> style looks strange </h2>
 
 <p>The <code>Springer_sv</code> style demands exercises to appear within the <code>prob</code>
 environment, and the <code>svmono.cls</code> package typesets <code>prob</code> with small
@@ -4907,20 +4883,19 @@ simply by automatic editing of the HTML code in a little shell script:
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">doconce replace &#39;&lt;p class=&quot;caption&quot;&gt;&#39; \
  &#39;&lt;p style=&quot;width: 50%; font-style: italic; color: blue&quot;&gt;&#39; mydoc.html
 doconce replace &#39;&lt;hr class=&quot;figure&quot;&gt;&#39; \
  &#39;&lt;hr style=&quot;width:60%, font-style: normal&quot;&gt;&#39; mydoc.html
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -4977,5 +4952,4 @@ Usually the HTML5 slides work best in Firefox.
 </center>
 </body>
 </html>
-    
 

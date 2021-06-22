@@ -1,6 +1,7 @@
 <!--
-Automatically generated HTML file from DocOnce source
+HTML file automatically generated from DocOnce source
 (https://github.com/doconce/doconce/)
+doconce format html admon.do.txt --html_style=blueish --html_admon=yellow --html_output=admon_yellow --html_box_shadow OPTIONS=--html_style=blueish --html_admon=yellow --html_box_shadow
 -->
 <html>
 <head>
@@ -8,16 +9,9 @@ Automatically generated HTML file from DocOnce source
 <meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Demo of admonition styles in DocOnce">
-
 <title>Demo of admonition styles in DocOnce</title>
-
-
 <style type="text/css">
 /* blueish style */
-
-/* Color definitions:  https://www.december.com/html/spec/color0.html
-   CSS examples:       https://www.w3schools.com/css/css_examples.asp */
-
 body {
   margin-top: 1.0em;
   background-color: #ffffff;
@@ -27,13 +21,88 @@ body {
 h1 { font-size: 1.8em; color: #1e36ce; }
 h2 { font-size: 1.6em; color: #1e36ce; }
 h3 { font-size: 1.4em; color: #1e36ce; }
+h4 { font-size: 1.2em; color: #1e36ce; }
 a { color: #1e36ce; text-decoration:none; }
 tt { font-family: "Courier New", Courier; }
-/* pre style removed because it will interfer with pygments */
 p { text-indent: 0px; }
 hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 p.caption { width: 80%; font-style: normal; text-align: left; }
-hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
+/* pre style removed because it will interfer with pygments */
+div.highlight {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    line-height: 1.21429em;
+}
+div.cell {
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    outline: none;
+}
+div.input {
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.inner_cell {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-flex: 1;
+    flex: 1;
+}
+div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    background: #f7f7f7;
+    line-height: 1.21429em;
+}
+div.input_area > div.highlight {
+    margin: .4em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+div.output_wrapper {
+    position: relative;
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.output {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+div.output_area {
+    padding: 0;
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.output_subarea {
+    padding: .4em .4em 0 .4em;
+    box-flex: 1;
+    flex: 1;
+}
+div.output_text {
+    text-align: left;
+    color: #000;
+    line-height: 1.21429em;
+}
 .alert-text-small   { font-size: 80%;  }
 .alert-text-large   { font-size: 130%; }
 .alert-text-normal  { font-size: 90%;  }
@@ -56,24 +125,32 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_yellow_notice.png); }
-.alert-summary  { background-image:url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_yellow_summary.png); }
-.alert-warning { background-image: url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_yellow_warning.png); }
-.alert-question {background-image:url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_yellow_question.png); }
-
+.alert-notice { background-image: url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_yellow_question.png); }
 div { text-align: justify; text-justify: inter-word; }
+.tab {
+  padding-left: 1.5em;
+}
+div.toc p,a {
+  line-height: 1.3;
+  margin-top: 1.1;
+  margin-bottom: 1.1;
+}
 </style>
-
-
 </head>
 
 <!-- tocinfo
 {'highest level': 1,
- 'sections': [('The four main types of admonitions', 1, None, '___sec0'),
+ 'sections': [('The four main types of admonitions',
+               1,
+               None,
+               'the-four-main-types-of-admonitions'),
               ('The block, quote and plain box environment',
                1,
                None,
-               '___sec1')]}
+               'the-block-quote-and-plain-box-environment')]}
 end of tocinfo -->
 
 <body>
@@ -93,97 +170,119 @@ MathJax.Hub.Config({
 </script>
 
 
-
-    
 <!-- ------------------- main content ---------------------- -->
+<center>
+<h1>Demo of admonition styles in DocOnce</h1>
+</center>  <!-- document title -->
 
-
-
-<center><h1>Demo of admonition styles in DocOnce</h1></center>  <!-- document title -->
-
-<p>
 <!-- author(s): H. P. Langtangen -->
-
 <center>
 <b>H. P. Langtangen</b> 
 </center>
-
-<p>
 <!-- institution(s) -->
+<br>
+<center>
+<h4>Jun 22, 2021</h4>
+</center> <!-- date -->
+<br>
 
-<br>
-<p>
-<center><h4>Nov 20, 2020</h4></center> <!-- date -->
-<br>
 <p>
 <b>Summary.</b> This note demonstrates how admonitions look like in the output format
 <b>html</b>.
+</p>
+<h1 id="the-four-main-types-of-admonitions">The four main types of admonitions </h1>
 
-<h1 id="___sec0">The four main types of admonitions </h1>
+<p>Key options when compiling this document were</p>
 
-<p>
-Key options when compiling this document were
 
-<p>
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">--html_style=blueish --html_admon=yellow --html_box_shadow
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>--html_style=blueish --html_admon=yellow --html_box_shadow
-</pre></div>
-<p>
-Here is the warning admon:
+<p>Here is the warning admon:</p>
 
-<p>
 <div class="alert alert-block alert-warning alert-text-normal">
 <b>Division by zero is illegal!</b>
 <p>
-Most math systems will give fatal errors if you divide by zero.
+<p>Most math systems will give fatal errors if you divide by zero.</p>
 
-<p>
 
 <!-- code=text (!bc sys) typeset with pygments style "default" -->
-<div class="highlight" style="background: #fcf8e3"><pre style="line-height: 125%; margin: 0;"><span></span>Terminal&gt; python -c &#39;print 4/0&#39;
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #fcf8e3">
+  <pre style="line-height: 125%;">Terminal&gt; python -c &#39;print 4/0&#39;
 Traceback (most recent call last):
   File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
 ZeroDivisionError: integer division or modulo by zero
-</pre></div>
-<p>
-You should therefore be very careful with all expressions that may result
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>You should therefore be very careful with all expressions that may result
 in division by zero. In Python, you can use a <code>try-except</code> clause to
 test if some expression gives a <code>ZeroDivisionError</code> exception and take
 appropriate actions. One example of a numerical method where division
 by zero can cause problems is Newton's methods of finding solutions to
 algebraic equations \( f(x)=0 \). In that algorithm, there is a division
 by \( f'(x) \).
+</p>
 </div>
 
 
-<p>
-Question admon (without title).
+<p>Question admon (without title).</p>
 
-<p>
 <div class="alert alert-block alert-question alert-text-normal">
 <b>Question</b>
 <p>
-What are the admon options for <code>doconce format html</code>?
+<p>What are the admon options for <code>doconce format html</code>?</p>
 
-<p>
 <!-- Answer: <code>--html_admon=</code>, <code>--html_admon_shadow</code>, <code>--html_admon_bg_color=</code>, -->
 <!-- <code>--html_admon_bd_color</code>. There is also <code>--html_box_shadow</code> for boxes. -->
 </div>
 
 
-<p>
-Summary admon:
+<p>Summary admon:</p>
 
-<p>
 <div class="alert alert-block alert-summary alert-text-normal">
 <b>Summary</b>
 <p>
-The most popular methods for solving algebraic equations
+<p>The most popular methods for solving algebraic equations</p>
 
 $$ f(x) = 0 $$
 
-are
+<p>are</p>
 
 <ul>
  <li> Newton's method</li>
@@ -191,100 +290,89 @@ are
  <li> The Secant method</li>
  <li> The Fixed-Point method (\( f(x) = x - g(x) \))</li>
 </ul>
-
-Of these, Newton's method is fastest, the Bisection method is the most
+<p>Of these, Newton's method is fastest, the Bisection method is the most
 reliable, the Secant method is a simplified Newton method, and the
 Fixed-Point method is obviously very problem dependent in its behavior
 since the user has the define the \( g \) function.
+</p>
 </div>
 
 
-<p>
-Here is a <em>notice admon</em>:
+<p>Here is a <em>notice admon</em>:</p>
 
-<p>
 <div class="alert alert-block alert-notice alert-text-normal">
 <b>Tip: follow well-established conventions for variable names!</b>
 <p>
-For example, in Python, variable and function names use
+<p>For example, in Python, variable and function names use
 lower case letters separated by underscore, as in
 <code>vibration_with_damping</code> (while Java typically would
 have <code>vibrationWithDamping</code>). Class names apply cap words,
 as in <code>ProblemClass</code>.
+</p>
 </div>
 
 
-<p>
-The four main admons are warning, notice, question, and summary, but you
+<p>The four main admons are warning, notice, question, and summary, but you
 may introduce other boxes by utilizing the title, as explained below.
+</p>
 
-<p>
 <div class="alert alert-block alert-notice alert-text-normal">
 <b>The title of the box is fully customizable</b>
 <p>
-This means that if you want
+<p>This means that if you want
 different types of boxes, e.g. a <em>detour</em> box and a <em>tip</em> box, you can just
 open introduce the convention that detour applies the summary box and
 starts with 'Detour:' in the title, while the notice box is used for
 tip boxes and as a title starting with 'Tip:'.
+</p>
 </div>
 
+<h1 id="the-block-quote-and-plain-box-environment">The block, quote and plain box environment </h1>
 
-<h1 id="___sec1">The block, quote and plain box environment </h1>
+<p>DocOnce features a <code>block</code> environment with or without title.</p>
 
-<p>
-DocOnce features a <code>block</code> environment with or without title.
-
-<p>
 <div class="alert alert-block alert-block alert-text-normal">
 <b></b>
 <p>
-Blocks are often used in slides to frame a collection of things.
+<p>Blocks are often used in slides to frame a collection of things.</p>
 </div>
 
 
-<p>
 <div class="alert alert-block alert-block alert-text-normal">
 <b>Block with title</b>
 <p>
-Blocks can contain text, math, code, figures, movies.
+<p>Blocks can contain text, math, code, figures, movies.</p>
 </div>
 
 
-<p>
-Here is a quote environment (<code>quote</code>):
+<p>Here is a quote environment (<code>quote</code>):</p>
 
-<p>
 <blockquote>
-    Sayre's law states that
+    <p>Sayre's law states that
     "in any dispute the intensity of feeling is inversely
     proportional to the value of the issues at stake." <br />
     By way of corollary, it adds: <br />
     "That is why academic politics are so bitter." <br />
-    <em>Source</em>: <a href="https://en.wikipedia.org/wiki/Sayre's_law" target="_self">wikipedia</a>
+    <em>Source</em>: <a href="http://en.wikipedia.org/wiki/Sayre's_law" target="_self">wikipedia</a>
+    </p>
 </blockquote>
 
 
-<p>
-Boxes are very simple frames (without any icons, background color,
+<p>Boxes are very simple frames (without any icons, background color,
 or stash, except for a shadow)
 used for important results like
+</p>
 
-<p>
 
 <!-- begin box -->
-<div style="width: 95%; padding: 10px; border: 1px solid #000; border-radius: 4px; box-shadow: 8px 8px 5px #888888;">
-The world most famous equation:
+<div style="width:95%; padding:10px; border:1px solid #000; border-radius:4px;  box-shadow: 8px 8px 5px #888888;">
+<p>The world most famous equation:</p>
 
 $$ E = mc^2 $$
 </div>
 <!-- end box -->
 
-
 <!-- ------------------- end of main content --------------- -->
-
-
 </body>
 </html>
-    
 

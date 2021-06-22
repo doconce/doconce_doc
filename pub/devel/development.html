@@ -1,5 +1,5 @@
 <!--
-Automatically generated HTML file from DocOnce source
+HTML file automatically generated from DocOnce source
 (https://github.com/doconce/doconce/)
 doconce format html development.do.txt --html_style=bootswatch_readable --html_code_style=inherit --no_abort --no_mako
 -->
@@ -11,6 +11,7 @@ doconce format html development.do.txt --html_style=bootswatch_readable --html_c
 <meta name="description" content="Getting Started with Development">
 <title>Getting Started with Development</title>
 <!-- Bootstrap style: bootswatch_readable -->
+<!-- doconce format html development.do.txt --html_style=bootswatch_readable --html_code_style=inherit --no_abort --no_mako -->
 <link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css" rel="stylesheet">
 <!-- not necessary
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -46,6 +47,10 @@ code { color: inherit; background-color: transparent; }
                2,
                None,
                'python-scripts-in-lib-doconce'),
+              ('Synching the `docs` and `test` folders',
+               2,
+               None,
+               'synching-the-docs-and-test-folders'),
               ('Running Tests', 2, None, 'running-tests'),
               ('Running DocOnce in a IDE', 1, 'section:IDE', 'section:IDE'),
               ('Compiling the Documentation',
@@ -78,6 +83,7 @@ end of tocinfo -->
      <!-- navigation toc: --> <li><a href="#program-structure" style="font-size: 80%;"><b>Program Structure</b></a></li>
      <!-- navigation toc: --> <li><a href="#the-entry-point-bin-doconce" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;The entry point <code>bin/doconce</code></a></li>
      <!-- navigation toc: --> <li><a href="#python-scripts-in-lib-doconce" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Python scripts in <code>lib/doconce/</code></a></li>
+     <!-- navigation toc: --> <li><a href="#synching-the-docs-and-test-folders" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Synching the <code>docs</code> and <code>test</code> folders</a></li>
      <!-- navigation toc: --> <li><a href="#running-tests" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Running Tests</a></li>
      <!-- navigation toc: --> <li><a href="#section:IDE" style="font-size: 80%;"><b>Running DocOnce in a IDE</b></a></li>
      <!-- navigation toc: --> <li><a href="#compiling-the-documentation" style="font-size: 80%;"><b>Compiling the Documentation</b></a></li>
@@ -108,11 +114,13 @@ end of tocinfo -->
 </center>
 <br>
 <center>
-<h4>Apr 8, 2021</h4>
+<h4>Jun 22, 2021</h4>
 </center> <!-- date -->
 <br>
 
-<p>DocOnce is an open source project.  The aim of this guide is to help getting started with development. It describes the program's structure and how to set up a script that runs DocOnce from a Python IDE.</p>
+<p>DocOnce is an open source project. 
+The aim of this guide is to help getting started with development. It describes the program's structure and how to set up a script that runs DocOnce from a Python IDE.
+</p>
 
 
 </div> <!-- end jumbotron -->
@@ -121,7 +129,7 @@ end of tocinfo -->
 <p>The entry point of the doconce program is the file <code>bin/doconce</code>. In fact, the <code>setup.py</code> file contains this line invoking the <code>scripts</code> option to run commands from terminal:</p>
 
 
-<!-- code=python (!bc pycod) typeset with pygments style "default-t" -->
+<!-- code=python (!bc pycod-t) typeset with pygments style "default-t" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
@@ -148,7 +156,7 @@ end of tocinfo -->
 <p>Most of the commands are handled by the <code>eval</code> function: </p>
 
 
-<!-- code=python (!bc pycod) typeset with pygments style "default-t" -->
+<!-- code=python (!bc pycod-t) typeset with pygments style "default-t" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
@@ -167,33 +175,44 @@ end of tocinfo -->
 
 <p>The <code>lib/doconce/</code> directory contains the scripts to run DocOnce. The name of the files give a clue about their purpose, e.g. <code>html.py</code> contains code that is run by <code>doconce format html</code>. The <code>doconce.py</code> file contains important formatting functions such as <code>doconce_format()</code>, <code>preprocess()</code>, <code>doconce2format()</code>, <code>file2file()</code>. </p>
 
-<p>I suggest navigating through the scripts by using an IDE with debugger. See the  the section <a href="#section:IDE">Running DocOnce in a IDE</a>.</p>
-<h2 id="running-tests" class="anchor">Running Tests </h2>
+<p>I suggest navigating through the scripts by using an IDE with debugger. See the 
+the section <a href="#section:IDE">Running DocOnce in a IDE</a>.
+</p>
+<h2 id="synching-the-docs-and-test-folders" class="anchor">Synching the <code>docs</code> and <code>test</code> folders </h2>
 
-<p>Tests are written in the <code>test/</code> folder. See the instructions in the <code>README</code> file. </p>
+<p>The documentation and tests for DocOnce are stored in their own GitHub repositories: <a href="https://github.com/doconce/doconce_doc" target="_self">doconce_doc</a> and <a href="https://github.com/doconce/doconce_tests" target="_self">doconce_tests</a>, respectively. 
+These two repositories are <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules" target="_self">git-submodules</a>, i.e. they are included in the main <a href="https://github.com/doconce/doconce" target="_self">doconce</a> repository as subdirectories. 
+The subdirectories for <a href="https://github.com/doconce/doconce_doc" target="_self">doconce_doc</a> and <a href="https://github.com/doconce/doconce_tests" target="_self">doconce_tests</a> are the <code>doc</code> and <code>test</code> folders, respectively. 
+This structure was chosen to improve modularization and the disk footprint of the main <a href="https://github.com/doconce/doconce" target="_self">doconce</a> repository.
+</p>
 
-<p>New tests using <code>pytest</code> library are currently under development. They can be run with </p>
+<p>The content of the <code>doc</code> and <code>test</code> folders can be downloaded by running this command after cloning the <a href="https://github.com/doconce/doconce" target="_self">doconce</a> repository:</p>
 
 
-<!-- code=python (!bc pycod) typeset with pygments style "default-t" -->
+<!-- code=bash (!bc shcod-t) typeset with pygments style "default-t" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;">pytest <span style="color: #666666">-</span>v test_run<span style="color: #666666">.</span>py
+  <pre style="line-height: 125%;">git submodule update --init
 </pre>
 </div>
       </div>
     </div>
   </div>
 </div>
+<h2 id="running-tests" class="anchor">Running Tests </h2>
+
+<p>Tests are implemented in the <a href="https://github.com/doconce/doconce_tests" target="_self">doconce_tests</a> <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodule" target="_self">git-submodule</a>, which can be downloaded as explained above to the <code>test</code> folder. </p>
+
+<p>See the instructions in the <code>test/README.md</code> file to install additional requirements for the tests and how to run them.</p>
 <h1 id="section:IDE" class="anchor">Running DocOnce in a IDE</h1>
 
 <p>The following code can be used in a IDE such as <a href="https://www.jetbrains.com/pycharm/" target="_self">PyCharm</a>, <a href="https://www.eclipse.org/" target="_self">Eclipse</a>, <a href="https://visualstudio.microsoft.com/" target="_self">Microsoft Visual Studio</a>, or others.</p>
 
 
-<!-- code=python (!bc pycod) typeset with pygments style "default-t" -->
+<!-- code=python (!bc pycod-t) typeset with pygments style "default-t" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
@@ -245,17 +264,33 @@ os<span style="color: #666666">.</span>system(<span style="color: #BA2121">&#39;
 
 <p>As an example for PyCharm, see the guide <a href="https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html" target="_self">Create and edit run/debug configurations&#65279;</a> to set up create and edit run/debug configurations&#65279;. I suggest using a virtual environment as <a href="https://www.jetbrains.com/help/pycharm/python-interpreters.html" target="_self">Python interpreter</a>. Also install DocOnce in development mode so that the <code>doconce</code> command will get updated when you edit its code:</p>
 
-<p>```</p>
-<!-- Create a virtual environment -->
-<p>python -m venv venv source venv/bin/activate</p>
-<!-- Install dependencies and DocOnce in development mode -->
-<p>(venv) pip install -r requirements.txt (venv) pip install -e . ```</p>
+
+<!-- code=bash (!bc shcod-t) typeset with pygments style "default-t" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic"># Create a virtual environment</span>
+python -m venv venv
+<span style="color: #008000">source</span> venv/bin/activate
+<span style="color: #408080; font-style: italic"># Install dependencies and DocOnce in development mode</span>
+<span style="color: #666666">(</span>venv<span style="color: #666666">)</span> pip install -r requirements.txt
+<span style="color: #666666">(</span>venv<span style="color: #666666">)</span> pip install -e .
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
 <h1 id="compiling-the-documentation" class="anchor">Compiling the Documentation </h1>
+
+<p>The documentation is implemented in the <a href="https://github.com/doconce/doconce_doc" target="_self">doconce_doc</a> <a href="https://git-scm.com/book/en/v2/Git-Tools-Submodule" target="_self">git-submodule</a>, which can be downloaded as explained above to the <code>doc</code> folder. </p>
 
 <p>The documentation is written as DocOnce <code>.do.txt</code> files in different folder inside <code>doc/src/</code>, for example <code>doc/src/manual/</code>, <code>doc/src/quickref/</code>, <code>doc/src/tutorial/</code>. These folders contains a <code>make.sh</code> file that can be run in <code>bash</code> to create documentation in  different formats: </p>
 
 
-<!-- code=bash (!bc shcod) typeset with pygments style "default-t" -->
+<!-- code=bash (!bc shcod-t) typeset with pygments style "default-t" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
@@ -296,5 +331,4 @@ os<span style="color: #666666">.</span>system(<span style="color: #BA2121">&#39;
 -->
 </body>
 </html>
-    
 

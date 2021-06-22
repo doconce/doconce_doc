@@ -3,25 +3,25 @@
 <!-- TITLE: Scientific Writing and Publishing for the Future: How Can We Handle the eLearning Revolution? -->
 % Scientific Writing and Publishing for the Future
 % **Hans Petter Langtangen**
-% Jul 8, 2020
+% Jun 22, 2021
 
-Copyright 2020, Hans Petter Langtangen
+Copyright 2021, Hans Petter Langtangen
 
 
 
-<!-- <img src="fig/doconce1b.png" width=400> -->
+<!-- <img src="fig/doconce1b.png" width="400"> -->
 ![](fig/doconce1b.png)
 
 <!-- !split -->
 ## Challenges with tools for scientific writing
 
 <!-- !bslidecell 00 -->
-<!-- <img src="fig/writing1.jpg" width=400> -->
+<!-- <img src="fig/writing1.jpg" width="400"> -->
 ![](fig/writing1.jpg)
 <!-- !eslidecell -->
 
 <!-- !bslidecell 01 -->
-<!-- <img src="fig/direction14.jpg" width=510> -->
+<!-- <img src="fig/direction14.jpg" width="510"> -->
 ![](fig/direction14.jpg)
 <!-- !eslidecell -->
 
@@ -35,7 +35,7 @@ Copyright 2020, Hans Petter Langtangen
  * Post 2010: a few scientists explore new digital formats
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 \def\FrameCommand{\colorbox{shadecolor}}\FrameRule0.6pt
 \MakeFramed {\FrameRestore}\vskip3mm}{\vskip0mm\endMakeFramed}
 \providecommand{\shadedquoteBlue}{}
@@ -49,7 +49,7 @@ Copyright 2020, Hans Petter Langtangen
 \begin{Verbatim}
 print 'Hello, World!'
 \end{Verbatim}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 **Big late 1990s question**: Will MS Word replace LaTeX? It never did!
 
@@ -57,10 +57,10 @@ print 'Hello, World!'
 ### LaTeX PDF is mostly suboptimal for the new devices
 
 <!-- !bslidecell 00 0.4 -->
-<!-- <img src="fig/ipad.png" width=400> -->
+<!-- <img src="fig/ipad.png" width="400"> -->
 ![](fig/ipad.png)
 
-<!-- <img src="fig/iphones.jpg" width=100> -->
+<!-- <img src="fig/iphones.jpg" width="100"> -->
 ![](fig/iphones.jpg)
 
 <!-- FIGURE: [fig/mbair, width=400] -->
@@ -68,26 +68,26 @@ print 'Hello, World!'
 <!-- !eslidecell -->
 
 <!-- !bslidecell 01 0.6 -->
-<!-- <img src="fig/imac.png" width=350> -->
+<!-- <img src="fig/imac.png" width="350"> -->
 ![](fig/imac.png)
 <!-- !eslidecell -->
 
 <!-- !split -->
 ### The book will survive (LaTeX is ideal)
 
-<!-- <img src="fig/oldbooks.jpg" width=800> -->
+<!-- <img src="fig/oldbooks.jpg" width="800"> -->
 ![](fig/oldbooks.jpg)
 
 <!-- !split -->
 ### The classical report/paper will survive (LaTeX is ideal)
 
 <!-- !bslidecell 00 -->
-<!-- <img src="fig/latex_thesis.jpg" width=400> -->
+<!-- <img src="fig/latex_thesis.jpg" width="400"> -->
 ![](fig/latex_thesis.jpg)
 <!-- !eslidecell -->
 
 <!-- !bslidecell 01 -->
-<!-- <img src="fig/latex_paper1.png" width=400> -->
+<!-- <img src="fig/latex_paper1.png" width="400"> -->
 ![](fig/latex_paper1.png)
 <!-- !eslidecell -->
 
@@ -105,20 +105,19 @@ print 'Hello, World!'
 [Opigno](https://www.opigno.org/en), ...
 
 <!-- !bslidecell 00 -->
-<!-- <img src="fig/digital_learning_words.jpg" width=400> -->
+<!-- <img src="fig/digital_learning_words.jpg" width="400"> -->
 ![](fig/digital_learning_words.jpg)
 <!-- !eslidecell -->
 
 <!-- !bslidecell 01 -->
-<!-- <img src="fig/digital_learning_iPad.jpg" width=400> -->
+<!-- <img src="fig/digital_learning_iPad.jpg" width="400"> -->
 ![](fig/digital_learning_iPad.jpg)
 <!-- !eslidecell -->
 
 <!-- !split -->
 ### My headache: How to write scientific material that can be easily published through old and new media?
 
-
-<!-- <img src="fig/headache4.jpg" width=300> -->
+<!-- <img src="fig/headache4.jpg" width="300"> -->
 ![](fig/headache4.jpg)
 
 *LaTeX-for-paper* and *HTML-for-screen* are two very different
@@ -134,38 +133,35 @@ What tools should I use for scientific writing?
 
 
 
-
-
 <!-- !bslidecell 00 0.25 -->
-<!-- <img src="fig/LaTeX_logo.jpg" width=120> -->
+<!-- <img src="fig/LaTeX_logo.jpg" width="120"> -->
 ![](fig/LaTeX_logo.jpg)
 <!-- !eslidecell -->
 
 <!-- !bslidecell 01 0.25 -->
-<!-- <img src="fig/MS_Word_logo.jpg" width=80> -->
+<!-- <img src="fig/MS_Word_logo.jpg" width="80"> -->
 ![](fig/MS_Word_logo.jpg)
 <!-- !eslidecell -->
 
 <!-- !bslidecell 02 0.5 -->
-<!-- <img src="fig/sphinx_logo.png" width=200> -->
+<!-- <img src="fig/sphinx_logo.png" width="200"> -->
 ![](fig/sphinx_logo.png)
 <!-- !eslidecell -->
 
 <!-- !bslidecell 10 0.25 -->
-<!-- <img src="fig/markdown_logo.jpg" width=80> -->
+<!-- <img src="fig/markdown_logo.jpg" width="80"> -->
 ![](fig/markdown_logo.jpg)
 <!-- !eslidecell -->
 
 <!-- !bslidecell 11 0.25 -->
-<!-- <img src="fig/MediaWiki_logo.jpg" width=80> -->
+<!-- <img src="fig/MediaWiki_logo.jpg" width="80"> -->
 ![](fig/MediaWiki_logo.jpg)
 <!-- !eslidecell -->
 
 <!-- !bslidecell 12 0.5 -->
-<!-- <img src="fig/IPython_logo.png" width=300> -->
+<!-- <img src="fig/IPython_logo.png" width="300"> -->
 ![](fig/IPython_logo.png)
 <!-- !eslidecell -->
-
 
 <!-- !split -->
 ### There is a jungle of outlets your scientific writings should address
@@ -185,7 +181,7 @@ What tools should I use for scientific writing?
 <!-- !eslidecell -->
 
 <!-- !bslidecell 01 0.6 -->
-<!-- <img src="fig/jungle_with_mess.jpg" width=500> -->
+<!-- <img src="fig/jungle_with_mess.jpg" width="500"> -->
 ![](fig/jungle_with_mess.jpg)
 <!-- !eslidecell -->
 
@@ -220,16 +216,10 @@ Probably not, but I have a solution :smile:
  * **pdfLaTeX**, **XeLaTeX**, **LuaLaTeX**: takes over (figures in png, pdf) - use these!
  * **MS Word**: too clicky math support and ugly fonts, but much used
  * **HTML with MathJax**: "full" LaTeX *math*, but much tagging
- * **Sphinx**:
-   somewhat limited LaTeX math support, but great support for web design,
-   and less tagged than HTML
- * **reStructuredText**: similar to Sphinx, but no math support, transforms to
-   lots of formats (LaTeX, HTML, XML, Word, OpenOffice, ...)
- * **Markdown**: somewhat limited LaTeX math support, but minor tagging,
-   transforms to lots of formats (LaTeX, HTML, XML, Word, OpenOffice, ...)
- * **IPython notebooks**: Markdown code/math,
-   combines Python code, interactivity, and
-   visualization, but requires all code snippets to sync together
+ * **Sphinx**: somewhat limited LaTeX math support, but great support for web design, and less tagged than HTML
+ * **reStructuredText**: similar to Sphinx, but no math support, transforms to lots of formats (LaTeX, HTML, XML, Word, OpenOffice, ...)
+ * **Markdown**: somewhat limited LaTeX math support, but minor tagging, transforms to lots of formats (LaTeX, HTML, XML, Word, OpenOffice, ...)
+ * **IPython notebooks**: Markdown code/math, combines Python code, interactivity, and visualization, but requires all code snippets to sync together
  * **Confluence**: Markdown-like input, with limited LaTeX math support, but converted to XML
  * **MediaWiki**: quite good LaTeX math support (cf. Wikipedia/Wikibooks)
  * Other **wiki** formats: no math support, great for collaborative editing
@@ -245,8 +235,7 @@ Probably not, but I have a solution :smile:
  * LaTeX has lots of fancy layouts, but few translates to other formats
  * LaTeX *inline* math: works with all math-enabled formats (LaTeX, MathJax, Sphinx, Markdown, MediaWiki, Confluence, ...)
  * LaTeX *equation* math:
-    * **LaTeX**: `equation*`, `equation`, `align*`, `align` +
-      `eqnarray`, `split`, `alignat`, ... (numerous!)
+    * **LaTeX**: `equation*`, `equation`, `align*`, `align` + `eqnarray`, `split`, `alignat`, ... (numerous!)
     * **MathJax**: `equation*`, `equation`, `align*`, `align`
     * **MediaWiki**: `equation*`, `equation`, `align*`, `align`
     * **Sphinx**: `equation*`, `equation`, `align*`
@@ -310,19 +299,12 @@ of new opportunities*.
 ### Examples on typesetting concerns (1)
 
 <!-- !bpop -->
- * Sphinx refers to figures by the caption (has to be short!) and
-   strips away any math notation (avoid that!).
- * Sphinx refers to sections by the title, but removes math in the
-   reference, so avoid math in headlines.
- * Tables cannot be referred to by numbers and have to appear at
-   fixed positions in the text.
+ * Sphinx refers to figures by the caption (has to be short!) and strips away any math notation (avoid that!).
+ * Sphinx refers to sections by the title, but removes math in the reference, so avoid math in headlines.
+ * Tables cannot be referred to by numbers and have to appear at fixed positions in the text.
  * Computer code has to appear at fixed positions in the text.
- * Algorithms must be written up using basic elements like lists or
-   paragraphs with headings.
- * Recipes are often typeset as enumerated lists. For recipes with
-   code or math blocks: drop the list (gives problems in some formats)
-   and use paragraph (or subsubsection) headings with "Step 1.",
-   "Step 2.", etc.
+ * Algorithms must be written up using basic elements like lists or paragraphs with headings.
+ * Recipes are often typeset as enumerated lists. For recipes with code or math blocks: drop the list (gives problems in some formats) and use paragraph (or subsubsection) headings with "Step 1.", "Step 2.", etc.
 
 <!-- !epop -->
 
@@ -330,15 +312,10 @@ of new opportunities*.
 ### Examples on typesetting concerns (2)
 
 <!-- !bpop -->
- * Footnotes must appear as part of the running text (e.g., sentences
-   surrounded by parenthesis), since only a few formats support footnotes.
+ * Footnotes must appear as part of the running text (e.g. sentences surrounded by parenthesis), since only a few formats support footnotes.
  * Sphinx does not handle code blocks where the first line is indented.
- * Multiple plots in the same figure: mount the plots to one image
-   file and include this (`montage` for png, gif, jpeg; `pdftk`, `pdfnup`,
-   and `pdfcrop` for PDF).
- * If you need several equations *numbered* in an `align` environment,
-   recall that Sphinx, Markdown, and MediaWiki cannot handle this,
-   although they have LaTeX math support.
+ * Multiple plots in the same figure: mount the plots to one image file and include this (`montage` for png, gif, jpeg; `pdftk`, `pdfnup`, and `pdfcrop` for PDF).
+ * If you need several equations *numbered* in an `align` environment, recall that Sphinx, Markdown, and MediaWiki cannot handle this, although they have LaTeX math support.
  * Markdown tolerates labels in equations but cannot refer to them.
 
 <!-- !epop -->
@@ -351,27 +328,19 @@ of new opportunities*.
 ### Examples on typesetting concerns (3)
 
 <!-- !bpop -->
- * Index words can appear anywhere in LaTeX, but should be outside
-   paragraphs in other tools.
- * References to tables, program code and algorithms can only be
-   made in LaTeX.
- * Figures are floating in LaTeX, but fixed in other tools, so place
-   figures exactly where they are needed the first time.
- * Curve plots with color lines do not work well in black-and-white
-   printing. Make sure plots makes sense in color and BW (e.g., by
-   using colors *and* markers).
+ * Index words can appear anywhere in LaTeX, but should be outside paragraphs in other tools.
+ * References to tables, program code and algorithms can only be made in LaTeX.
+ * Figures are floating in LaTeX, but fixed in other tools, so place figures exactly where they are needed the first time.
+ * Curve plots with color lines do not work well in black-and-white printing. Make sure plots makes sense in color and BW (e.g. by using colors *and* markers).
 
 <!-- !epop -->
 
 <!-- !split -->
 ### Solution I: Use a format that translates to many
 
- * Sphinx can do nice HTML, LaTeX, epub, (almost) plain text,
-   man pages, Gnome devhelp files, Qt help files, texinfo, JSON
- * Markdown can do LaTeX, HTML, MS Word, OpenOffice, XML,
-   reStructuredText, epub, DocBook, ... but not Sphinx
- * IPython notebook: can do LaTeX, reStructuredText, HTML, PDF,
-   Python script
+ * Sphinx can do nice HTML, LaTeX, epub, (almost) plain text, man pages, Gnome devhelp files, Qt help files, texinfo, JSON
+ * Markdown can do LaTeX, HTML, MS Word, OpenOffice, XML, reStructuredText, epub, DocBook, ... but not Sphinx
+ * IPython notebook: can do LaTeX, reStructuredText, HTML, PDF, Python script
  * Sphinx and Markdown has some limited math support
 
 <!-- !split -->
@@ -381,12 +350,10 @@ of new opportunities*.
 offers minimalistic typing, great flexibility wrt format,
 especially for scientific writing with *much math and code*.
 
- * Can generate LaTeX, HTML, Sphinx, Markdown, MediaWiki, Google wiki,
-   Creole wiki, reST, plain text
+ * Can generate LaTeX, HTML, Sphinx, Markdown, MediaWiki, Google wiki, Creole wiki, reST, plain text
  * Made for large science books *and* small notes
  * Targets paper and screen
- * Many special features (code snippets from files, embedded movies,
-   admonitions, modern LaTeX layouts, extended math support for Sphinx/Markdown, ...)
+ * Many special features (code snippets from files, embedded movies, admonitions, modern LaTeX layouts, extended math support for Sphinx/Markdown, ...)
  * Very effective for generating slides from ordinary text
  * Applies Mako: DocOnce text is a program (!)
  * Much like Markdown, less tagged than LaTeX, HTML, Sphinx
@@ -394,9 +361,8 @@ especially for scientific writing with *much math and code*.
 <!-- !split -->
 ## DocOnce: Write once, include anywhere
 
-<!-- <img src="fig/doconce1b.png" width=600> -->
+<!-- <img src="fig/doconce1b.png" width="600"> -->
 ![](fig/doconce1b.png)
-
 
 <!-- !split -->
 ### DocOnce demos
@@ -413,8 +379,7 @@ especially for scientific writing with *much math and code*.
 <!-- !split -->
 ### DocOnce disclaimer
 
- * Based on text transformations (reg.exp.) so valid syntax may
-   occasionally give problems
+ * Based on text transformations (reg.exp.) so valid syntax may occasionally give problems
 <!-- * Actively developed and maintained, but one-man show -->
 
 *DocOnce divorce.* 
@@ -430,21 +395,18 @@ formats, such as LaTeX or Sphinx. The generated code is clean.
  * Code generation is a great thing
  * Preprocessors a la Mako is a great thing
  * Less tagging than LaTeX/HTML is a great thing
- * Code generation software becomes a repository of
-   advanced and nice constructs for layout
-
+ * Code generation software becomes a repository of advanced and nice constructs for layout
 
 
 
 <!-- !split -->
 ## A tour of DocOnce
 
-
 <!-- !split -->
 ### Title, authors, date, toc
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 TITLE: Some Title
 AUTHOR: name1 at institution1, with more info & institution2
 AUTHOR: name2 email:name2@web.com at institution
@@ -452,7 +414,7 @@ DATE: today
 
 # A table of contents is optional:
 TOC: on
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 *Notice.* 
 Title and authors must have all information *on a single line*!
@@ -463,24 +425,24 @@ Title and authors must have all information *on a single line*!
 ### Abstract
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 __Abstract.__
 Here goes the abstract...
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Or:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 __Summary.__
 Here goes the summary...
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Section headings
 
 Headings are surrounded by `=` signs:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 ======= This is an H1/chapter heading =======
 
 ===== This is an H2/section heading =====
@@ -490,7 +452,7 @@ Headings are surrounded by `=` signs:
 === This is an H4/paragraph heading ===
 
 __This is a paragraph heading.__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Result:
 
@@ -508,7 +470,7 @@ Result:
 ### Markup and lists
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
  * Bullet list items start with `*`
    and may span several lines
  * *Emphasized words* are possible
@@ -517,12 +479,11 @@ Result:
  * `inline verbatim code` is featured
    o and sublists with enumerated items starting with `o`
    o items are just indented as you would do in email
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 This gets rendered as
 
- * Bullet lists start with `*`
-   and may span several lines
+ * Bullet lists start with `*` and may span several lines
  * *Emphasized words* are possible
  * **Boldface words** are also possible
  * <font color="red">colored words</font> too
@@ -535,7 +496,7 @@ This gets rendered as
 ### Labels, references, index items
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 # Insert index items in the source
 idx{key word1} idx{key word2}
 
@@ -549,14 +510,14 @@ items and labels follow a syntax similar to LaTeX
 but without backslashes.
 
 # Make reference to equations
-See \eqref{eq1}-\eqref{myeq}.
+See (ref{eq1})-(ref{myeq}).
 
 # Make hyperlink
 "some link text": "https://github.com/doconce/doconce"
 
 # Hyperlink with complete URL as link text
 URL: "https://github.com/doconce/doconce"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Figures and movies
@@ -567,21 +528,21 @@ Figures with HTML and LaTeX size info, and caption: *everything on one line*
 
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 FIGURE: [figdir/myfig, width=300 frac=1.2] My caption. \label{fig1}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Movies are also supported:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 MOVIE: [http://youtu.be/IDeGDFZSYo8, width=420 height=315]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 and rendered as
 
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/IDeGDFZSYo8" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="http://youtube.com/embed/IDeGDFZSYo8" frameborder="0" allowfullscreen></iframe>
 
 
 <!-- !split -->
@@ -590,18 +551,17 @@ and rendered as
 Inline math as in LaTeX:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 ...where $a=\int_{\Omega}fdx$ is an integral.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 gets rendered as ...where $a=\int_{\Omega}fdx$ is an integral.
-
 
 An equation environment is surrounded by `!bt` and `!et` tags,
 the rest is plain LaTeX:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 !bt
 \begin{align}
 \frac{\partial u}{\partial t} &= \nabla^2 u,
@@ -610,7 +570,7 @@ the rest is plain LaTeX:
 \label{b:eq}
 \end{align}
 !et
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 which is rendered as
 
@@ -629,7 +589,7 @@ $$
 Limit math environments to
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 \[ ... \]
 
 \begin{equation*}
@@ -643,13 +603,11 @@ Limit math environments to
 
 \begin{align}
 \end{align}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 *DocOnce fix of shortcomings.* 
- * Sphinx, Markdown, and MediaWiki cannot have
-   `align` with labels
- * MathJax (HTML, Sphinx, Markdown, Mediawiki, ...) cannot
-   handle equation references across web pages
+ * Sphinx, Markdown, and MediaWiki cannot have `align` with labels
+ * MathJax (HTML, Sphinx, Markdown, Mediawiki, ...) cannot handle equation references across web pages
 
 
 
@@ -659,7 +617,7 @@ Limit math environments to
 Code is enclosed in `!bc` and `!ec` tags:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 !bc pycod
 def solver(I, a, T, dt, theta):
     """Solve u'=-a*u, u(0)=I, for t in (0,T] with steps of dt."""
@@ -671,12 +629,12 @@ def solver(I, a, T, dt, theta):
         u[n+1] = (1 - (1-theta)*a*dt)/(1 + theta*dt*a)*u[n]
     return u, t
 !ec
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 This gets rendered as
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.Python}
+~~~{.Python}
 def solver(I, a, T, dt, theta):
     """Solve u'=-a*u, u(0)=I, for t in (0,T] with steps of dt."""
     dt = float(dt); N = int(round(T/dt)); T = N*dt
@@ -686,7 +644,7 @@ def solver(I, a, T, dt, theta):
     for n in range(0, N):
         u[n+1] = (1 - (1-theta)*a*dt)/(1 + theta*dt*a)*u[n]
     return u, t
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Copying code from source files
@@ -695,19 +653,19 @@ We recommend to copy as much code as possible directly from the
 source files:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 @@@CODE path/to/file
 @@@CODE path/to/file   fromto: start-regex@end-regex
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 For example, copying a code snippet starting with `def solver(` and
 ending with (line not included) `def next(x, y,` is specified by
 start and end regular expressions:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 @@@CODE src/somefile.py  fromto: def solver\(@def next\(x,\s*y,
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Typesetting of code is implied by the file extension
@@ -731,7 +689,7 @@ With `!bc pyoptpro` or a file `*.pyopt`, the code applies the
 program flow and state of variables:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.Python}
+~~~{.Python}
 def solver(I, a, T, dt, theta):
     dt = float(dt)
     N = int(round(T/dt))
@@ -746,7 +704,7 @@ def solver(I, a, T, dt, theta):
 
 u, t = solver(I=1, a=1, T=3, dt=1., theta=0.5)
 print u
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Demonstrating code execution; Sage Cell Server
@@ -756,7 +714,7 @@ With `!bc pyscpro` or a file `*.pysc`, the code is typeset in
 a sage cell:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~{.Python}
+~~~{.Python}
 a = 2
 b = 3
 print 'a+b:', a + b
@@ -769,7 +727,7 @@ y = exp(-0.1*x)*cos(x)
 plot(x, y)
 xlabel('x'); ylabel('y')
 show()
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 *Warning.* 
 Works only in Sphinx documents (but HTML support is possible).
@@ -786,7 +744,7 @@ Can take a [DocOnce source](http://doconce.github.com/teamods/writing_reports/_s
 ### Tables
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
   |--------------------------------|
   |time  | velocity | acceleration |
@@ -796,7 +754,7 @@ Can take a [DocOnce source](http://doconce.github.com/teamods/writing_reports/_s
   | 4.0  | 1.1E+1   | 14.717624    |
   |--------------------------------|
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Gets rendered as
 
@@ -806,7 +764,6 @@ time  velocity  acceleration
  0.0    1.4186         -5.01  
  2.0  1.376512        11.919  
  4.0    1.1E+1     14.717624  
-
 
 
 <!-- !split -->
@@ -823,7 +780,7 @@ Lables, citations, index, and bibliography follow the ideas of
 LaTeX, but without backslashes:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 ===== My Section =====
 \label{sec:mysec}
 
@@ -838,7 +795,7 @@ the *key equation*. Here we focus on the extension
 \Ddt{\u} = \mycommand{v} \label{mysec:eq:Dudt}
 \end{equation}
 !et
-Equation \eqref{mysec:eq:Dudt} is important, see
+Equation (ref{mysec:eq:Dudt}) is important, see
 cite{Larsen_et_al_2002,Johnson_Friedman_2010a}.
 Also, cite{Miller_2000} supports such a view.
 
@@ -849,7 +806,7 @@ FIGURE: [fig/myfile, width=600] My figure. \label{mysec:fig:myfig}
 ===== References =====
 
 BIBFILE: papers.pub
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 The `papers.pub` file must be in [Publish](https://github.com/doconce/publish)
 format (easy to make from BibTeX).
@@ -861,7 +818,7 @@ DocOnce offers a special format for *exercises*, *problems*, *projects*,
 and *examples*:
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 ===== Problem: Flip a Coin =====
 \label{demo:ex:1}
 files=flip_coin.py, flip_coin.pdf
@@ -883,20 +840,17 @@ Compute the probability of getting heads.
 0.5.
 !eans
 !esubex
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Rendering of the previous page
-
-
-
 
 <!-- --- begin exercise --- -->
 
 ### Problem 1: Flip a Coin
 <!-- keywords = random numbers; Monte Carlo simulation -->
 
-
+<!-- --- begin subexercise --- -->
 *a)*
 Make a program that simulates flipping a coin $N$ times.
 
@@ -907,30 +861,33 @@ Use `r = random.random()` and define head as `r <= 0.5`.
 
 <!-- --- end hint in exercise --- -->
 
+<!-- --- end subexercise --- -->
+
+<!-- --- begin subexercise --- -->
 *b)*
 Compute the probability of getting heads.
-
 
 <!-- --- begin answer of exercise --- -->
 *Answer.*
 0.5.
 <!-- --- end answer of exercise --- -->
 
+<!-- --- end subexercise --- -->
+
 Filenames: `flip_coin.py`, `flip_coin.pdf`.
 <!-- solution files: mysol.txt, mysol_flip_coin.py -->
 
 <!-- --- end exercise --- -->
-
 
 <!-- !split -->
 ### Exercises
 
 All *exercises*, *problems*, and *projects* in a document are parsed
 and available in a data structure (list of dicts) for further
-processing (e.g., making a book of problems).
+processing (e.g. making a book of problems).
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 [{'answer': '',
   'closing_remarks': '',
   'file': ['flip_coin.py', 'flip_coin.pdf'],
@@ -945,20 +902,19 @@ processing (e.g., making a book of problems).
              'text': 'Make a program that simulates ...'},],
   'title': 'Flip a Coin',
   'type': 'Problem'}]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Use of preprocessors
 
  * Simple if-else tests a la the C/C++ preprocessor
- * `FORMAT` variable can be used to test on format, e.g.,
+ * `FORMAT` variable can be used to test on format, e.g. 
     * if latex/pdflatex do one sort of code (raw LaTeX)
     * if html, do another type of code (raw HTML)
 
  * Easy to comment out large portions of text
  * Easy to make different versions of the document
- * The mako preprocessor is really powerful - gives a
-   complete programming language inside the document!
+ * The mako preprocessor is really powerful - gives a complete programming language inside the document!
 
 <!-- !split -->
 ### DocOnce admonitions
@@ -984,8 +940,7 @@ Tasks:
 
 Conclusion:
 
-  * A special "block" admonition has less pronounced typesetting and
-    can be used when no special icon is desired. Good for slides.
+  * A special "block" admonition has less pronounced typesetting and can be used when no special icon is desired. Good for slides.
 
 
 
@@ -994,22 +949,21 @@ Conclusion:
 
  * Chapters can be stand-alone documents or parts of a book
  * In a book you frequently refer to other chapters
- * When a chapter is a stand-alone document, it must refer to
-   another stand-alone chapter document
+ * When a chapter is a stand-alone document, it must refer to another stand-alone chapter document
  * This requires *generalized cross-referencing*
  * LaTeX has a solution: `xr`
  * DocOnce has a solution also for HTML, Sphinx, Markdown, ...
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 ref[internal][latex cite][external]
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 ...as shown in ref[Section ref{sec:eqs}][ in cite{math_eqs_2020}][
 the document "Mathematical Equations":
 "http://some.net/doc/matheqs.html" cite{math_eqs_2020}].
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Slides
@@ -1021,17 +975,15 @@ Very effective way to generate slides from running text:
  * Emphasize key points in bullet items
  * Focus on key equations, figures, movies, key code snippets
  * Insert `!split` wherever you want a new slide to begin
- * Insert `!bpop` and `!epop` around elements to pop up
-   in sequence (or insert `|\pause|` inside code blocks)
+ * Insert `!bpop` and `!epop` around elements to pop up in sequence (or insert `|\pause|` inside code blocks)
  * Use 7 `=` or 5 `=` in headings (H2 or H3)
- * Supported slide types: Beamer, HTML,
-   HTML5 (reveal.js, deck.js, csss, dzslides)
+ * Supported slide types: Beamer, HTML, HTML5 (reveal.js, deck.js, csss, dzslides)
 
 <!-- !split -->
 ### Example on slide code
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 !split
 ===== Headline =====
 
@@ -1055,7 +1007,7 @@ And maybe a final comment?
 
 !split
 ===== Next slide... =====
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Example on slide code
@@ -1067,7 +1019,7 @@ Last page gets rendered to
  * Key point 1
  * Key point 2
 
-<!-- <img src="fig/teacher1.gif" width=100> -->
+<!-- <img src="fig/teacher1.gif" width="100"> -->
 ![](fig/teacher1.gif)
 
 Key equation:
@@ -1085,7 +1037,7 @@ Example with a bullet list to the left and
 a figure to the right (two cells: 00 and 01):
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 !split
 ===== Headline =====
 
@@ -1110,15 +1062,12 @@ FIGURE: [fig/broken_pen_and_paper, width=400 frac=0.8]
 
 !split
 ===== Next slide... =====
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Grid layout of slide: MxN cells
 
 Last page gets rendered to
-
-
-
 
 ### Headline
 
@@ -1139,10 +1088,9 @@ $$
 <!-- !eslidecell -->
 
 <!-- !bslidecell 01 -->
-<!-- <img src="fig/broken_pen_and_paper.jpg" width=400> -->
+<!-- <img src="fig/broken_pen_and_paper.jpg" width="400"> -->
 ![](fig/broken_pen_and_paper.jpg)
 <!-- !eslidecell -->
-
 
 <!-- !split -->
 ### Classic slide types
@@ -1172,21 +1120,18 @@ $$
  * **Problem**: HTML5 slides need many style files
    * **Solution**: autocopy all files to talk directory
 
- * **Problem**: original versions of the styles have too large fonts,
-   centering, and other features not so suitable for lectures
-   with much math and code
+ * **Problem**: original versions of the styles have too large fonts, centering, and other features not so suitable for lectures with much math and code
    * **Solution**: DocOnce contains adjusted css files
 
 
 <!-- !epop -->
-
 
 <!-- !split -->
 ### DocOnce to HTML
 
 Run in terminal window:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 doconce format html doconcefile
 
 # Solarized HTML style
@@ -1200,46 +1145,41 @@ doconce format html doconcefile --no_pygments_html
 
 # Further making of slides
 doconce slides_html doconcefile reveal --html_slide_theme=darkgray
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Output for blog posts
 
 Two formats of blog posts are supported:
 
- * Google's [blogspot.com](http://doconce-report-demo.blogspot.no/):
-   just paste the raw HTML (full support of math and code)
- * [Wordpress](http://doconcereportdemo.wordpress.com/):
-   despite limited math, DocOnce manipulates the math
-   such that even `equation` and `align` work in Wordpress :-)
+ * Google's [blogspot.com](http://doconce-report-demo.blogspot.no/): just paste the raw HTML (full support of math and code)
+ * [Wordpress](http://doconcereportdemo.wordpress.com/): despite limited math, DocOnce manipulates the math such that even `equation` and `align` work in Wordpress :-)
 
 For wordpress, add `--wordpress`:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 doconce format html doconcefile --wordpress
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 and paste the code into the text area.
-
-
 
 <!-- !split -->
 ### DocOnce to pdfLaTeX
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 doconce format pdflatex doconcefile --latex_code_style=lst
 
 pdflatex doconcefile
 bibtex doconcefile
 pdflatex doconcefile
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### DocOnce to Sphinx
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 doconce format sphinx doconcefile
 
 # Autocreate sphinx directory
@@ -1249,7 +1189,7 @@ doconce sphinx_dir theme=pyramid doconcefile
 python automake-sphinx.py
 
 google-chrome sphinx-rootdir/_build/html/index.html
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Much easier than running the Sphinx tools manually!
 
@@ -1259,38 +1199,36 @@ Much easier than running the Sphinx tools manually!
 Only MediaWiki supports math.
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 doconce format mwiki doconcefile
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 Recommended site:
 
- * [ShoutWiki](http://doconcedemo.shoutwiki.com/wiki/DocOnce_demo_page)
-   for standard wikis
+ * [ShoutWiki](http://doconcedemo.shoutwiki.com/wiki/DocOnce_demo_page) for standard wikis
 
 Publishing of "official" documents:
 
- * [Wikibooks](http://en.wikibooks.org/wiki/Wikibooks:WIW)
-   (can test code in the [sandbox](http://en.wikibooks.org/wiki/Wikibooks:Sandbox))
+ * [Wikibooks](http://en.wikibooks.org/wiki/Wikibooks:WIW) (can test code in the [sandbox](http://en.wikibooks.org/wiki/Wikibooks:Sandbox))
  * Wikipedia
 
 <!-- !split -->
 ### DocOnce to other formats
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 doconce format pandoc doconcefile  # (Pandoc extended) Markdown
 doconce format gwiki  doconcefile  # Googlecode wiki
 doconce format cwiki  doconcefile  # Creole wiki (Bitbucket)
 doconce format rst    doconcefile  # reStructuredText
 doconce format plain  doconcefile  # plain, untagged text for email
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~
 
 <!-- !split -->
 ### Installation
 
  * Source at [GitHub](https://github.com/doconce/doconce) (recommended!)
-   * `git clone` + `python setyp.py install`
+   * `git clone` + `python setup.py install`
 
  * Many [dependencies...](http://doconce.github.io/doconce/doc/pub/manual/html/manual.html#installation-of-doconce-and-its-dependencies)
    * Must have `preprocess` and `mako`
@@ -1302,8 +1240,7 @@ doconce format plain  doconcefile  # plain, untagged text for email
 ### Writing tips for LaTeX writers who want to convert to DocOnce *and generate other formats*
 
  * `doconce latex2doconce` helps the translation
- * Use `\[ \]`, `equation`, `equation*`, `align`, `align*` and nothing more for
-   equations
+ * Use `\[ \]`, `equation`, `equation*`, `align`, `align*` and nothing more for equations
  * Figures: avoid subfigures (combine image files instead), use `\includegraphics`, have captions after graphics, use short figure captions, position exactly where needed
  * Tables: have them inline (not floating), with no caption
  * Computer codes: have them inline (not floating)
@@ -1314,10 +1251,8 @@ doconce format plain  doconcefile  # plain, untagged text for email
  * Use BibTeX (can easily be converted to [publish](https://github.com/doconce/publish) used by DocOnce)
  * Use `\href` for links (and insert links frequently)
  * Use the `bm` package for boldface $\boldsymbol{u}$
- * Place all newcommands in a separate file, with one definition per line
-   (multiline definitions goes to a separate LaTeX preamble file in DocOnce)
- * Avoid all fancy LaTeX constructs - more backslashes than needed in math
-   and sections is a bad thing...
+ * Place all newcommands in a separate file, with one definition per line (multiline definitions goes to a separate LaTeX preamble file in DocOnce)
+ * Avoid all fancy LaTeX constructs - more backslashes than needed in math and sections is a bad thing...
 
 <!-- !split -->
 ### DocOnce writing tips
@@ -1328,30 +1263,20 @@ doconce format plain  doconcefile  # plain, untagged text for email
 
 Figures and movies:
 
- * Prepare figures in the right format: EPS for `latex`, PDF for `pdflatex`,
-   PNG, GIF or JPEG for HTML formats (`html`, and HTML output from
-   `sphinx`, `rst`, `pandoc`). One can omit the figure file extension and
-   `doconce` will pick the most appropriate file for the given output format.
- * Let plotting programs produce both PDF/EPS and PNG files.
-   (Recall that PDF and EPS are vector graphics formats that can scale to
-   any size with much higher quality than PNG or other bitmap formats.)
+ * Prepare figures in the right format: EPS for `latex`, PDF for `pdflatex`, PNG, GIF or JPEG for HTML formats (`html`, and HTML output from `sphinx`, `rst`, `pandoc`). One can omit the figure file extension and `doconce` will pick the most appropriate file for the given output format.
+ * Let plotting programs produce both PDF/EPS and PNG files. (Recall that PDF and EPS are vector graphics formats that can scale to any size with much higher quality than PNG or other bitmap formats.)
  * Use `doconce combine_images` to combine several images into one.
- * Store all figures in a directory (tree) with name `fig` or `fig-X`,
-   where `X` is some short logical name for the current document.
+ * Store all figures in a directory (tree) with name `fig` or `fig-X`, where `X` is some short logical name for the current document.
  * Store all movies in a directory (tree) with name `mov` or `mov-X`.
  * Favor the movie formats MP4, WebM, and Ogg (best suited for modern browsers).
 
 <!-- !split -->
 ### DocOnce writing tips
 
- * `\boldsymbol{u}` gives nicer boldface typesetting of math symbols than
-   the alternatives `\boldsymbol{u}` and `\pmb{u}`.
- * For HTML-based formats using MathJax, `\boldsymbol{u}` is not supported
-   and therefore automatically replaced by `\boldsymbol{u}` by DocOnce.
+ * `\boldsymbol{u}` gives nicer boldface typesetting of math symbols than the alternatives `\boldsymbol{u}` and `\pmb{u}`.
+ * For HTML-based formats using MathJax, `\boldsymbol{u}` is not supported and therefore automatically replaced by `\boldsymbol{u}` by DocOnce.
  * Use `\<font color="blue">formula</font>` in math expressions to color a part.
- * Not all LaTeX math is supported by MathJax. Some legal LaTeX math
-   might give MathJax problems - then one has to rewrite the expression
-   to find a syntax that works both with LaTeX and MathJax.
+ * Not all LaTeX math is supported by MathJax. Some legal LaTeX math might give MathJax problems - then one has to rewrite the expression to find a syntax that works both with LaTeX and MathJax.
  * Use `doconce spellcheck *.do.txt` to automatically spellcheck files.
  * Avoid page references and footnotes.
 
@@ -1361,18 +1286,12 @@ Figures and movies:
 For output formats different from `latex`, `pdflatex`, and `html`:
 
  * Use labels only right after section headings and in equations.
- * Be careful with labels in `align` math environments: `pandoc`
-   and `mwiki` cannot refer to them.
+ * Be careful with labels in `align` math environments: `pandoc` and `mwiki` cannot refer to them.
  * `sphinx` output requires
-   * no math in section headings or figure captions
-     (gets removed in references).
+   * no math in section headings or figure captions (gets removed in references).
    * running text to start in column 1.
-   * progressive section headings: after chapter (9 `=`) comes
-     section (7 `=`), then subsection (5 `=`), then paragraph
-     (3 `=`). Do not make jumps in this progression.
-   * index entries (``) before the paragraph where they
-     are introduced and place them *before* subsubsection
-     headings (`=== ... ===`) and after subsection and section headings.
+   * progressive section headings: after chapter (9 `=`) comes section (7 `=`), then subsection (5 `=`), then paragraph (3 `=`). Do not make jumps in this progression.
+   * index entries (``) before the paragraph where they are introduced and place them *before* subsubsection headings (`=== ... ===`) and after subsection and section headings.
    * a line of text and no comment or math before code or list.
 
 

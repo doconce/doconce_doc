@@ -29,7 +29,7 @@ and using *HTML templates*. The present note explains the details.
    nicely typeset mathematics and computer code, and most
    importantly: the approach does not scale with a lot of files!
  o You would like your pages to live on a 24/7 available server *you*
-   have chosen, e.g.,
+   have chosen, e.g. 
    "GitHub": "http://github.com", "Bitbucket": "http://bitbucket.org",
    "Googlecode": "http://code.google.com", or similar.
 

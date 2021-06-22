@@ -1,6 +1,10 @@
 #!/bin/bash
 
+# NBL install the locales for the languages below e.g. 
+# sudo locale-gen de_DE.UTF-8; sudo update-locale
+
 set -x
+export PS4='+ l.${LINENO}: ${FUNCNAME[0]:+${FUNCNAME[0]}(): }'
 
 function system {
   "$@"
@@ -19,6 +23,7 @@ EOF
 
 languages="English German Norwegian"
 for language in $languages; do
+
 options="--encoding=utf-8 --language=$language"
 name=$language
 
@@ -34,7 +39,6 @@ EOF
 system doconce format sphinx $name $options
 touch conf.py
 theme=alabaster
-theme=cbc
 system doconce sphinx_dir theme=$theme dirname=${name}-${theme} $name
 python automake_sphinx.py
 
@@ -55,6 +59,8 @@ cat >> index.html <<EOF
 EOF
 
 done
+
+
 
 cat >> index.html <<EOF
 </ul>

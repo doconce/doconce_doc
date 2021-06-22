@@ -1,5 +1,5 @@
 #!/bin/bash
-#set -x
+set -x
 export PS4='+ l.${LINENO}: ${FUNCNAME[0]:+${FUNCNAME[0]}(): }'
 # NOTE: There are many doconce errors arising when compiling this manual
 # because it describes doconce syntax in the text, and this syntax is
@@ -141,7 +141,7 @@ pdflatex -shell-escape -halt-on-error manual
 # Google Code wiki:
 system doconce format gwiki manual.do.txt --cite_doconce --no_mako --no_abort
 # fix figure in wiki: (can also by done by doconce gwiki_figsubst)
-doconce subst "\(the URL of the image file fig/wave1D.png must be inserted here\)" "(https://raw.github.com/doconce/doconce/master/doc/src/manual/fig/wave1D.png" manual.gwiki
+doconce subst "\(the URL of the image file fig/wave1D.png must be inserted here\)" "(https://github.com/doconce/doconce_doc/tree/main/src/manual/fig/wave1D.png" manual.gwiki
 
 system doconce format cwiki manual.do.txt --cite_doconce --no_mako --no_abort
 system doconce format mwiki manual.do.txt --cite_doconce --no_mako --no_abort

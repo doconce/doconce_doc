@@ -161,7 +161,7 @@ using a console cell that is to be shown as plain Markdown Bash code.
 
 What we have not shown here, is the ability to call Python functions
 in the text. We could, if it was sensible, call the `solve` function
-in the text, e.g., as in
+in the text, e.g. as in
 `...and the solution becomes ${solve()[0]}`. In addition, you can
 define lists and dictionaries in Python and walk through them in
 the text with the Mako constructs `% for e in mylist:` and

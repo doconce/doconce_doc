@@ -1,6 +1,7 @@
 <!--
-Automatically generated HTML file from DocOnce source
+HTML file automatically generated from DocOnce source
 (https://github.com/doconce/doconce/)
+doconce format html quiz.do.txt --html_style=bootstrap --html_code_style=inherit --quiz_horizontal_rule=off -DBOOTSTRAP
 -->
 <html>
 <head>
@@ -8,26 +9,22 @@ Automatically generated HTML file from DocOnce source
 <meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="A Software Tool for Typesetting Quizzes">
-
 <title>A Software Tool for Typesetting Quizzes</title>
-
 <!-- Bootstrap style: bootstrap -->
+<!-- doconce format html quiz.do.txt --html_style=bootstrap --html_code_style=inherit --quiz_horizontal_rule=off -DBOOTSTRAP -->
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- not necessary
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 -->
-
 <style type="text/css">
 /* Let inline verbatim have the same color as the surroundings */
 code { color: inherit; background-color: transparent; }
-
 /* Add scrollbar to dropdown menus in bootstrap navigation bar */
 .dropdown-menu {
    height: auto;
    max-height: 400px;
    overflow-x: hidden;
 }
-
 /* Adds an invisible element before each target to offset for the navigation
    bar */
 .anchor::before {
@@ -36,45 +33,57 @@ code { color: inherit; background-color: transparent; }
   height:50px;      /* fixed header height for style bootstrap */
   margin:-50px 0 0; /* negative fixed header height */
 }
-
 /*
 in.collapse+a.btn.showdetails:before { content:'Hide details'; }
 .collapse+a.btn.showdetails:before { content:'Show details'; }
 */
 </style>
-
-
 </head>
 
 <!-- tocinfo
 {'highest level': 1,
- 'sections': [('A pure text quiz', 1, None, '___sec0'),
-              ('Question and choices', 2, None, '___sec1'),
-              ('Explanations of choices', 2, None, '___sec2'),
-              ('Typesetting', 2, None, '___sec3'),
-              ('Quiz inside admonitions', 2, None, '___sec4'),
+ 'sections': [('A pure text quiz', 1, None, 'a-pure-text-quiz'),
+              ('Question and choices', 2, None, 'question-and-choices'),
+              ('Explanations of choices', 2, None, 'explanations-of-choices'),
+              ('Typesetting', 2, None, 'typesetting'),
+              ('Quiz inside admonitions', 2, None, 'quiz-inside-admonitions'),
               ('Typesetting of mathematics and computer code',
                1,
                None,
-               '___sec5'),
+               'typesetting-of-mathematics-and-computer-code'),
               ('Mathematics', 2, 'sec:math', 'sec:math'),
-              ('Simple example', 3, None, '___sec7'),
-              ('A more complicated example', 3, None, '___sec8'),
-              ('Computer code', 2, None, '___sec9'),
-              ('Example: Putting it all together', 2, None, '___sec10'),
-              ('Specification in HTML', 2, None, '___sec11'),
-              ('The Python data structure for quizzes', 1, None, '___sec12'),
+              ('Simple example', 3, None, 'simple-example'),
+              ('A more complicated example',
+               3,
+               None,
+               'a-more-complicated-example'),
+              ('Computer code', 2, None, 'computer-code'),
+              ('Example: Putting it all together',
+               2,
+               None,
+               'example-putting-it-all-together'),
+              ('Specification in HTML', 2, None, 'specification-in-html'),
+              ('The Python data structure for quizzes',
+               1,
+               None,
+               'the-python-data-structure-for-quizzes'),
               ('Translating the quiz format to HTML or PDF',
                1,
                None,
-               '___sec13'),
-              ('HTML', 2, None, '___sec14'),
-              ('Plain HTML', 3, None, '___sec15'),
-              ('Bootstrap HTML', 3, None, '___sec16'),
-              ('Multiple page HTML document', 3, None, '___sec17'),
-              ('Setting the question and choice prefix', 3, None, '___sec18'),
-              ('LaTeX', 2, None, '___sec19'),
-              ('Sphinx', 2, None, '___sec20')]}
+               'translating-the-quiz-format-to-html-or-pdf'),
+              ('HTML', 2, None, 'html'),
+              ('Plain HTML', 3, None, 'plain-html'),
+              ('Bootstrap HTML', 3, None, 'bootstrap-html'),
+              ('Multiple page HTML document',
+               3,
+               None,
+               'multiple-page-html-document'),
+              ('Setting the question and choice prefix',
+               3,
+               None,
+               'setting-the-question-and-choice-prefix'),
+              ('LaTeX', 2, None, 'latex'),
+              ('Sphinx', 2, None, 'sphinx')]}
 end of tocinfo -->
 
 <body>
@@ -94,8 +103,6 @@ MathJax.Hub.Config({
 </script>
 
 
-
-    
 <!-- Bootstrap navigation bar -->
 <div class="navbar navbar-default navbar-fixed-top">
   <div class="navbar-header">
@@ -106,33 +113,32 @@ MathJax.Hub.Config({
     </button>
     <a class="navbar-brand" href="quiz.html">A Software Tool for Typesetting Quizzes</a>
   </div>
-
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
         <ul class="dropdown-menu">
-     <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;"><b>A pure text quiz</b></a></li>
-     <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Question and choices</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Explanations of choices</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Typesetting</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Quiz inside admonitions</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz002.html#___sec5" style="font-size: 80%;"><b>Typesetting of mathematics and computer code</b></a></li>
+     <!-- navigation toc: --> <li><a href="#a-pure-text-quiz" style="font-size: 80%;"><b>A pure text quiz</b></a></li>
+     <!-- navigation toc: --> <li><a href="#question-and-choices" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Question and choices</a></li>
+     <!-- navigation toc: --> <li><a href="#explanations-of-choices" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Explanations of choices</a></li>
+     <!-- navigation toc: --> <li><a href="#typesetting" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Typesetting</a></li>
+     <!-- navigation toc: --> <li><a href="#quiz-inside-admonitions" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Quiz inside admonitions</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz002.html#typesetting-of-mathematics-and-computer-code" style="font-size: 80%;"><b>Typesetting of mathematics and computer code</b></a></li>
      <!-- navigation toc: --> <li><a href="._quiz002.html#sec:math" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Mathematics</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz002.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple example</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz002.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A more complicated example</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz002.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Computer code</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz002.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Example: Putting it all together</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz003.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Specification in HTML</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz004.html#___sec12" style="font-size: 80%;"><b>The Python data structure for quizzes</b></a></li>
-     <!-- navigation toc: --> <li><a href="._quiz005.html#___sec13" style="font-size: 80%;"><b>Translating the quiz format to HTML or PDF</b></a></li>
-     <!-- navigation toc: --> <li><a href="._quiz005.html#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;HTML</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz005.html#___sec15" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plain HTML</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz005.html#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bootstrap HTML</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz005.html#___sec17" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple page HTML document</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz005.html#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting the question and choice prefix</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz005.html#___sec19" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;LaTeX</a></li>
-     <!-- navigation toc: --> <li><a href="._quiz005.html#___sec20" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Sphinx</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz002.html#simple-example" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple example</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz002.html#a-more-complicated-example" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A more complicated example</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz002.html#computer-code" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Computer code</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz002.html#example-putting-it-all-together" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Example: Putting it all together</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz003.html#specification-in-html" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Specification in HTML</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz004.html#the-python-data-structure-for-quizzes" style="font-size: 80%;"><b>The Python data structure for quizzes</b></a></li>
+     <!-- navigation toc: --> <li><a href="._quiz005.html#translating-the-quiz-format-to-html-or-pdf" style="font-size: 80%;"><b>Translating the quiz format to HTML or PDF</b></a></li>
+     <!-- navigation toc: --> <li><a href="._quiz005.html#html" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;HTML</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz005.html#plain-html" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plain HTML</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz005.html#bootstrap-html" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bootstrap HTML</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz005.html#multiple-page-html-document" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multiple page HTML document</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz005.html#setting-the-question-and-choice-prefix" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting the question and choice prefix</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz005.html#latex" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;LaTeX</a></li>
+     <!-- navigation toc: --> <li><a href="._quiz005.html#sphinx" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Sphinx</a></li>
 
         </ul>
       </li>
@@ -140,37 +146,30 @@ MathJax.Hub.Config({
   </div>
 </div>
 </div> <!-- end of navigation bar -->
-
 <div class="container">
-
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
-
 <a name="part0001"></a>
 <!-- !split -->
+<h1 id="a-pure-text-quiz" class="anchor">A pure text quiz </h1>
+<h2 id="question-and-choices" class="anchor">Question and choices </h2>
 
-<h1 id="___sec0" class="anchor">A pure text quiz </h1>
+<p>Here is a typical quiz with a question and four alternative answers:</p>
 
-<h2 id="___sec1" class="anchor">Question and choices </h2>
-
-<p>
-Here is a typical quiz with a question and four alternative answers:
-
-<p>
 <!-- begin quiz -->
 
 <p>
-<b>Question:</b> What is the capital of Norway?</p>
+<b>Question:</b> <p>What is the capital of Norway?</p></p>
 
 <p>
 <a class="glyphicon glyphicon-pencil showdetails" data-toggle="collapse"
  data-target="#quiz_id_1_A" style="font-size: 80%;"></a>
 <a href="#quiz_id_1_A" data-toggle="collapse">
 &nbsp;<b>Choice A:</b>
-Helsinki
+<p>Helsinki</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_1_A">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 Wrong!
 </div></p>
 </div>
@@ -181,11 +180,11 @@ Wrong!
  data-target="#quiz_id_1_B" style="font-size: 80%;"></a>
 <a href="#quiz_id_1_B" data-toggle="collapse">
 &nbsp;<b>Choice B:</b>
-Drammen
+<p>Drammen</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_1_B">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 Wrong!
 </div></p>
 </div>
@@ -196,11 +195,11 @@ Wrong!
  data-target="#quiz_id_1_C" style="font-size: 80%;"></a>
 <a href="#quiz_id_1_C" data-toggle="collapse">
 &nbsp;<b>Choice C:</b>
-Oslo
+<p>Oslo</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_1_C">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/correct.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/correct.gif">
 Correct!
 </div></p>
 </div>
@@ -211,60 +210,76 @@ Correct!
  data-target="#quiz_id_1_D" style="font-size: 80%;"></a>
 <a href="#quiz_id_1_D" data-toggle="collapse">
 &nbsp;<b>Choice D:</b>
-Denmark
+<p>Denmark</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_1_D">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 Wrong!
 </div></p>
 </div>
 </p>
 <!-- end quiz -->
 
-Hover over the choice to see if it is correct or not.
+<p>Hover over the choice to see if it is correct or not.</p>
 
-<p>
-The above quiz can be specified by the compact text
+<p>The above quiz can be specified by the compact text</p>
 
-<p>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>!bquiz
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bquiz
 Q: What is the capital of Norway?
 Cw: Helsinki
 Cw: Drammen
 Cr: Oslo
 Cw: Denmark
 !equiz
-</pre></div>
-<p>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="alert alert-block alert-success alert-text-normal"><b>Syntax:</b>
 
 <ul>
- <li> Each individual quiz (question with multiple-choice answers)
-   is specified between <code>!bquiz</code> (&quot;begin quiz&quot;) and <code>!equiz</code>
-   (&quot;end quiz&quot;) tags.</li>
+ <li> Each individual quiz (question with multiple-choice answers) is specified between <code>!bquiz</code> (&quot;begin quiz&quot;) and <code>!equiz</code> (&quot;end quiz&quot;) tags.</li>
  <li> The question starts right after <code>Q:</code> (&quot;question&quot;).</li>
  <li> Wrong choices are specified with <code>Cw:</code>, and right choices with <code>Cr:</code>.</li>
- <li> The instructions <code>!bquiz</code>, <code>!equiz</code>, <code>Q:</code>, <code>Cw:</code>, and <code>Cr:</code> must appear
-   at the beginning of a line.</li>
- <li> The text of (e.g.) a wrong answer (<code>Cr:</code>) lasts up to the next
-   instruction (like <code>Cw:</code>, <code>Cr:</code>, <code>!equiz</code>).</li>
- <li> One can have as many wrong and right
-   choices as desired.</li>
+ <li> The instructions <code>!bquiz</code>, <code>!equiz</code>, <code>Q:</code>, <code>Cw:</code>, and <code>Cr:</code> must appear at the beginning of a line.</li>
+ <li> The text of (e.g.) a wrong answer (<code>Cr:</code>) lasts up to the next instruction (like <code>Cw:</code>, <code>Cr:</code>, <code>!equiz</code>).</li>
+ <li> One can have as many wrong and right choices as desired.</li>
 </ul>
 </div>
 
 
-<p>
-Multiple correct choices are possible. Here is an example with three
+<p>Multiple correct choices are possible. Here is an example with three
 right choices:
+</p>
 
-<p>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>!bquiz
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bquiz
 Q: Which of the following cities are capitals?
 Cw: Sidney
 Cr: Kigali
@@ -273,23 +288,37 @@ Cr: Bern
 Cr: Ottawa
 Cw: New York
 !equiz
-</pre></div>
-<p>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- begin quiz -->
 
 <p>
-<b>Question:</b> Which of the following cities are capitals?</p>
+<b>Question:</b> <p>Which of the following cities are capitals?</p></p>
 
 <p>
 <a class="glyphicon glyphicon-pencil showdetails" data-toggle="collapse"
  data-target="#quiz_id_2_A" style="font-size: 80%;"></a>
 <a href="#quiz_id_2_A" data-toggle="collapse">
 &nbsp;<b>Choice A:</b>
-Sidney
+<p>Sidney</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_2_A">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 Wrong!
 </div></p>
 </div>
@@ -300,11 +329,11 @@ Wrong!
  data-target="#quiz_id_2_B" style="font-size: 80%;"></a>
 <a href="#quiz_id_2_B" data-toggle="collapse">
 &nbsp;<b>Choice B:</b>
-Kigali
+<p>Kigali</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_2_B">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/correct.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/correct.gif">
 Correct!
 </div></p>
 </div>
@@ -315,11 +344,11 @@ Correct!
  data-target="#quiz_id_2_C" style="font-size: 80%;"></a>
 <a href="#quiz_id_2_C" data-toggle="collapse">
 &nbsp;<b>Choice C:</b>
-Bonn
+<p>Bonn</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_2_C">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 Wrong!
 </div></p>
 </div>
@@ -330,11 +359,11 @@ Wrong!
  data-target="#quiz_id_2_D" style="font-size: 80%;"></a>
 <a href="#quiz_id_2_D" data-toggle="collapse">
 &nbsp;<b>Choice D:</b>
-Bern
+<p>Bern</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_2_D">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/correct.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/correct.gif">
 Correct!
 </div></p>
 </div>
@@ -345,11 +374,11 @@ Correct!
  data-target="#quiz_id_2_E" style="font-size: 80%;"></a>
 <a href="#quiz_id_2_E" data-toggle="collapse">
 &nbsp;<b>Choice E:</b>
-Ottawa
+<p>Ottawa</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_2_E">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/correct.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/correct.gif">
 Correct!
 </div></p>
 </div>
@@ -360,43 +389,41 @@ Correct!
  data-target="#quiz_id_2_F" style="font-size: 80%;"></a>
 <a href="#quiz_id_2_F" data-toggle="collapse">
 &nbsp;<b>Choice F:</b>
-New York
+<p>New York</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_2_F">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 Wrong!
 </div></p>
 </div>
 </p>
 <!-- end quiz -->
 
+<h2 id="explanations-of-choices" class="anchor">Explanations of choices </h2>
 
-<h2 id="___sec2" class="anchor">Explanations of choices </h2>
-
-<p>
-Sometimes it is desirable to give some explanation why certain choices
+<p>Sometimes it is desirable to give some explanation why certain choices
 are wrong (or right).
 If you hover over the choice, the explanation will pop up if
 it is simple text (otherwise it cannot be formatted).
+</p>
 
-<p>
 <!-- begin quiz -->
 
 <p>
-<b>Question:</b> What is the capital of Norway?</p>
+<b>Question:</b> <p>What is the capital of Norway?</p></p>
 
 <p>
 <a class="glyphicon glyphicon-pencil showdetails" data-toggle="collapse"
  data-target="#quiz_id_3_A" style="font-size: 80%;"></a>
 <a href="#quiz_id_3_A" data-toggle="collapse">
 &nbsp;<b>Choice A:</b>
-Helsinki
+<p>Helsinki</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_3_A">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
-Helsinki is the capital of Finland.
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
+<p>Helsinki is the capital of Finland.</p>
 </div></p>
 </div>
 </p>
@@ -406,12 +433,12 @@ Helsinki is the capital of Finland.
  data-target="#quiz_id_3_B" style="font-size: 80%;"></a>
 <a href="#quiz_id_3_B" data-toggle="collapse">
 &nbsp;<b>Choice B:</b>
-Drammen
+<p>Drammen</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_3_B">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
-Drammen is a small city close to Oslo.
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
+<p>Drammen is a small city close to Oslo.</p>
 </div></p>
 </div>
 </p>
@@ -421,11 +448,11 @@ Drammen is a small city close to Oslo.
  data-target="#quiz_id_3_C" style="font-size: 80%;"></a>
 <a href="#quiz_id_3_C" data-toggle="collapse">
 &nbsp;<b>Choice C:</b>
-Oslo
+<p>Oslo</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_3_C">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/correct.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/correct.gif">
 Correct!
 </div></p>
 </div>
@@ -436,24 +463,29 @@ Correct!
  data-target="#quiz_id_3_D" style="font-size: 80%;"></a>
 <a href="#quiz_id_3_D" data-toggle="collapse">
 &nbsp;<b>Choice D:</b>
-Denmark
+<p>Denmark</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_3_D">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 Wrong!
 </div></p>
 </div>
 </p>
 <!-- end quiz -->
 
-The quiz syntax applies <code>E: ...</code> after the choice to
+<p>The quiz syntax applies <code>E: ...</code> after the choice to
 give an explanation of that choice.
+</p>
 
-<p>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>!bquiz
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bquiz
 Q: What is the capital of Norway?
 
 Cw: Helsinki
@@ -466,14 +498,25 @@ Cr: Oslo
 
 Cw: Denmark
 !equiz
-</pre></div>
-<p>
-This time we also added some whitespace for enhanced reading of the text.
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h2 id="___sec3" class="anchor">Typesetting </h2>
+<p>This time we also added some whitespace for enhanced reading of the text.</p>
+<h2 id="typesetting" class="anchor">Typesetting </h2>
 
-<p>
-It is easy to use <em>emphasize font</em>, <b>boldface</b>, <font color="red">color</font>,
+<p>It is easy to use <em>emphasize font</em>, <b>boldface</b>, <font color="red">color</font>,
 <a href="http://google.com" target="_self">hyperlinks</a>, etc.,
 since the text in the specification of questions, choices,
 and explanations are rendered according to the
@@ -481,30 +524,29 @@ and explanations are rendered according to the
 For simple typesetting (emphasize, boldface, links) DocOnce also
 accepts Markdown syntax.
 Here is an example:
+</p>
 
-<p>
 <!-- begin quiz -->
 
 <p>
-<b>Question:</b> This is a very famous quote:
+<b>Question:</b> <p>This is a very famous quote:</p>
 
-<p>
 <blockquote>
     <em>Premature optimization is the root of all evil.</em>
 </blockquote>
 
-This quote is attributed to</p>
+<p>This quote is attributed to</p></p>
 
 <p>
 <a class="glyphicon glyphicon-pencil showdetails" data-toggle="collapse"
  data-target="#quiz_id_4_A" style="font-size: 80%;"></a>
 <a href="#quiz_id_4_A" data-toggle="collapse">
 &nbsp;<b>Choice A:</b>
-George W. Bush
+<p>George W. Bush</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_4_A">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 Wrong!
 </div></p>
 </div>
@@ -515,15 +557,16 @@ Wrong!
  data-target="#quiz_id_4_B" style="font-size: 80%;"></a>
 <a href="#quiz_id_4_B" data-toggle="collapse">
 &nbsp;<b>Choice B:</b>
-Donald Knuth
+<p>Donald Knuth</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_4_B">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/correct.gif">
-According to <a href="http://en.wikiquote.org/wiki/Donald_Knuth" target="_self">Wikiquote</a>,
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/correct.gif">
+<p>According to <a href="http://en.wikiquote.org/wiki/Donald_Knuth" target="_self">Wikiquote</a>,
 Donald Knuth wrote this statement in <em>Structured Programming with
 Goto Statements</em>. Computing Surveys, <b>6</b>:4,
 pp. 261-301, <b>1974</b>.
+</p>
 </div></p>
 </div>
 </p>
@@ -533,28 +576,32 @@ pp. 261-301, <b>1974</b>.
  data-target="#quiz_id_4_C" style="font-size: 80%;"></a>
 <a href="#quiz_id_4_C" data-toggle="collapse">
 &nbsp;<b>Choice C:</b>
-Ole-Johan Dahl
+<p>Ole-Johan Dahl</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_4_C">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
-Ole-Johan Dahl was a famous Norwegian professor of computer
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
+<p>Ole-Johan Dahl was a famous Norwegian professor of computer
 science and together with Kristen Nygaard the inventor of
 object-oriented programming, but he is not the man behind this
 quote.
+</p>
 </div></p>
 </div>
 </p>
 <!-- end quiz -->
 
 
-<p>
-The corresponding specification reads
+<p>The corresponding specification reads</p>
 
-<p>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>!bquiz
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bquiz
 Q: Here is a famous quote:
 
 !bquote
@@ -576,50 +623,77 @@ science and together with Kristen Nygaard the inventor of
 object-oriented programming, but he is not the man behind this
 quote.
 !equiz
-</pre></div>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h2 id="quiz-inside-admonitions" class="anchor">Quiz inside admonitions </h2>
 
-<h2 id="___sec4" class="anchor">Quiz inside admonitions </h2>
-
-<p>
-Question admonitions may well feature quizzes unless the output
+<p>Question admonitions may well feature quizzes unless the output
 format is reStructuredText (<code>rst</code>, <code>sphinx</code>). A plain question
 admonition is
+</p>
 
-<p>
 <div class="alert alert-block alert-info alert-text-normal"><b>Question</b>
-What is the capital of Norway?
+<p>What is the capital of Norway?</p>
 </div>
 
-specified by the DocOnce syntax
+<p>specified by the DocOnce syntax</p>
 
-<p>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>!bquestion
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bquestion
 What is the capital of Norway?
 !equestion
-</pre></div>
-<p>
-Putting a quiz inside the question admonition looks like
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
+<p>Putting a quiz inside the question admonition looks like</p>
+
 <div class="alert alert-block alert-info alert-text-normal"><b>Question</b>
 <!-- begin quiz -->
 
 <p>
-<b></b> What is the capital of Norway?</p>
+<b>Question:</b> <p>[] What is the capital of Norway?</p></p>
 
 <p>
 <a class="glyphicon glyphicon-pencil showdetails" data-toggle="collapse"
  data-target="#quiz_id_5_A" style="font-size: 80%;"></a>
 <a href="#quiz_id_5_A" data-toggle="collapse">
-&nbsp;<b>Answer:</b>
-Stockholm
+&nbsp;<b>Choice A:</b>
+<p>[Answer:] Stockholm</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_5_A">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
-Stockholm is the capital of Sweden, Norway's neighboring country.
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
+<p>Stockholm is the capital of Sweden, Norway's neighboring country.</p>
 </div></p>
 </div>
 </p>
@@ -629,13 +703,14 @@ Stockholm is the capital of Sweden, Norway's neighboring country.
  data-target="#quiz_id_5_B" style="font-size: 80%;"></a>
 <a href="#quiz_id_5_B" data-toggle="collapse">
 &nbsp;<b>Choice B:</b>
-Bergen
+<p>Bergen</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_5_B">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
-Some people from Bergen may claim so... It is just the second
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
+<p>Some people from Bergen may claim so... It is just the second
 largest city in Norway.
+</p>
 </div></p>
 </div>
 </p>
@@ -645,11 +720,11 @@ largest city in Norway.
  data-target="#quiz_id_5_C" style="font-size: 80%;"></a>
 <a href="#quiz_id_5_C" data-toggle="collapse">
 &nbsp;<b>Choice C:</b>
-Oslo
+<p>Oslo</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_5_C">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/correct.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/correct.gif">
 Correct!
 </div></p>
 </div>
@@ -660,11 +735,11 @@ Correct!
  data-target="#quiz_id_5_D" style="font-size: 80%;"></a>
 <a href="#quiz_id_5_D" data-toggle="collapse">
 &nbsp;<b>Choice D:</b>
-Denmark
+<p>Denmark</p>
 </a>
 <div class="collapse-group">
 <p><div class="collapse" id="quiz_id_5_D">
-<img src="https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/incorrect.gif">
+<img src="https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/incorrect.gif">
 Wrong!
 </div></p>
 </div>
@@ -673,12 +748,16 @@ Wrong!
 
 </div>
 
-specified as
+<p>specified as</p>
 
-<p>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>!bquestion
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bquestion
 !bquiz
 Q: [] What is the capital of Norway?
 
@@ -694,50 +773,57 @@ Cr: Oslo
 Cw: Denmark
 !equiz
 !equestion
-</pre></div>
-<p>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="alert alert-block alert-success alert-text-normal"><b>Choice and question prefix</b>
-In the above example, we demonstrate the possibility to control
+<p>In the above example, we demonstrate the possibility to control
 the word preceding the question and the choices.
 For the current output format (<code>html</code>), questions are by default preceded by
 <code>Question:</code> and choices by <code>Choice X:</code>, where <code>X</code> is the
 letter corresponding to the choice.
+</p>
 
-<p>
-The prefix appears inside square brackets. Empty brackets, as those
+<p>The prefix appears inside square brackets. Empty brackets, as those
 in the question, leads to no prefix. The choice <code>Stockholm</code> has
 a prefix <code>[Answer:]</code>, and exactly the text inside the square brackets
 precedes the text of this choice in the output.
+</p>
 </div>
 
 
 <p>
-<p>
 <!-- navigation buttons at the bottom of the page -->
 <ul class="pager">
-
   <li class="previous">
     <a href="._quiz000.html">&larr; Prev</a>
   </li>
-
   <li class="next">
     <a href="._quiz002.html">Next &rarr;</a>
   </li>
 </ul>
 <!-- ------------------- end of main content --------------- -->
-
 </div>  <!-- end container -->
 <!-- include javascript, jQuery *first* -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
 <!-- Bootstrap footer
 <footer>
-<a href="http://..."><img width="250" align=right src="http://..."></a>
+<a href="https://..."><img width="250" align=right src="https://..."></a>
 </footer>
 -->
-
-
 </body>
 </html>
-    

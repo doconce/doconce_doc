@@ -1,15 +1,12 @@
-
 <wiki:comment> TITLE: On the Technicalities of Scientific Writing Anno 2012: The DocOnce Way </wiki:comment>
 <wiki:comment> TITLE: Scientific Writing Anno 2013: The DocOnce Way </wiki:comment>
 <wiki:comment> TITLE: Scientific Writing and Publishing for the Future: How Can We Handle the eLearning Revolution? </wiki:comment>
 #summary Scientific Writing and Publishing for the Future
 
 By *Hans Petter Langtangen*
-==== Jul 8, 2020 ====
+==== Jun 22, 2021 ====
 
-Copyright 2020, Hans Petter Langtangen
-
-
+Copyright 2021, Hans Petter Langtangen
 
 
 
@@ -25,13 +22,10 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
-
 <wiki:comment> !split </wiki:comment>
 == Challenges with tools for scientific writing ==
 
 <wiki:comment> !bslidecell 00 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -45,11 +39,9 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !bslidecell 01 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -63,7 +55,6 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> FIGURE: [fig/writing_is_hard_stone, width=500 frac=0.5] </wiki:comment>
@@ -72,8 +63,11 @@ googlecode repository) and substitute the line above with the URL.
 ==== Scientific writing = LaTeX ====
 
  * Pre 1980: handwriting + publisher
+
  * Post 1985: scientists write LaTeX
+
  * Post 2010: a few scientists explore new digital formats
+
 
 {{{
 \def\FrameCommand{\colorbox{shadecolor}}\FrameRule0.6pt
@@ -98,7 +92,6 @@ print 'Hello, World!'
 
 <wiki:comment> !bslidecell 00 0.4 </wiki:comment>
 
-
 ---------------------------------------------------------------
 
 Figure: 
@@ -110,10 +103,6 @@ Put the figure file fig/ipad.png on the web (e.g., as part of the
 googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
-
-
-
-
 
 ---------------------------------------------------------------
 
@@ -127,14 +116,11 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
-
 <wiki:comment> FIGURE: [fig/mbair, width=400] </wiki:comment>
 
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !bslidecell 01 0.6 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -147,7 +133,6 @@ Put the figure file fig/imac.png on the web (e.g., as part of the
 googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
-
 
 <wiki:comment> !eslidecell </wiki:comment>
 
@@ -166,13 +151,10 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
-
 <wiki:comment> !split </wiki:comment>
 ==== The classical report/paper will survive (LaTeX is ideal) ====
 
 <wiki:comment> !bslidecell 00 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -186,11 +168,9 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !bslidecell 01 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -203,7 +183,6 @@ Put the figure file fig/latex_paper1.png on the web (e.g., as part of the
 googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
-
 
 <wiki:comment> !eslidecell </wiki:comment>
 
@@ -222,7 +201,6 @@ googlecode repository) and substitute the line above with the URL.
 
 <wiki:comment> !bslidecell 00 </wiki:comment>
 
-
 ---------------------------------------------------------------
 
 Figure: 
@@ -235,11 +213,9 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !bslidecell 01 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -252,7 +228,6 @@ Put the figure file fig/digital_learning_iPad.jpg on the web (e.g., as part of t
 googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
-
 
 <wiki:comment> !eslidecell </wiki:comment>
 
@@ -271,8 +246,6 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
-
 *LaTeX-for-paper* and *HTML-for-screen* are two very different
 writing styles and technology platforms.
 
@@ -286,10 +259,7 @@ What tools should I use for scientific writing?
 
 
 
-
-
 <wiki:comment> !bslidecell 00 0.25 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -303,11 +273,9 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !bslidecell 01 0.25 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -321,11 +289,9 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !bslidecell 02 0.5 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -339,11 +305,9 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !bslidecell 10 0.25 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -357,11 +321,9 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !bslidecell 11 0.25 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -375,11 +337,9 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !bslidecell 12 0.5 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -393,9 +353,7 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
-
 
 <wiki:comment> !split </wiki:comment>
 ==== There is a jungle of outlets your scientific writings should address ====
@@ -405,18 +363,25 @@ googlecode repository) and substitute the line above with the URL.
 <wiki:comment> !bslidecell 00 0.4 </wiki:comment>
 
  * BW paper
+
  * Color paper
+
  * Slides
+
  * Web w/design
+
  * Wiki
+
  * Blog
+
  * Notebook
+
  * ...
+
 
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !bslidecell 01 0.6 </wiki:comment>
-
 
 ---------------------------------------------------------------
 
@@ -430,7 +395,6 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
 
 <wiki:comment> !split </wiki:comment>
@@ -440,12 +404,19 @@ Suppose I write various types of scientific material,
 
 
  * LaTeX document,
+
  * blog posts (HTML),
+
  * web pages (HTML),
+
  * Sphinx documents,
+
  * IPython notebooks,
+
  * wikis,
+
  * Markdown files, ...
+
 
 and later want to collect the pieces into a larger document, maybe
 some book - is that at all feasible?
@@ -463,18 +434,31 @@ Probably not, but I have a solution :smile:
 <wiki:comment> !bpop </wiki:comment>
 
  * *LaTeX*: de facto standard for math-instensive documents
+
  * *pdfLaTeX*, *XeLaTeX*, *LuaLaTeX*: takes over (figures in png, pdf) - use these!
+
  * *MS Word*: too clicky math support and ugly fonts, but much used
+
  * *HTML with MathJax*: "full" LaTeX *math*, but much tagging
- * *Sphinx*:   somewhat limited LaTeX math support, but great support for web design,   and less tagged than HTML
- * *reStructuredText*: similar to Sphinx, but no math support, transforms to   lots of formats (LaTeX, HTML, XML, Word, OpenOffice, ...)
- * *Markdown*: somewhat limited LaTeX math support, but minor tagging,   transforms to lots of formats (LaTeX, HTML, XML, Word, OpenOffice, ...)
- * *IPython notebooks*: Markdown code/math,   combines Python code, interactivity, and   visualization, but requires all code snippets to sync together
+
+ * *Sphinx*: somewhat limited LaTeX math support, but great support for web design, and less tagged than HTML
+
+ * *reStructuredText*: similar to Sphinx, but no math support, transforms to lots of formats (LaTeX, HTML, XML, Word, OpenOffice, ...)
+
+ * *Markdown*: somewhat limited LaTeX math support, but minor tagging, transforms to lots of formats (LaTeX, HTML, XML, Word, OpenOffice, ...)
+
+ * *IPython notebooks*: Markdown code/math, combines Python code, interactivity, and visualization, but requires all code snippets to sync together
+
  * *Confluence*: Markdown-like input, with limited LaTeX math support, but converted to XML
+
  * *MediaWiki*: quite good LaTeX math support (cf. Wikipedia/Wikibooks)
+
  * Other *wiki* formats: no math support, great for collaborative editing
+
  * *Wordpress*: supports full HTML with LaTeX *formulas* only
+
  * *Google blogger*: supports full HTML with MathJax
+
 
 <wiki:comment> !epop </wiki:comment>
 
@@ -483,14 +467,22 @@ Probably not, but I have a solution :smile:
 ==== LaTeX is very rich; other tools support much less ====
 
  * LaTeX has lots of fancy layouts, but few translates to other formats
+
  * LaTeX *inline* math: works with all math-enabled formats (LaTeX, MathJax, Sphinx, Markdown, MediaWiki, Confluence, ...)
+
  * LaTeX *equation* math:
 
-    * *LaTeX*: `equation*`, `equation`, `align*`, `align` +      `eqnarray`, `split`, `alignat`, ... (numerous!)
+
+    * *LaTeX*: `equation*`, `equation`, `align*`, `align` + `eqnarray`, `split`, `alignat`, ... (numerous!)
+
     * *MathJax*: `equation*`, `equation`, `align*`, `align`
+
     * *MediaWiki*: `equation*`, `equation`, `align*`, `align`
+
     * *Sphinx*: `equation*`, `equation`, `align*`
+
     * *Markdown*: `equation*`, `equation`, `eqnarray*`, `align*` (but no labels)
+
 
 
 
@@ -500,14 +492,23 @@ Probably not, but I have a solution :smile:
 <wiki:comment> !bpop </wiki:comment>
 
  * Figures: all
+
  * Movies: raw HTML or YouTube/Vimeo, (LaTeX)
+
  * Subfigures: LaTeX (`subfigure`)
+
  * Floating computer code: LaTeX; fixed computer code: all
+
  * Floating tables: LaTeX; fixed tables: all
+
  * Algorithms: LaTeX
+
  * Page references: LaTeX
+
  * Cross references: LaTeX (also to external doc.)
+
  * Equation references: LaTeX, HTML, Sphinx
+
 
 <wiki:comment> !epop </wiki:comment>
 
@@ -517,12 +518,19 @@ Probably not, but I have a solution :smile:
 <wiki:comment> !bpop </wiki:comment>
 
  * Margin notes: LaTeX, HTML with tailored css code
+
  * Footnotes: LaTeX, Sphinx, reStructuredText, MediaWiki
+
  * Bibliography: LaTeX, Sphinx, reStructuredText, MediaWiki
+
  * Index: LaTeX, Sphinx
+
  * Hyperlinks: all (but not on paper!)
+
  * Interactive programs: Sphinx, IPython notebook, raw HTML
+
  * Searching in multi-page doc.: Sphinx, MediaWiki, LaTeX PDF
+
 
 <wiki:comment> !epop </wiki:comment>
 
@@ -554,12 +562,18 @@ of new opportunities*.
 
 <wiki:comment> !bpop </wiki:comment>
 
- * Sphinx refers to figures by the caption (has to be short!) and   strips away any math notation (avoid that!).
- * Sphinx refers to sections by the title, but removes math in the   reference, so avoid math in headlines.
- * Tables cannot be referred to by numbers and have to appear at   fixed positions in the text.
+ * Sphinx refers to figures by the caption (has to be short!) and strips away any math notation (avoid that!).
+
+ * Sphinx refers to sections by the title, but removes math in the reference, so avoid math in headlines.
+
+ * Tables cannot be referred to by numbers and have to appear at fixed positions in the text.
+
  * Computer code has to appear at fixed positions in the text.
- * Algorithms must be written up using basic elements like lists or   paragraphs with headings.
- * Recipes are often typeset as enumerated lists. For recipes with   code or math blocks: drop the list (gives problems in some formats)   and use paragraph (or subsubsection) headings with "Step 1.",   "Step 2.", etc.
+
+ * Algorithms must be written up using basic elements like lists or paragraphs with headings.
+
+ * Recipes are often typeset as enumerated lists. For recipes with code or math blocks: drop the list (gives problems in some formats) and use paragraph (or subsubsection) headings with "Step 1.", "Step 2.", etc.
+
 
 <wiki:comment> !epop </wiki:comment>
 
@@ -568,11 +582,16 @@ of new opportunities*.
 
 <wiki:comment> !bpop </wiki:comment>
 
- * Footnotes must appear as part of the running text (e.g., sentences   surrounded by parenthesis), since only a few formats support footnotes.
+ * Footnotes must appear as part of the running text (e.g. sentences surrounded by parenthesis), since only a few formats support footnotes.
+
  * Sphinx does not handle code blocks where the first line is indented.
- * Multiple plots in the same figure: mount the plots to one image   file and include this (`montage` for png, gif, jpeg; `pdftk`, `pdfnup`,   and `pdfcrop` for PDF).
- * If you need several equations *numbered* in an `align` environment,   recall that Sphinx, Markdown, and MediaWiki cannot handle this,   although they have LaTeX math support.
+
+ * Multiple plots in the same figure: mount the plots to one image file and include this (`montage` for png, gif, jpeg; `pdftk`, `pdfnup`, and `pdfcrop` for PDF).
+
+ * If you need several equations *numbered* in an `align` environment, recall that Sphinx, Markdown, and MediaWiki cannot handle this, although they have LaTeX math support.
+
  * Markdown tolerates labels in equations but cannot refer to them.
+
 
 <wiki:comment> !epop </wiki:comment>
 
@@ -585,41 +604,54 @@ of new opportunities*.
 
 <wiki:comment> !bpop </wiki:comment>
 
- * Index words can appear anywhere in LaTeX, but should be outside   paragraphs in other tools.
- * References to tables, program code and algorithms can only be   made in LaTeX.
- * Figures are floating in LaTeX, but fixed in other tools, so place   figures exactly where they are needed the first time.
- * Curve plots with color lines do not work well in black-and-white   printing. Make sure plots makes sense in color and BW (e.g., by   using colors *and* markers).
+ * Index words can appear anywhere in LaTeX, but should be outside paragraphs in other tools.
+
+ * References to tables, program code and algorithms can only be made in LaTeX.
+
+ * Figures are floating in LaTeX, but fixed in other tools, so place figures exactly where they are needed the first time.
+
+ * Curve plots with color lines do not work well in black-and-white printing. Make sure plots makes sense in color and BW (e.g. by using colors *and* markers).
+
 
 <wiki:comment> !epop </wiki:comment>
 
 <wiki:comment> !split </wiki:comment>
 ==== Solution I: Use a format that translates to many ====
 
- * Sphinx can do nice HTML, LaTeX, epub, (almost) plain text,   man pages, Gnome devhelp files, Qt help files, texinfo, JSON
- * Markdown can do LaTeX, HTML, MS Word, OpenOffice, XML,   reStructuredText, epub, DocBook, ... but not Sphinx
- * IPython notebook: can do LaTeX, reStructuredText, HTML, PDF,   Python script
+ * Sphinx can do nice HTML, LaTeX, epub, (almost) plain text, man pages, Gnome devhelp files, Qt help files, texinfo, JSON
+
+ * Markdown can do LaTeX, HTML, MS Word, OpenOffice, XML, reStructuredText, epub, DocBook, ... but not Sphinx
+
+ * IPython notebook: can do LaTeX, reStructuredText, HTML, PDF, Python script
+
  * Sphinx and Markdown has some limited math support
+
 
 <wiki:comment> !split </wiki:comment>
 ==== Solution II: Use DocOnce ====
 
-[http://doconce.github.io/doconce/doc/web/index.html DocOnce]
+[https://github.com/doconce/doconce DocOnce]
 offers minimalistic typing, great flexibility wrt format,
 especially for scientific writing with *much math and code*.
 
 
- * Can generate LaTeX, HTML, Sphinx, Markdown, MediaWiki, Google wiki,   Creole wiki, reST, plain text
+ * Can generate LaTeX, HTML, Sphinx, Markdown, MediaWiki, Google wiki, Creole wiki, reST, plain text
+
  * Made for large science books *and* small notes
+
  * Targets paper and screen
- * Many special features (code snippets from files, embedded movies,   admonitions, modern LaTeX layouts, extended math support for Sphinx/Markdown, ...)
+
+ * Many special features (code snippets from files, embedded movies, admonitions, modern LaTeX layouts, extended math support for Sphinx/Markdown, ...)
+
  * Very effective for generating slides from ordinary text
+
  * Applies Mako: DocOnce text is a program (!)
+
  * Much like Markdown, less tagged than LaTeX, HTML, Sphinx
+
 
 <wiki:comment> !split </wiki:comment>
 == DocOnce: Write once, include anywhere ==
-
-
 
 ---------------------------------------------------------------
 
@@ -633,9 +665,6 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
-
-
 <wiki:comment> !split </wiki:comment>
 ==== DocOnce demos ====
 
@@ -643,16 +672,23 @@ http://doconce.github.com/teamods/writing_reports/
 
 
  * LaTeX-based PDF [http://doconce.github.com/teamods/writing_reports/_static/report.pdf for screen], [http://doconce.github.com/teamods/writing_reports/_static/report_4printing.pdf for printing], [http://doconce.github.com/teamods/writing_reports/_static/report_4phone.pdf for phone]
+
  * [http://doconce.github.com/teamods/writing_reports/_static/report_bloodish.html Plain HTML] or [http://doconce.github.com/teamods/writing_reports/_static/report_bootstrap_wtoc.html Bootstrap] or [http://doconce.github.com/teamods/writing_reports/_static/report_bootswatch_journal.html Bootswatch] or with a [http://doconce.github.com/teamods/writing_reports/_static/report_vagrant.html template] or [http://doconce.github.com/teamods/writing_reports/_static/report_github_minimal.html another template] or [http://doconce.github.com/teamods/writing_reports/_static/report_solarized.html solarized]
+
  * Sphinx: [http://doconce.github.com/teamods/writing_reports/_static/sphinx-agni/index.html agni], [http://doconce.github.com/teamods/writing_reports/_static/sphinx-pyramid/report.html pyramid], [http://doconce.github.com/teamods/writing_reports/_static/sphinx-classy/report.html classy], [http://doconce.github.com/teamods/writing_reports/_static/sphinx-fenics_minimal/report.html fenics], [http://doconce.github.com/teamods/writing_reports/_static/sphinx-redcloud/report.html redcloud]
+
  * HTML for [http://doconce-report-demo.blogspot.no/ Google] or [http://doconcereportdemo.wordpress.com/ Wordpress] for blog posts
+
  * [http://doconcedemo.shoutwiki.com/wiki/DocOnce_demo_page MediaWiki] (Wikipedia, Wikibooks, etc)
+
  * DocOnce [http://doconce.github.com/teamods/writing_reports/_static/report.do.txt.html source code] and [http://doconce.github.io/doconce/doc/pub/tutorial/html/index.html tutorial]
+
 
 <wiki:comment> !split </wiki:comment>
 ==== DocOnce disclaimer ====
 
- * Based on text transformations (reg.exp.) so valid syntax may   occasionally give problems<wiki:comment> * Actively developed and maintained, but one-man show </wiki:comment>
+ * Based on text transformations (reg.exp.) so valid syntax may occasionally give problems
+<wiki:comment> * Actively developed and maintained, but one-man show </wiki:comment>
 
 
 *DocOnce divorce.* 
@@ -667,16 +703,17 @@ formats, such as LaTeX or Sphinx. The generated code is clean.
 
 
  * Code generation is a great thing
- * Preprocessors a la Mako is a great thing
- * Less tagging than LaTeX/HTML is a great thing
- * Code generation software becomes a repository of   advanced and nice constructs for layout
 
+ * Preprocessors a la Mako is a great thing
+
+ * Less tagging than LaTeX/HTML is a great thing
+
+ * Code generation software becomes a repository of advanced and nice constructs for layout
 
 
 
 <wiki:comment> !split </wiki:comment>
 == A tour of DocOnce ==
-
 
 <wiki:comment> !split </wiki:comment>
 ==== Title, authors, date, toc ====
@@ -709,7 +746,6 @@ Or:
 __Summary.__
 Here goes the summary...
 }}}
-
 
 <wiki:comment> !split </wiki:comment>
 ==== Section headings ====
@@ -756,14 +792,21 @@ Result:
 This gets rendered as
 
 
- * Bullet lists start with `*`   and may span several lines
+ * Bullet lists start with `*` and may span several lines
+
  * *Emphasized words* are possible
+
  * *Boldface words* are also possible
+
  * <font color="red">colored words</font> too
+
  * `inline verbatim code` is featured
 
+
   # and sublists with enumerated items starting with `o`
+
   # items are just indented as you would do in email
+
 
 
 
@@ -824,7 +867,6 @@ Inline math as in LaTeX:
 }}}
 gets rendered as ...where `a=\int_{\Omega}fdx` is an integral.
 
-
 An equation environment is surrounded by `!bt` and `!et` tags,
 the rest is plain LaTeX:
 
@@ -872,8 +914,9 @@ Limit math environments to
 
 *DocOnce fix of shortcomings.* 
 
- * Sphinx, Markdown, and MediaWiki cannot have   `align` with labels
- * MathJax (HTML, Sphinx, Markdown, Mediawiki, ...) cannot   handle equation references across web pages
+ * Sphinx, Markdown, and MediaWiki cannot have `align` with labels
+
+ * MathJax (HTML, Sphinx, Markdown, Mediawiki, ...) cannot handle equation references across web pages
 
 
 
@@ -909,8 +952,6 @@ def solver(I, a, T, dt, theta):
     return u, t
 }}}
 
-
-
 <wiki:comment> !split </wiki:comment>
 ==== Copying code from source files ====
 
@@ -933,14 +974,23 @@ start and end regular expressions:
 ==== Typesetting of code is implied by the file extension ====
 
  * `.py`: `pypro` if complete file, `pycod` if snippet
+
  * `.pyopt`: visualized execution via the [http://pythontutor.com Online Python Tutor]
+
  * `.f`, `.f90`, `f.95`: `fpro` and `fcod`
+
  * `.cpp`, `.cxx`: `cpppro` and `cppcod`
+
  * `.c`: `cpro` and `ccod`
+
  * `.*sh`: `shpro` and `shcod`
+
  * `.m`: `mpro` and `mcod`
+
  * `ptex2tex`: between 40+ code styles in LaTeX
+
  * `pygments` is used for code in HTML (ca 10 styles)
+
 
 <wiki:comment> !split </wiki:comment>
 ==== Demonstrating code execution; Online Python Tutor ====
@@ -1020,13 +1070,15 @@ Gets rendered as
  ||  4.0      ||  1.1E+1       ||  14.717624        ||
 
 
-
 <wiki:comment> !split </wiki:comment>
 ==== Newcommands for math ====
 
  * `newcommands*.tex` files contain newcommands
+
  * Used directly in LaTeX
+
  * Substitution made for many other formats
+
 
 <wiki:comment> !split </wiki:comment>
 ==== Labels, citations, index, bibliography ====
@@ -1103,7 +1155,7 @@ Compute the probability of getting heads.
 
 <wiki:comment> keywords = random numbers; Monte Carlo simulation </wiki:comment>
 
-
+<wiki:comment> --- begin subexercise --- </wiki:comment>
 *a)*
 Make a program that simulates flipping a coin `N` times.
 
@@ -1114,27 +1166,30 @@ Use `r = random.random()` and define head as `r <= 0.5`.
 
 <wiki:comment> --- end hint in exercise --- </wiki:comment>
 
+<wiki:comment> --- end subexercise --- </wiki:comment>
+
+<wiki:comment> --- begin subexercise --- </wiki:comment>
 *b)*
 Compute the probability of getting heads.
-
 
 <wiki:comment> --- begin answer of exercise --- </wiki:comment>
 *Answer.*
 0.5.
 <wiki:comment> --- end answer of exercise --- </wiki:comment>
 
+<wiki:comment> --- end subexercise --- </wiki:comment>
+
 Filenames: `flip_coin.py`, `flip_coin.pdf`.
 <wiki:comment> solution files: mysol.txt, mysol_flip_coin.py </wiki:comment>
 
 <wiki:comment> --- end exercise --- </wiki:comment>
-
 
 <wiki:comment> !split </wiki:comment>
 ==== Exercises ====
 
 All *exercises*, *problems*, and *projects* in a document are parsed
 and available in a data structure (list of dicts) for further
-processing (e.g., making a book of problems).
+processing (e.g. making a book of problems).
 
 {{{
 [{'answer': '',
@@ -1157,15 +1212,22 @@ processing (e.g., making a book of problems).
 ==== Use of preprocessors ====
 
  * Simple if-else tests a la the C/C++ preprocessor
- * `FORMAT` variable can be used to test on format, e.g.,
+
+ * `FORMAT` variable can be used to test on format, e.g. 
+
 
     * if latex/pdflatex do one sort of code (raw LaTeX)
+
     * if html, do another type of code (raw HTML)
 
 
+
  * Easy to comment out large portions of text
+
  * Easy to make different versions of the document
- * The mako preprocessor is really powerful - gives a   complete programming language inside the document!
+
+ * The mako preprocessor is really powerful - gives a complete programming language inside the document!
+
 
 <wiki:comment> !split </wiki:comment>
 ==== DocOnce admonitions ====
@@ -1186,6 +1248,7 @@ Tasks:
 
 
   * Maybe ask a question?
+
   * Or two?
 
 
@@ -1193,7 +1256,7 @@ Tasks:
 Conclusion:
 
 
-  * A special "block" admonition has less pronounced typesetting and    can be used when no special icon is desired. Good for slides.
+  * A special "block" admonition has less pronounced typesetting and can be used when no special icon is desired. Good for slides.
 
 
 
@@ -1201,11 +1264,17 @@ Conclusion:
 ==== Generalized references ====
 
  * Chapters can be stand-alone documents or parts of a book
+
  * In a book you frequently refer to other chapters
- * When a chapter is a stand-alone document, it must refer to   another stand-alone chapter document
+
+ * When a chapter is a stand-alone document, it must refer to another stand-alone chapter document
+
  * This requires *generalized cross-referencing*
+
  * LaTeX has a solution: `xr`
+
  * DocOnce has a solution also for HTML, Sphinx, Markdown, ...
+
 
 {{{
 ref[internal][latex cite][external]
@@ -1217,7 +1286,6 @@ the document "Mathematical Equations":
 "http://some.net/doc/matheqs.html" cite{math_eqs_2020}].
 }}}
 
-
 <wiki:comment> !split </wiki:comment>
 ==== Slides ====
 
@@ -1225,13 +1293,21 @@ Very effective way to generate slides from running text:
 
 
  * Take a copy of your DocOnce prose
+
  * Strip off as much text as possible
+
  * Emphasize key points in bullet items
+
  * Focus on key equations, figures, movies, key code snippets
+
  * Insert `!split` wherever you want a new slide to begin
- * Insert `!bpop` and `!epop` around elements to pop up   in sequence (or insert `|\pause|` inside code blocks)
+
+ * Insert `!bpop` and `!epop` around elements to pop up in sequence (or insert `|\pause|` inside code blocks)
+
  * Use 7 `=` or 5 `=` in headings (H2 or H3)
- * Supported slide types: Beamer, HTML,   HTML5 (reveal.js, deck.js, csss, dzslides)
+
+ * Supported slide types: Beamer, HTML, HTML5 (reveal.js, deck.js, csss, dzslides)
+
 
 <wiki:comment> !split </wiki:comment>
 ==== Example on slide code ====
@@ -1270,7 +1346,9 @@ Last page gets rendered to
 ==== Headline ====
 
  * Key point 1
+
  * Key point 2
+
 
 ---------------------------------------------------------------
 
@@ -1283,8 +1361,6 @@ Put the figure file fig/teacher1.gif on the web (e.g., as part of the
 googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
-
-
 
 Key equation:
 
@@ -1332,17 +1408,17 @@ FIGURE: [fig/broken_pen_and_paper, width=400 frac=0.8]
 
 Last page gets rendered to
 
-
-
-
 ==== Headline ====
 
 <wiki:comment> !bslidecell 00 </wiki:comment>
 <wiki:comment> !bpop </wiki:comment>
 
  * Key point 1
+
  * Key point 2
+
  * Key point 3
+
 
 <wiki:comment> !epop </wiki:comment>
 
@@ -1356,7 +1432,6 @@ Last page gets rendered to
 
 <wiki:comment> !bslidecell 01 </wiki:comment>
 
-
 ---------------------------------------------------------------
 
 Figure: 
@@ -1369,18 +1444,20 @@ googlecode repository) and substitute the line above with the URL.
 </wiki:comment>
 ---------------------------------------------------------------
 
-
 <wiki:comment> !eslidecell </wiki:comment>
-
 
 <wiki:comment> !split </wiki:comment>
 ==== Classic slide types ====
 
  * LaTeX Beamer
+
  * Plain HTML w/various styles
 
+
    * separate slides w/navigation
+
    * one big slide
+
 
 
 
@@ -1391,35 +1468,47 @@ googlecode repository) and substitute the line above with the URL.
 
  * Supported HTML5 packages:
 
+
    * [http://lab.hakim.se/reveal-js/ reveal.js]
+
    * [http://imakewebthings.com/deck.js/ deck.js]
+
    * [http://paulrouget.com/dzslides/ dzslides]
+
    * [http://leaverou.github.com/csss/#intro csss]
+
 
 
  * *Problem*: each package has its own syntax (though similar)
 
+
    * *Solution*: slide code is autogenerated from DocOnce
+
 
 
  * *Problem*: reveal and deck have numerous styles
 
+
    * *Solution*: easy [http://doconce.github.com/teamods/doconce/demo/index.html to autogenerate all styles] for a talk
+
 
 
  * *Problem*: HTML5 slides need many style files
 
+
    * *Solution*: autocopy all files to talk directory
 
 
- * *Problem*: original versions of the styles have too large fonts,   centering, and other features not so suitable for lectures   with much math and code
+
+ * *Problem*: original versions of the styles have too large fonts, centering, and other features not so suitable for lectures with much math and code
+
 
    * *Solution*: DocOnce contains adjusted css files
 
 
 
-<wiki:comment> !epop </wiki:comment>
 
+<wiki:comment> !epop </wiki:comment>
 
 <wiki:comment> !split </wiki:comment>
 ==== DocOnce to HTML ====
@@ -1447,16 +1536,16 @@ doconce slides_html doconcefile reveal --html_slide_theme=darkgray
 Two formats of blog posts are supported:
 
 
- * Google's [http://doconce-report-demo.blogspot.no/ blogspot.com]:   just paste the raw HTML (full support of math and code)
- * [http://doconcereportdemo.wordpress.com/ Wordpress]:   despite limited math, DocOnce manipulates the math   such that even `equation` and `align` work in Wordpress :-)
+ * Google's [http://doconce-report-demo.blogspot.no/ blogspot.com]: just paste the raw HTML (full support of math and code)
+
+ * [http://doconcereportdemo.wordpress.com/ Wordpress]: despite limited math, DocOnce manipulates the math such that even `equation` and `align` work in Wordpress :-)
+
 
 For wordpress, add `--wordpress`:
 {{{
 doconce format html doconcefile --wordpress
 }}}
 and paste the code into the text area.
-
-
 
 <wiki:comment> !split </wiki:comment>
 ==== DocOnce to pdfLaTeX ====
@@ -1495,17 +1584,19 @@ Only MediaWiki supports math.
 doconce format mwiki doconcefile
 }}}
 
-
 Recommended site:
 
 
- * [http://doconcedemo.shoutwiki.com/wiki/DocOnce_demo_page ShoutWiki]   for standard wikis
+ * [http://doconcedemo.shoutwiki.com/wiki/DocOnce_demo_page ShoutWiki] for standard wikis
+
 
 Publishing of "official" documents:
 
 
- * [http://en.wikibooks.org/wiki/Wikibooks:WIW Wikibooks]   (can test code in the [http://en.wikibooks.org/wiki/Wikibooks:Sandbox sandbox])
+ * [http://en.wikibooks.org/wiki/Wikibooks:WIW Wikibooks] (can test code in the [http://en.wikibooks.org/wiki/Wikibooks:Sandbox sandbox])
+
  * Wikipedia
+
 
 <wiki:comment> !split </wiki:comment>
 ==== DocOnce to other formats ====
@@ -1523,14 +1614,20 @@ doconce format plain  doconcefile  # plain, untagged text for email
 
  * Source at [https://github.com/doconce/doconce GitHub] (recommended!)
 
-   * `git clone` + `python setyp.py install`
+
+   * `git clone` + `python setup.py install`
+
 
 
  * Many [http://doconce.github.io/doconce/doc/pub/manual/html/manual.html#installation-of-doconce-and-its-dependencies dependencies...]
 
+
    * Must have `preprocess` and `mako`
+
    * Need `latex`, `sphinx`, `pandoc`, etc. (see the [http://doconce.github.io/doconce/doc/pub/manual/html/manual.html#installation-of-doconce-and-its-dependencies Installation] description)
+
    * Easy for slides: only `preprocess` and `mako` are needed :-)
+
 
 
 
@@ -1538,19 +1635,33 @@ doconce format plain  doconcefile  # plain, untagged text for email
 ==== Writing tips for LaTeX writers who want to convert to DocOnce *and generate other formats* ====
 
  * `doconce latex2doconce` helps the translation
- * Use `\[ \]`, `equation`, `equation*`, `align`, `align*` and nothing more for   equations
+
+ * Use `\[ \]`, `equation`, `equation*`, `align`, `align*` and nothing more for equations
+
  * Figures: avoid subfigures (combine image files instead), use `\includegraphics`, have captions after graphics, use short figure captions, position exactly where needed
+
  * Tables: have them inline (not floating), with no caption
+
  * Computer codes: have them inline (not floating)
+
  * Rewrite all `pageref` commands
+
  * Do not use *algorithm* environments, use simple list formatting instead
+
  * Avoid math in section headings
+
  * Use `pdflatex` or `xetex`
+
  * Use BibTeX (can easily be converted to [https://github.com/doconce/publish publish] used by DocOnce)
+
  * Use `\href` for links (and insert links frequently)
+
  * Use the `bm` package for boldface `\bm{u}`
- * Place all newcommands in a separate file, with one definition per line   (multiline definitions goes to a separate LaTeX preamble file in DocOnce)
- * Avoid all fancy LaTeX constructs - more backslashes than needed in math   and sections is a bad thing...
+
+ * Place all newcommands in a separate file, with one definition per line (multiline definitions goes to a separate LaTeX preamble file in DocOnce)
+
+ * Avoid all fancy LaTeX constructs - more backslashes than needed in math and sections is a bad thing...
+
 
 <wiki:comment> !split </wiki:comment>
 ==== DocOnce writing tips ====
@@ -1562,22 +1673,34 @@ doconce format plain  doconcefile  # plain, untagged text for email
 Figures and movies:
 
 
- * Prepare figures in the right format: EPS for `latex`, PDF for `pdflatex`,   PNG, GIF or JPEG for HTML formats (`html`, and HTML output from   `sphinx`, `rst`, `pandoc`). One can omit the figure file extension and   `doconce` will pick the most appropriate file for the given output format.
- * Let plotting programs produce both PDF/EPS and PNG files.   (Recall that PDF and EPS are vector graphics formats that can scale to   any size with much higher quality than PNG or other bitmap formats.)
+ * Prepare figures in the right format: EPS for `latex`, PDF for `pdflatex`, PNG, GIF or JPEG for HTML formats (`html`, and HTML output from `sphinx`, `rst`, `pandoc`). One can omit the figure file extension and `doconce` will pick the most appropriate file for the given output format.
+
+ * Let plotting programs produce both PDF/EPS and PNG files. (Recall that PDF and EPS are vector graphics formats that can scale to any size with much higher quality than PNG or other bitmap formats.)
+
  * Use `doconce combine_images` to combine several images into one.
- * Store all figures in a directory (tree) with name `fig` or `fig-X`,   where `X` is some short logical name for the current document.
+
+ * Store all figures in a directory (tree) with name `fig` or `fig-X`, where `X` is some short logical name for the current document.
+
  * Store all movies in a directory (tree) with name `mov` or `mov-X`.
+
  * Favor the movie formats MP4, WebM, and Ogg (best suited for modern browsers).
+
 
 <wiki:comment> !split </wiki:comment>
 ==== DocOnce writing tips ====
 
- * `\bm{u}` gives nicer boldface typesetting of math symbols than   the alternatives `\boldsymbol{u}` and `\pmb{u}`.
- * For HTML-based formats using MathJax, `\bm{u}` is not supported   and therefore automatically replaced by `\boldsymbol{u}` by DocOnce.
+ * `\bm{u}` gives nicer boldface typesetting of math symbols than the alternatives `\boldsymbol{u}` and `\pmb{u}`.
+
+ * For HTML-based formats using MathJax, `\bm{u}` is not supported and therefore automatically replaced by `\boldsymbol{u}` by DocOnce.
+
  * Use `\<font color="blue">formula</font>` in math expressions to color a part.
- * Not all LaTeX math is supported by MathJax. Some legal LaTeX math   might give MathJax problems - then one has to rewrite the expression   to find a syntax that works both with LaTeX and MathJax.
+
+ * Not all LaTeX math is supported by MathJax. Some legal LaTeX math might give MathJax problems - then one has to rewrite the expression to find a syntax that works both with LaTeX and MathJax.
+
  * Use `doconce spellcheck *.do.txt` to automatically spellcheck files.
+
  * Avoid page references and footnotes.
+
 
 <wiki:comment> !split </wiki:comment>
 ==== Writing tips for sphinx and other formats ====
@@ -1586,14 +1709,22 @@ For output formats different from `latex`, `pdflatex`, and `html`:
 
 
  * Use labels only right after section headings and in equations.
- * Be careful with labels in `align` math environments: `pandoc`   and `mwiki` cannot refer to them.
+
+ * Be careful with labels in `align` math environments: `pandoc` and `mwiki` cannot refer to them.
+
  * `sphinx` output requires
 
-   * no math in section headings or figure captions     (gets removed in references).
+
+   * no math in section headings or figure captions (gets removed in references).
+
    * running text to start in column 1.
-   * progressive section headings: after chapter (9 `=`) comes     section (7 `=`), then subsection (5 `=`), then paragraph     (3 `=`). Do not make jumps in this progression.
-   * index entries (``) before the paragraph where they     are introduced and place them *before* subsubsection     headings (`=== ... ===`) and after subsection and section headings.
+
+   * progressive section headings: after chapter (9 `=`) comes section (7 `=`), then subsection (5 `=`), then paragraph (3 `=`). Do not make jumps in this progression.
+
+   * index entries (``) before the paragraph where they are introduced and place them *before* subsubsection headings (`=== ... ===`) and after subsection and section headings.
+
    * a line of text and no comment or math before code or list.
+
 
 
 

@@ -1,6 +1,7 @@
 <!--
-Automatically generated HTML file from DocOnce source
+HTML file automatically generated from DocOnce source
 (https://github.com/doconce/doconce/)
+doconce format html wrapper_tech.do.txt --html_style=bootswatch_readable --html_code_style=inherit --no_abort
 -->
 <html>
 <head>
@@ -8,26 +9,22 @@ Automatically generated HTML file from DocOnce source
 <meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Wrapping Plain HTML Files in Fancy Design Templates">
-
 <title>Wrapping Plain HTML Files in Fancy Design Templates</title>
-
 <!-- Bootstrap style: bootswatch_readable -->
+<!-- doconce format html wrapper_tech.do.txt --html_style=bootswatch_readable --html_code_style=inherit --no_abort -->
 <link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/readable/bootstrap.min.css" rel="stylesheet">
 <!-- not necessary
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 -->
-
 <style type="text/css">
 /* Let inline verbatim have the same color as the surroundings */
 code { color: inherit; background-color: transparent; }
-
 /* Add scrollbar to dropdown menus in bootstrap navigation bar */
 .dropdown-menu {
    height: auto;
    max-height: 400px;
    overflow-x: hidden;
 }
-
 /* Adds an invisible element before each target to offset for the navigation
    bar */
 .anchor::before {
@@ -37,36 +34,47 @@ code { color: inherit; background-color: transparent; }
   margin:-64px 0 0; /* negative fixed header height */
 }
 </style>
-
-
 </head>
 
 <!-- tocinfo
 {'highest level': 0,
- 'sections': [('Example on a problem setting', 0, None, '___sec0'),
-              ('Solution', 0, None, '___sec1'),
-              ('Step 1: Use DocOnce to generate text', 2, None, '___sec2'),
-              ('Step 2: Write the core text', 2, None, '___sec3'),
-              ('Step 3: Inspect the HTML page', 2, None, '___sec4'),
+ 'sections': [('Example on a problem setting',
+               0,
+               None,
+               'example-on-a-problem-setting'),
+              ('Solution', 0, None, 'solution'),
+              ('Step 1: Use DocOnce to generate text',
+               2,
+               None,
+               'step-1-use-doconce-to-generate-text'),
+              ('Step 2: Write the core text',
+               2,
+               None,
+               'step-2-write-the-core-text'),
+              ('Step 3: Inspect the HTML page',
+               2,
+               None,
+               'step-3-inspect-the-html-page'),
               ('Step 4: Find a web page design and make a template',
                2,
                None,
-               '___sec5'),
+               'step-4-find-a-web-page-design-and-make-a-template'),
               ('Step 5: Embed your HTML document in the template',
                2,
                None,
-               '___sec6'),
+               'step-5-embed-your-html-document-in-the-template'),
               ('Making a template from Vortex pages at the University of Oslo',
                1,
                None,
-               '___sec7'),
-              ('Using the Vagrant template', 1, None, '___sec8'),
-              ('Summary', 1, None, '___sec9')]}
+               'making-a-template-from-vortex-pages-at-the-university-of-oslo'),
+              ('Using the Vagrant template',
+               1,
+               None,
+               'using-the-vagrant-template'),
+              ('Summary', 1, None, 'summary')]}
 end of tocinfo -->
 
 <body>
-
-    
 <!-- Bootstrap navigation bar -->
 <div class="navbar navbar-default navbar-fixed-top">
   <div class="navbar-header">
@@ -77,22 +85,21 @@ end of tocinfo -->
     </button>
     <a class="navbar-brand" href="wrapper_tech.html">Wrapping Plain HTML Files in Fancy Design Templates</a>
   </div>
-
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
         <ul class="dropdown-menu">
-     <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;"><b>Example on a problem setting</b></a></li>
-     <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 80%;"><b>Solution</b></a></li>
-     <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 1: Use DocOnce to generate text</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 2: Write the core text</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 3: Inspect the HTML page</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 4: Find a web page design and make a template</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 5: Embed your HTML document in the template</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Making a template from Vortex pages at the University of Oslo</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Using the Vagrant template</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Summary</a></li>
+     <!-- navigation toc: --> <li><a href="#example-on-a-problem-setting" style="font-size: 80%;"><b>Example on a problem setting</b></a></li>
+     <!-- navigation toc: --> <li><a href="#solution" style="font-size: 80%;"><b>Solution</b></a></li>
+     <!-- navigation toc: --> <li><a href="#step-1-use-doconce-to-generate-text" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 1: Use DocOnce to generate text</a></li>
+     <!-- navigation toc: --> <li><a href="#step-2-write-the-core-text" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 2: Write the core text</a></li>
+     <!-- navigation toc: --> <li><a href="#step-3-inspect-the-html-page" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 3: Inspect the HTML page</a></li>
+     <!-- navigation toc: --> <li><a href="#step-4-find-a-web-page-design-and-make-a-template" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 4: Find a web page design and make a template</a></li>
+     <!-- navigation toc: --> <li><a href="#step-5-embed-your-html-document-in-the-template" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Step 5: Embed your HTML document in the template</a></li>
+     <!-- navigation toc: --> <li><a href="#making-a-template-from-vortex-pages-at-the-university-of-oslo" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Making a template from Vortex pages at the University of Oslo</a></li>
+     <!-- navigation toc: --> <li><a href="#using-the-vagrant-template" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Using the Vagrant template</a></li>
+     <!-- navigation toc: --> <li><a href="#summary" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Summary</a></li>
 
         </ul>
       </li>
@@ -100,82 +107,65 @@ end of tocinfo -->
   </div>
 </div>
 </div> <!-- end of navigation bar -->
-
 <div class="container">
-
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
-
 <!-- ------------------- main content ---------------------- -->
-
-
-
 <div class="jumbotron">
-<center><h1>Wrapping Plain HTML Files in Fancy Design Templates</h1></center>  <!-- document title -->
+<center>
+<h1>Wrapping Plain HTML Files in Fancy Design Templates</h1>
+</center>  <!-- document title -->
 
-<p>
 <!-- author(s): Hans Petter Langtangen -->
-
 <center>
 <b>Hans Petter Langtangen</b> [1, 2]
 </center>
-
-<p>
 <!-- institution(s) -->
+<center>
+[1] <b>Center for Biomedical Computing, Simula Research Laboratory</b>
+</center>
+<center>
+[2] <b>Department of Informatics, University of Oslo</b>
+</center>
+<br>
+<center>
+<h4>Jun 22, 2021</h4>
+</center> <!-- date -->
+<br>
 
-<center>[1] <b>Center for Biomedical Computing, Simula Research Laboratory</b></center>
-<center>[2] <b>Department of Informatics, University of Oslo</b></center>
-<br>
-<p>
-<center><h4>Nov 23, 2020</h4></center> <!-- date -->
-<br>
 <p>
 <b>Summary.</b> You want to write your web pages as simple text, but at the same time you
 need the design and layout to be compatible with a given look-and-feel standard.
 This is easy to accomplish by writing the HTML pages in plain DocOnce text
 and using <em>HTML templates</em>. The present note explains the details.
+</p>
 
-<p>
+
 </div> <!-- end jumbotron -->
 
-<center><h1 id="___sec0" class="anchor">Example on a problem setting </h1></center> <!-- chapter heading -->
+<center>
+<h1 id="example-on-a-problem-setting" class="anchor">Example on a problem setting </h1>
+</center> <!-- chapter heading -->
 
 <ol>
-<li> You need to write web pages, say for a course, and want to have
-   complete control of the core text in a plain text editor without
-   paying attention to fancy layouts.</li>
-<li> There might be many pages, often developing dynamically over time,
-   linked to a potentially large number of files (images, computer codes,
-   lecture notes, exercises, etc.).
-   You also have a lot of mathematics and computer code
-   in these pages.</li>
-<li> You will (of course) have full version control of the files with the
-   core content and publish the latest version of all files with one command.</li>
-<li> However, the web pages should appear with a prescribed look and feel
-   because your host institution requires so.</li>
-<li> The look and feel is automatically obtained if you write your
-   web pages with particular web-based tools, but this is tedious and
-   boring, happens without version control, has no support for
-   nicely typeset mathematics and computer code, and most
-   importantly: the approach does not scale with a lot of files!</li>
-<li> You would like your pages to live on a 24/7 available server <em>you</em>
-   have chosen, e.g.,
-   <a href="http://github.com" target="_self">GitHub</a>, <a href="http://bitbucket.org" target="_self">Bitbucket</a>,
-   <a href="http://code.google.com" target="_self">Googlecode</a>, or similar.</li>
+<li> You need to write web pages, say for a course, and want to have complete control of the core text in a plain text editor without paying attention to fancy layouts.</li>
+<li> There might be many pages, often developing dynamically over time, linked to a potentially large number of files (images, computer codes, lecture notes, exercises, etc.). You also have a lot of mathematics and computer code in these pages.</li>
+<li> You will (of course) have full version control of the files with the core content and publish the latest version of all files with one command.</li>
+<li> However, the web pages should appear with a prescribed look and feel because your host institution requires so.</li>
+<li> The look and feel is automatically obtained if you write your web pages with particular web-based tools, but this is tedious and boring, happens without version control, has no support for nicely typeset mathematics and computer code, and most importantly: the approach does not scale with a lot of files!</li>
+<li> You would like your pages to live on a 24/7 available server <em>you</em> have chosen, e.g.  <a href="http://github.com" target="_self">GitHub</a>, <a href="http://bitbucket.org" target="_self">Bitbucket</a>, <a href="http://code.google.com" target="_self">Googlecode</a>, or similar.</li>
 </ol>
-
-In short, you would like to write something close to standard LaTeX,
+<p>In short, you would like to write something close to standard LaTeX,
 but get it published on the web with your institution's look and
 feel. This document tells you how to do that and minimize the fuss
 with layouts.
+</p>
 
-<p>
+<center>
+<h1 id="solution" class="anchor">Solution </h1>
+</center> <!-- chapter heading -->
+<h2 id="step-1-use-doconce-to-generate-text" class="anchor">Step 1: Use DocOnce to generate text </h2>
 
-<center><h1 id="___sec1" class="anchor">Solution </h1></center> <!-- chapter heading -->
-
-<h2 id="___sec2" class="anchor">Step 1: Use DocOnce to generate text </h2>
-
-<p>
-We shall in this document use <a href="https://github.com/doconce/doconce" target="_self">DocOnce</a>
+<p>We shall in this document use <a href="https://github.com/doconce/doconce" target="_self">DocOnce</a>
 for writing the core text. DocOnce looks like plain text, with just a
 few tags for enabling full LaTeX mathematics and nicely typeset
 computer code. From DocOnce you can go to plain LaTeX, pdfLaTeX,
@@ -184,16 +174,20 @@ that support LaTeX mathematics and nice computer code. (If you do not
 have code and math, it is easy to go to MS Word, XML, DocBook, and
 numerous other formats too.) From a DocOnce text it is also trivial
 to generate slides.
+</p>
+<h2 id="step-2-write-the-core-text" class="anchor">Step 2: Write the core text </h2>
 
-<h2 id="___sec3" class="anchor">Step 2: Write the core text </h2>
+<p>Write the core text, here an <a href="mydoc_plain_pygmentized.html" target="_self">exercise with some math and code</a> stored in a file <code>mydoc.do.txt</code>:
+</p>
 
-<p>
-Write the core text, here an <a href="mydoc_plain_pygmentized.html" target="_self">exercise with some math and code</a> stored in a file <code>mydoc.do.txt</code>:
 
-<p>
-
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>DATE: today
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">DATE: today
 
 ======= Solve the world&#39;s simplest differential equation =======
 
@@ -264,72 +258,91 @@ $\theta=0$ and $\theta=1/2$ can give non-physical solutions
 
 Perform experiments and determine empirically the convergence
 rate for $\theta=0,1/2,1$.
-</pre></div>
-<p>
-When the title in a DocOnce document (<code>TITLE: ...</code>) is missing or
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>When the title in a DocOnce document (<code>TITLE: ...</code>) is missing or
 commented out (<code>#TITLE:</code>), no HTML header and footer are generated,
 which is important when embedding the HTML code in a template file
 later.
+</p>
+<h2 id="step-3-inspect-the-html-page" class="anchor">Step 3: Inspect the HTML page </h2>
 
-<h2 id="___sec4" class="anchor">Step 3: Inspect the HTML page </h2>
-
-<p>
-Check the default layout of your HTML page by translating the
+<p>Check the default layout of your HTML page by translating the
 DocOnce file to HTML:
+</p>
 
-<p>
 
 <!-- code=text (!bc sys) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>doconce format html mydoc
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">doconce format html mydoc
 google-chrome mydoc.html
-</pre></div>
-<p>
-The page is rendered with the <a href="mydoc_plain_pygmentized.html" target="_self">default HTML style</a> as seen in the figure below (or <a href="mydoc_plain.html" target="_self">in the file itself</a>):
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-<br /><br /><center><p><img src="fig/plain_html.png" align="bottom" width=900></p></center><br /><br />
+<p>The page is rendered with the <a href="mydoc_plain_pygmentized.html" target="_self">default HTML style</a> as seen in the figure below (or <a href="mydoc_plain.html" target="_self">in the file itself</a>):</p>
 
-<h2 id="___sec5" class="anchor">Step 4: Find a web page design and make a template </h2>
+<br/><br/>
+<center>
+<p><img src="fig/plain_html.png" width="900" align="bottom"></p>
+</center>
+<br/><br/>
+<h2 id="step-4-find-a-web-page-design-and-make-a-template" class="anchor">Step 4: Find a web page design and make a template </h2>
 
-<p>
-When you see a design of a web page that you would like to adopt,
+<p>When you see a design of a web page that you would like to adopt,
 view the source code (all browsers have a menu choice for doing this)
 and store it to file. To proceed you need to know some basic HTML.
+</p>
 
 <ol>
-<li> Identify where the main body of text is. Remove this text and
-   insert <code>%(main)s</code> instead. This is a tag that will be replaced
-   by the HTML code of the core text you had in <code>mydoc.do.txt</code>.
-   (The HTML code of the web page is viewed as a text string in
-   Python and <code>%(main)s</code> is just the standard syntax for inserting
-   a dictionary with key <code>main</code> at this point.)</li>
-<li> Identify the <code>title</code> tag and replace the title by <code>%(title)s</code>.
-   The title (commented out) or the first heading in <code>mydoc.do.txt</code>
-   will replace <code>%(title)s</code>.</li>
+<li> Identify where the main body of text is. Remove this text and insert <code>%(main)s</code> instead. This is a tag that will be replaced by the HTML code of the core text you had in <code>mydoc.do.txt</code>. (The HTML code of the web page is viewed as a text string in Python and <code>%(main)s</code> is just the standard syntax for inserting a dictionary with key <code>main</code> at this point.)</li>
+<li> Identify the <code>title</code> tag and replace the title by <code>%(title)s</code>. The title (commented out) or the first heading in <code>mydoc.do.txt</code> will replace <code>%(title)s</code>.</li>
 <li> If relevant, find the date in the page and replace by <code>%(date)s</code>.</li>
-<li> Search for text <code>link type=&quot;text/css&quot; rel=&quot;stylesheet&quot;...</code>, which
-   specifies CSS stylesheets. You either need to have the stylesheet
-   files together with the HTML document, or you need to copy the stylesheet
-   code into the HTML file.</li>
-<li> Search for text <code>script type=&quot;text/javascript&quot; src=&quot;...</code>, which
-   specifies JavaScript code. Either the code must be available on the
-   net (<code>http://...</code> address) or you need a copy of this code stored
-   along with the HTML file. You may use the Google Chrome or Firefox
-   browsers to view the source code and just click on stylesheets,
-   JavaScript files, and other links to see the content. This has the
-   great advantage of showing a <em>complete URL</em> to the file that may
-   have a relative path in the HTML code.</li>
+<li> Search for text <code>link type=&quot;text/css&quot; rel=&quot;stylesheet&quot;...</code>, which specifies CSS stylesheets. You either need to have the stylesheet files together with the HTML document, or you need to copy the stylesheet code into the HTML file.</li>
+<li> Search for text <code>script type=&quot;text/javascript&quot; src=&quot;...</code>, which specifies JavaScript code. Either the code must be available on the net (<code>http://...</code> address) or you need a copy of this code stored along with the HTML file. You may use the Google Chrome or Firefox browsers to view the source code and just click on stylesheets, JavaScript files, and other links to see the content. This has the great advantage of showing a <em>complete URL</em> to the file that may have a relative path in the HTML code.</li>
 </ol>
-
-For example, we took the source code of the GitHub "minimal" theme
+<p>For example, we took the source code of the GitHub "minimal" theme
 and implemented the points above. Some of the elements in the
 downloaded page are conveniently replaced by indicating text
 that we will fill out when we finalize the layout of our web site.
+</p>
 
-<p>
 
 <!-- code=html (!bc htmlpro) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span><span style="color: #BC7A00">&lt;!doctype html&gt;</span>
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #BC7A00">&lt;!doctype html&gt;</span>
 &lt;<span style="color: #008000; font-weight: bold">html</span>&gt;
   &lt;<span style="color: #008000; font-weight: bold">head</span>&gt;
     &lt;<span style="color: #008000; font-weight: bold">meta</span> <span style="color: #7D9029">charset</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;utf-8&quot;</span>&gt;
@@ -371,72 +384,101 @@ that we will fill out when we finalize the layout of our web site.
 
   &lt;/<span style="color: #008000; font-weight: bold">body</span>&gt;
 &lt;/<span style="color: #008000; font-weight: bold">html</span>&gt;
-</pre></div>
-<p>
-Note that the template requires
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Note that the template requires</p>
 
 <ul>
  <li> the stylesheet <code>styles.css</code> in a subdirectory <code>css</code></li>
  <li> the JavaScript <code>scale.fix.js</code> in a subdirectory <code>js</code></li>
 </ul>
-
-We need to get our hands on both these files. For the current
+<p>We need to get our hands on both these files. For the current
 application we customize the template:
+</p>
 
 <ul>
- <li> The picture on the left is specified to <code>fig/discrete_function.png</code>
-   which acts as a kind of logo for the page.</li>
- <li> The  <code>Main Permanent Header</code> and <code>Permanent SubHeader</code> are
-   replaced by something appropriate, here <code>Exercise</code> and
-   <code>Differential Equations</code>.</li>
+ <li> The picture on the left is specified to <code>fig/discrete_function.png</code> which acts as a kind of logo for the page.</li>
+ <li> The  <code>Main Permanent Header</code> and <code>Permanent SubHeader</code> are replaced by something appropriate, here <code>Exercise</code> and <code>Differential Equations</code>.</li>
 </ul>
+<p>DocOnce features a <a href="https://github.com/doconce/doconce/blob/master/bundled/html_styles/style_github_minimal/template_github_minimal.html" target="_self">GitHub minimal template</a> that you can adapt to your own purposes.</p>
+<h2 id="step-5-embed-your-html-document-in-the-template" class="anchor">Step 5: Embed your HTML document in the template </h2>
 
-DocOnce features a <a href="https://github.com/doconce/doconce/blob/master/bundled/html_styles/style_github_minimal/template_github_minimal.html" target="_self">GitHub minimal template</a> that you can adapt to your own purposes.
-
-<h2 id="___sec6" class="anchor">Step 5: Embed your HTML document in the template </h2>
-
-<p>
-We can now use DocOnce to insert our document <code>mydoc.html</code>,
+<p>We can now use DocOnce to insert our document <code>mydoc.html</code>,
 generated from <code>mydoc.do.txt</code> into an HTML template.
 The template shown above, stored in the file <code>template_minimal.html</code>
 is used as example. We run
+</p>
 
-<p>
 
 <!-- code=text (!bc sys) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>doconce format html mydoc --html_template=template_minimal.html
-</pre></div>
-<p>
-The result is a file <a href="mydoc_github_pygmentized.html" target="_self"><tt>mydoc.html</tt></a> where
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">doconce format html mydoc --html_template=template_minimal.html
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>The result is a file <a href="mydoc_github_pygmentized.html" target="_self"><tt>mydoc.html</tt></a> where</p>
 
 <ol>
  <li> the first heading in <code>mydoc.do.txt</code> is substituted as title tag</li>
- <li> the text in <code>mydoc.do.txt</code>, transformed to HTML, is inserted
-    where <code>%(main)s</code> appears in the template.</li>
+ <li> the text in <code>mydoc.do.txt</code>, transformed to HTML, is inserted where <code>%(main)s</code> appears in the template.</li>
 </ol>
+<p>Here is the <a href="mydoc_github.html" target="_self">visual result</a>:</p>
 
-Here is the <a href="mydoc_github.html" target="_self">visual result</a>:
+<br/><br/>
+<center>
+<p><img src="fig/github_html.png" width="900" align="bottom"></p>
+</center>
+<br/><br/>
 
-<p>
-<br /><br /><center><p><img src="fig/github_html.png" align="bottom" width=900></p></center><br /><br />
-
-<p>
-The original text file <code>mydoc.do.txt</code> has now been transformed
+<p>The original text file <code>mydoc.do.txt</code> has now been transformed
 to a web page with fancy design!
+</p>
+<h1 id="making-a-template-from-vortex-pages-at-the-university-of-oslo" class="anchor">Making a template from Vortex pages at the University of Oslo </h1>
 
-<h1 id="___sec7" class="anchor">Making a template from Vortex pages at the University of Oslo </h1>
-
-<p>
-As another example, we want to make web pages that has the
+<p>As another example, we want to make web pages that has the
 look and feel of the Vortex web system at the University of Oslo.
 Let us look at a specific <a href="http://www.uio.no/studier/emner/matnat/ifi/INF5620/h12/" target="_self">course</a> from the official web pages. The associated HTML
 <a href="uio/5620_pygmentized.html" target="_self">source code</a>
 is huge. Here is a glimpse:
+</p>
 
-<p>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>    &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; href=&quot;/vrtx/decorating/resources/dist/style/style.css&quot; /&gt;
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">    &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; href=&quot;/vrtx/decorating/resources/dist/style/style.css&quot; /&gt;
     &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot; href=&quot;/vrtx/decorating/resources/dist/www.uio.no/logos-eng/logos.css&quot; /&gt;
     &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;print&quot; href=&quot;/vrtx/decorating/resources/dist/style/print.css&quot; /&gt;
     &lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;handheld&quot; href=&quot;/vrtx/decorating/resources/dist/style/handheld.css&quot;/&gt;
@@ -455,142 +497,182 @@ is huge. Here is a glimpse:
 ...
             &lt;div id=&quot;right-main&quot;&gt;
               &lt;!--startindex--&gt;
-</pre></div>
-<p>
-Our aim is to make a template out of this file by keeping header, footer,
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Our aim is to make a template out of this file by keeping header, footer,
 style information, links, etc., which are common to all web pages, and
 replacing the course-specific information, title, and date by
 &quot;slots&quot; like <code>%(main)s</code>, <code>%(title)s</code>, and <code>%(date)s</code>.
 We do the following:
+</p>
 
 <ol>
-<li> The part of the text which we want to replace by our course-specific
-   plain text must be deleted and substituted by <code>%(main)s</code>.</li>
-<li> A more challenging task is to deal with all the links to <em>local files</em>
-   of the type <code>/vrtx/decorating/resources/...</code> and similar.
-   However, clicking on these links when viewing the source code of
-   the page in Google Chrome or Firefox, displays the full URL
-   of the files. It appears that <code>/vrtx/</code> can simply be replaced
-   by <code>http://www.uio.no/vrtx/</code> and the page works (!). We therefore
-   carry out that substitution.</li>
+<li> The part of the text which we want to replace by our course-specific plain text must be deleted and substituted by <code>%(main)s</code>.</li>
+<li> A more challenging task is to deal with all the links to <em>local files</em> of the type <code>/vrtx/decorating/resources/...</code> and similar. However, clicking on these links when viewing the source code of the page in Google Chrome or Firefox, displays the full URL of the files. It appears that <code>/vrtx/</code> can simply be replaced by <code>http://www.uio.no/vrtx/</code> and the page works (!). We therefore carry out that substitution.</li>
 <li> The title inside the <code>title</code> tags is replaced by <code>%(title)s</code>.</li>
 </ol>
-
-(There is no date in this page and hence no need to insert <code>%(date)s</code>.)
+<p>(There is no date in this page and hence no need to insert <code>%(date)s</code>.)
 The "resulting code": "uio/template_5620_pygmentized.hml" is ready
 as a template:
+</p>
 
-<p>
 
 <!-- code=text (!bc sys) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>doconce format html mydoc --html_template=mynewcoursetemplate.html
-</pre></div>
-<p>
-Here is <a href="mydoc_uio.html" target="_self">the result</a>.
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">doconce format html mydoc --html_template=mynewcoursetemplate.html
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-<br /><br /><center><p><img src="fig/uio_html.png" align="bottom" width=900></p></center><br /><br />
+<p>Here is <a href="mydoc_uio.html" target="_self">the result</a>.</p>
 
-<p>
-It really looks like we are inside the Vortex web system at the
+<br/><br/>
+<center>
+<p><img src="fig/uio_html.png" width="900" align="bottom"></p>
+</center>
+<br/><br/>
+
+<p>It really looks like we are inside the Vortex web system at the
 University of Oslo and all the links to <em>Student Life</em>, <em>People</em>,
 etc. work.
+</p>
 
-<p>
-Normally, the web pages at the University of Oslo have to be written
+<p>Normally, the web pages at the University of Oslo have to be written
 through a web-based editor (in the Vortex system), and the information
 is stored in XML files.  It is somewhat remarkable that the HTML
 rendered from these XML files can be copied so easily and used as
 templates for web documents anywhere else.
+</p>
+<h1 id="using-the-vagrant-template" class="anchor">Using the Vagrant template </h1>
 
-<h1 id="___sec8" class="anchor">Using the Vagrant template </h1>
-
-<p>
-Besides the GitHub "minimal" theme, DocOnce comes with a template
+<p>Besides the GitHub "minimal" theme, DocOnce comes with a template
 <a href="https://github.com/doconce/doconce/blob/master/bundled/html_styles/style_vagrant/template_vagrant.html" target="_self"><tt>template_vagrant.html</tt></a>
 adopted from
 the style in the original documentation of the <a href="http://docs.vagrantup.com/v1/docs/getting-started/index.html" target="_self">Vagrant</a> virtual machine
 tool.
+</p>
 
-<p>
-<br /><br /><center><p><img src="fig/vagrant_web.png" align="bottom" width=900></p></center><br /><br />
+<br/><br/>
+<center>
+<p><img src="fig/vagrant_web.png" width="900" align="bottom"></p>
+</center>
+<br/><br/>
 
-<p>
-This template is easy to adopt to a particular set
+<p>This template is easy to adopt to a particular set
 of web pages. The plain template looks as
+</p>
 
-<p>
-<br /><br /><center><p><img src="fig/template_vagrant.png" align="bottom" width=900></p></center><br /><br />
+<br/><br/>
+<center>
+<p><img src="fig/template_vagrant" width="900" align="bottom"></p>
+</center>
+<br/><br/>
 
-<p>
-There are several elements in the template:
+<p>There are several elements in the template:</p>
 
 <ol>
 <li> Navigation bar to the left, which is automatically created by DocOnce.</li>
 <li> A main part (<code>%(main)s</code>) and a title as usual.</li>
-<li> Navigation buttons on the button, which are automatically filled in
-   by DocOnce if the document is split into several parts.</li>
-<li> A logo consisting of a <em>LogoWord</em> in black and a <em>withSubWord</em> in
-   gray. This should be <em>manually edited</em> to some short name for the web pages
-   you want to embed with the Vagrant style.</li>
-<li> Navigation links in the top right part of the page. These should be
-   <em>manually edited</em> or deleted.</li>
-<li> At the bottom of the page there is a footer, which can be
-   <em>manually edited</em> or deleted.</li>
+<li> Navigation buttons on the button, which are automatically filled in by DocOnce if the document is split into several parts.</li>
+<li> A logo consisting of a <em>LogoWord</em> in black and a <em>withSubWord</em> in gray. This should be <em>manually edited</em> to some short name for the web pages you want to embed with the Vagrant style.</li>
+<li> Navigation links in the top right part of the page. These should be <em>manually edited</em> or deleted.</li>
+<li> At the bottom of the page there is a footer, which can be <em>manually edited</em> or deleted.</li>
 </ol>
-
-Here we edit the logo to <em>DiffEq101</em>, edit the navigation links at the
+<p>Here we edit the logo to <em>DiffEq101</em>, edit the navigation links at the
 top right to point to Wikipedia and WolframAlpha, and insert a
 copyright 2013 notice in the footer.
+</p>
 
-<p>
-Translation of the original DocOnce writings in <code>mydoc.do.txt</code> is
+<p>Translation of the original DocOnce writings in <code>mydoc.do.txt</code> is
 done by
+</p>
 
-<p>
 
 <!-- code=text (!bc sys) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>doconce format html mydoc.do.txt --html_style=bootstrap \
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">doconce format html mydoc.do.txt --html_style=bootstrap \
         --html_template=template_vagrant.html
-</pre></div>
-<p>
-The resulting <a href="mydoc_vagrant_pygmentized.html" target="_self">HTML file</a> has
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>The resulting <a href="mydoc_vagrant_pygmentized.html" target="_self">HTML file</a> has
 a <a href="mydoc_vagrant.html" target="_self">nice look</a>:
+</p>
 
-<p>
-<br /><br /><center><p><img src="fig/vagrant_html.png" align="bottom" width=900></p></center><br /><br />
+<br/><br/>
+<center>
+<p><img src="fig/vagrant_html.png" width="900" align="bottom"></p>
+</center>
+<br/><br/>
+<h1 id="summary" class="anchor">Summary </h1>
 
-<h1 id="___sec9" class="anchor">Summary </h1>
-
-<p>
-We have seen how to write web pages in a text-like format, with full
+<p>We have seen how to write web pages in a text-like format, with full
 support of LaTeX mathematics and nicely typeset (pygmentized) computer code.
 These pages can easily be embedded in various fancy HTML styles by
 simply grabbing a web page with the desired style and editing it as
 explained to make an <em>HTML template</em>. DocOnce can then embed our plain
 text in the template.
+</p>
 
-<p>
-However, embedding DocOnce documents in fancy web pages is just <em>one</em>
+<p>However, embedding DocOnce documents in fancy web pages is just <em>one</em>
 technique to achieve nice web designs. DocOnce features Bootstrap and
 Sphinx HTML styles, which offer a lot of different designs, see our
 <a href="http://doconce.github.io/doconce/doc/pub/bootstrap/index.html" target="_self">Bootstrap demo</a> and our extensive <a href="http://doconce.github.com/teamods/writing_reports/index.html" target="_self">report demo</a>.
-
+</p>
 <!-- ------------------- end of main content --------------- -->
-
 </div>  <!-- end container -->
 <!-- include javascript, jQuery *first* -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
 <!-- Bootstrap footer
 <footer>
-<a href="http://..."><img width="250" align=right src="http://..."></a>
+<a href="https://..."><img width="250" align=right src="https://..."></a>
 </footer>
 -->
-
-
 </body>
 </html>
-    
 

@@ -166,7 +166,7 @@ MathJax.Hub.Config({
 </center>
 <br>
 <center>
-<h4>Apr 14, 2021</h4>
+<h4>Jun 22, 2021</h4>
 </center> <!-- date -->
 <br>
 
@@ -208,7 +208,7 @@ the formating. Here are some examples.
   <li> Bullet lists automatically arise from lines starting with <code>*</code>, or <code>o</code> if the list is to be enumerated.</li>
   <li> <em>Emphasized words</em> are surrounded by <code>*</code>. <b>Words in boldface</b> are surrounded by underscores.</li>
   <li> Words from computer code are enclosed in backticks and then typeset <code>verbatim (in a monospace font)</code>.</li>
-  <li> Section headings are recognized by special decorating characters <code>=</code> before and after the heading, e.g., <code>===== Here is a subsection heading =====</code>.</li>
+  <li> Section headings are recognized by special decorating characters <code>=</code> before and after the heading, e.g.  <code>===== Here is a subsection heading =====</code>.</li>
   <li> The abstract of a document starts with <em>Abstract</em> as paragraph heading, and all text up to the next heading makes up the abstract,</li>
   <li> Blocks of computer code are surrounded by <code>!bc</code> (begin code) and <code>!ec</code> (end code) tags on separate lines. Blocks of computer code can also be imported from source files.</li>
   <li> Blocks of LaTeX mathematics are surrounded by <code>!bt</code> (begin TeX) and <code>!et</code> (end TeX) tags on separate lines. Inline mathematics is surrounded by dollar signs: <code>$a=b$</code>.</li>
@@ -216,17 +216,16 @@ the formating. Here are some examples.
   <li> Comments to authors can be inserted throughout the text with the following syntax and made visible or invisible as desired.</li>
 </ul>
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">[name: comment...]
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -302,12 +301,12 @@ followed when translating the text to <code>sphinx</code>, <code>pandoc</code>,
  <li> Keep figure captions shorts as they are used as references in the Sphinx format. Avoid inline mathematics since Sphinx will strip it away in the figure reference. (Many writing styles encourage rich captions that explains everything about the figure; this work well only in the HTML and LaTeX formats.)</li>
  <li> You cannot use <code>subfigure</code> to combine several image files in one figure, but you can combine the files into one file using the <code>doconce combine_images</code> tool. Refer to individual image files in the caption or text by (e.g.) &quot;left&quot; and &quot;right&quot;, or &quot;upper left&quot;, &quot;lower right&quot;, etc.</li>
  <li> Footnotes can be used as usual in LaTeX, but some HTML formats are not able to display mathematics or inline verbatim or other formatted code (emphasis, boldface, color) in footnotes - keep that in mind.</li>
- <li> Use plain <code>cite</code> for references (e.g., <code>\citeauthor</code> has no counterpart in DocOnce). The bibliography must be prepared in the Publish format, but import from (clean) BibTeX is possible.</li>
+ <li> Use plain <code>cite</code> for references (e.g. <code>\citeauthor</code> has no counterpart in DocOnce). The bibliography must be prepared in the Publish format, but import from (clean) BibTeX is possible.</li>
  <li> Use <code>idx</code> for index entries, but put the definitions between paragraphs, not inside them (required by Sphinx).</li>
  <li> Use the <code>\bm</code> command (from the <code>bm</code> package, always included by DocOnce) for boldface in mathematics.</li>
  <li> Make sure all ordinary text starts in column 1 on each line. Equations can be indented. The <code>\begin{}</code> and <code>\end{}</code> directives should start in column 1.</li>
  <li> If you depend on various LaTeX environments for your writings, you have to give these up, or implement <em>user-defined environments</em> in DocOnce. For instance, examples are normally typeset as subsections in DocOnce, but can also utilize a user-defined example environment. Learn about the exercise support in DocOnce for typesetting exercises, problems, and projects.</li>
- <li> Learn about the preprocessors Preprocess and Mako - these are smart tools for, e.g., commenting out/in large portions of text and creating macros.</li>
+ <li> Learn about the preprocessors Preprocess and Mako - these are smart tools for, e.g. commenting out/in large portions of text and creating macros.</li>
  <li> Use <em>generalized references</em> when referring to companion documents that may later become part of this document (or migrated out of this document).</li>
  <li> Follow <a href="https://github.com/doconce/setup4book-doconce" target="_self">recommendations for DocOnce books</a> if you plan to write a book.</li>
 </ul>
@@ -328,7 +327,7 @@ of using Preprocess or Mako
 allows you to use advanced LaTeX features (or HTML features for the HTML formats)
 to fine tune the resulting
 document. More tuning can be done by automatic editing of the
-output file (e.g., <code>.tex</code> or <code>.html</code>) produced by DocOnce using
+output file (e.g. <code>.tex</code> or <code>.html</code>) produced by DocOnce using
 your own scripts or the <code>doconce replace</code> and <code>doconce subst</code> commands.
 </p>
 </div>
@@ -439,13 +438,12 @@ translation is desired.
 <p>Here is an example of some simple text written in the DocOnce format:</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">======= First a Section Heading =======
 
 ===== Then a Subsection Heading =====
@@ -498,7 +496,7 @@ the plain text format which does not support hyperlinks.
 
 __Inline comments.__
 DocOnce also allows inline comments of the form [name: comment] (with
-a space after `name:`), e.g., such as [hpl: here I will make some
+a space after `name:`), e.g. such as [hpl: here I will make some
 remarks to the text]. Inline comments can be removed from the output
 by a command-line argument (see Section ref{doconce2formats} for an
 example). Inline comments can also be used for detailed editing of
@@ -513,7 +511,7 @@ __Footnotes.__ Adding a footnote[^footnote] is also possible.
 [^footnote]: The syntax for footnotes is borrowed from Extended Markdown.
 
 __Tables.__
-Tables are also written in the plain text way, e.g.,
+Tables are also written in the plain text way, e.g. 
 
   |--c--------c-----------c--------|
   |time  | velocity | acceleration |
@@ -531,7 +529,7 @@ left-adjusted).
 # Lines beginning with # are comment lines.
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -606,7 +604,7 @@ DocOnce also allows inline comments of the form
 <font color="red">(<b>name 1</b>: comment)</font>
 <!-- end inline comment -->
  (with
-a space after <code>name:</code>), e.g., such as 
+a space after <code>name:</code>), e.g. such as 
 <!-- begin inline comment -->
 <font color="red">(<b>hpl 2</b>: here I will make some  remarks to the text)</font>
 <!-- end inline comment -->
@@ -628,12 +626,12 @@ Adding a footnote <button type="button" class="btn btn-primary btn-xs" rel="tool
 
 <p>
 <b>Tables.</b>
-Tables are also written in the plain text way, e.g.,
+Tables are also written in the plain text way, e.g. 
 </p>
 
 <div class="row">
   <div class="col-xs-2">
-    <table class="table table-striped table-hover table-condensed">
+    <table class="dotable table-striped table-hover table-condensed">
 <thead>
 <tr><td align="center"><b>time</b></td> <td align="center"><b>velocity</b></td> <td align="center"><b>acceleration</b></td> </tr>
 </thead>
@@ -656,17 +654,16 @@ for aligning the headings and the columns (center, right, left).
 <p>Inline mathematics, such as \( \nu = \sin(x) \) is written exactly as in LaTeX:</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">$\nu = \sin(x)$
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -684,13 +681,12 @@ for aligning the headings and the columns (center, right, left).
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">!bt
 \begin{align}
 {\partial u\over\partial t} &amp;= \nabla^2 u + f,
@@ -700,7 +696,7 @@ label{myeq1}\\
 !et
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -752,13 +748,12 @@ tables, and
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">!bc pycod
 from math import sin, pi
 def myfunc(x):
@@ -769,7 +764,7 @@ I = integrate.trapezoidal(myfunc, 0, pi, 100)
 !ec
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -832,17 +827,16 @@ complete file or specified parts, e.g,
 </p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;"> @@@CODE src/myprog.py fromto: def regression\(@import mymod
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -891,13 +885,12 @@ an equation, surround the reference by parenthesis.
 <p>Here is an example:</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">===== My Section =====
 label{sec:mysec}
 
@@ -929,7 +922,7 @@ FIGURE: [fig/myfile, width=600 frac=0.9] My figure. label{mysec:fig:myfig}
 BIBFILE: papers.pub
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -1007,8 +1000,8 @@ syntax. The Preprocess program allows you to include other files
 possible). You can also have if-else branching based on variables set
 on the command line. The Mako preprocessor is (much) more advanced
 and features if-else tests, loops, variables, and function calls.
-You can, e.g., write Python functions in Mako to make quite intelligent
-output (e.g., copy computer code from a certain directory based on a
+You can, e.g. write Python functions in Mako to make quite intelligent
+output (e.g. copy computer code from a certain directory based on a
 variable that tells which computer language the document is to apply).
 The preprocessors are definitely one of the strongest features of
 DocOnce.
@@ -1079,17 +1072,16 @@ translation).
 <p>The current text is generated from a DocOnce format stored in the file</p>
 
 
-<!-- code=text (!bc ccq) typeset with pygments style "default" -->
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
 <div class="cell border-box-sizing code_cell rendered">
   <div class="input">
     <div class="inner_cell">
       <div class="input_area">
-        <blockquote>
-<div class="highlight" style="background: #f8f8f8">
+        <div class="highlight" style="background: #f8f8f8">
   <pre style="line-height: 125%;">doc/tutorial/tutorial.do.txt
 </pre>
 </div>
-</blockquote>      </div>
+      </div>
     </div>
   </div>
   <div class="output_wrapper">
@@ -1121,5 +1113,4 @@ formats.
 </center>
 </body>
 </html>
-    
 

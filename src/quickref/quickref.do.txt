@@ -44,7 +44,7 @@ so you *must* use a text editor with monospace font.
 ===== Emacs syntax support =====
 
 The file ".doconce-mode.el":
-"https://github.com/doconce/doconce/blob/master/misc/.doconce-mode.el"
+"https://github.com/doconce/doconce/tree/main/bundled/emacs_syntax/.doconce-mode.el"
 in the DocOnce source distribution gives a "DocOnce Editing Mode" in
 Emacs. Store the raw version of the file in the home directory and add
 `(load-file "~/.doconce-mode.el")` to the `.emacs` file.
@@ -102,7 +102,7 @@ same institution, make sure that the institution is specified in an identical
 way for each author.
 
 The date can be set as any text different from `today` if not the
-current date is wanted, e.g., `Feb 22, 2016`.
+current date is wanted, e.g. `Feb 22, 2016`.
 
 The table of contents is removed by writing `TOC: off`.
 
@@ -116,7 +116,7 @@ of the `AUTHOR` command. The copyright syntax is
 !bc do
 {copyright,year1-year2|license}
 !ec
-and can be placed after the author or after an institution, e.g.,
+and can be placed after the author or after an institution, e.g. 
 
 !bc do
  AUTHOR: name Email: somename@adr.net {copyright,2006-present} at inst1

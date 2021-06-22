@@ -5,7 +5,6 @@
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Hans Petter Langtangen at Simula Research Laboratory and University of Oslo" />
-  <meta name="date" content="2016-05-29" />
   <title>How various formats can deal with LaTeX math</title>
   <style type="text/css">code{white-space: pre;}</style>
   
@@ -17,28 +16,28 @@ MathJax.Hub.Config({
   }
 });
 </script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
 </head>
 <body>
 <div id="header">
 <h1 class="title">How various formats can deal with LaTeX math</h1>
 <h2 class="author"><strong>Hans Petter Langtangen</strong> at Simula Research Laboratory and University of Oslo</h2>
-<h3 class="date">May 29, 2016</h3>
+<h3 class="date">Jun 22, 2021</h3>
 </div>
-<p><em>Summary.</em> The purpose of this document is to test LaTeX math in DocOnce with various output formats. Most LaTeX math constructions are renedered correctly by MathJax in plain HTML, but some combinations of constructions may fail. Unfortunately, only a subset of what works in html MathJax also works in sphinx MathJax. The same is true for markdown MathJax expresions (e.g., Jupyter notebooks). Tests and examples are provided to illustrate what may go wrong.</p>
+<p><em>Summary.</em> The purpose of this document is to test LaTeX math in DocOnce with various output formats. Most LaTeX math constructions are renedered correctly by MathJax in plain HTML, but some combinations of constructions may fail. Unfortunately, only a subset of what works in html MathJax also works in sphinx MathJax. The same is true for markdown MathJax expresions (e.g. Jupyter notebooks). Tests and examples are provided to illustrate what may go wrong.</p>
 <p>The recommendation for writing math that translates to MathJax in html, sphinx, and markdown is to stick to the environments <code>\[ ... \]</code>, <code>equation</code>, <code>equation*</code>, <code>align</code>, <code>align*</code>, <code>alignat</code>, and <code>alignat*</code> only. Test the math with sphinx output; if it works in that format, it should work elsewhere too.</p>
 <p>The current version of the document is translated from DocOnce source to the format <strong>pandoc</strong>.</p>
 <h2 id="test-of-equation-environments">Test of equation environments</h2>
 <h3 id="test-1-inline-math">Test 1: Inline math</h3>
-<p>We can get an inline equation <code>$u(t)=e^{-at}$</code> rendered as <span class="math">\(u(t)=e^{-at}\)</span>.</p>
+<p>We can get an inline equation <code>$u(t)=e^{-at}$</code> rendered as <span class="math inline">\(u(t)=e^{-at}\)</span>.</p>
 <h3 id="test-2-a-single-equation-with-label">Test 2: A single equation with label</h3>
 <p>An equation with number,</p>
 <pre><code>!bt
 \begin{equation} u(t)=e^{-at} \label{eq1a}\end{equation}
 !et</code></pre>
 <p>looks like</p>
-<p><span class="math">\[
-\begin{equation} u(t)=e^{-at} \label{eq1a}\end{equation}
+<p><span class="math display">\[
+\begin{equation} u(t)=e^{-at} \label{_eq1a}\end{equation}
 \]</span> Maybe this multi-line version is what we actually prefer to write:</p>
 <pre><code>!bt
 \begin{equation}
@@ -47,11 +46,11 @@ u(t)=e^{-at}
 \end{equation}
 !et</code></pre>
 <p>The result is the same:</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{equation}
-u(t)=e^{-at} \label{eq1b}
+u(t)=e^{-at} \label{_eq1b}
 \end{equation}
-\]</span> We can refer to this equation through its label <code>eq1b</code>: \eqref{eq1b}.</p>
+\]</span> We can refer to this equation through its label <code>eq1b</code>: (<a href="#_eq1b">_eq1b</a>).</p>
 <h3 id="test-3-multiple-aligned-equations-without-label-and-number">Test 3: Multiple, aligned equations without label and number</h3>
 <p>MathJax has historically had some problems with rendering many LaTeX math environments, but the <code>align*</code> and <code>align</code> environments have always worked.</p>
 <pre><code>!bt
@@ -61,7 +60,7 @@ v(t) - 1 &amp;= \frac{du}{dt}
 \end{align*}
 !et</code></pre>
 <p>Result:</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{align*}
 u(t)&amp;=e^{-at}\\ 
 v(t) - 1 &amp;= \frac{du}{dt}
@@ -78,14 +77,14 @@ v(t) - 1 &amp;= \frac{du}{dt}
 \end{align}
 !et</code></pre>
 <p>Result:</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{align}
 u(t)&amp;=e^{-at}
-\label{eq2b}\\ 
+\label{_eq2b}\\ 
 v(t) - 1 &amp;= \frac{du}{dt}
-\label{eq3b}
+\label{_eq3b}
 \end{align}
-\]</span> We can refer to the last equations as the system \eqref{eq2b}-\eqref{eq3b}.</p>
+\]</span> We can refer to the last equations as the system (<a href="#_eq2b">_eq2b</a>)-(<a href="#_eq3b">_eq3b</a>).</p>
 <h3 id="test-5-multiple-aligned-equations-without-label">Test 5: Multiple, aligned equations without label</h3>
 <p>In LaTeX, equations within an <code>align</code> environment is automatically given numbers. To ensure that an html document with MathJax gets the same equation numbers as its latex/pdflatex companion, DocOnce generates labels in equations where there is no label prescribed. For example,</p>
 <pre><code>!bt
@@ -105,14 +104,14 @@ v(t) - 1 &amp;= \frac{du}{dt}
 \end{align}
 !et</code></pre>
 <p>and the output gets the two equation numbered.</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{align}
 u(t)&amp;=e^{-at}\\ 
 v(t) - 1 &amp;= \frac{du}{dt}
 \end{align}
 \]</span></p>
 <h3 id="test-6-multiple-aligned-equations-with-multiple-alignments">Test 6: Multiple, aligned equations with multiple alignments</h3>
-<p>The <code>align</code> environment can be used with two <code>&amp;</code> alignment characters, e.g.,</p>
+<p>The <code>align</code> environment can be used with two <code>&amp;</code> alignment characters, e.g.</p>
 <pre><code>!bt
 \begin{align}
 \frac{\partial u}{\partial t} &amp;= \nabla^2 u, &amp; x\in (0,L),
@@ -121,7 +120,7 @@ u(0,t) &amp;= u_0(x), &amp; x\in [0,L]
 \end{align}
 !et</code></pre>
 <p>The result in pandoc becomes</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{align}
 \frac{\partial u}{\partial t} &amp;= \nabla^2 u, &amp; x\in (0,L),
 \ t\in (0,T]\\ 
@@ -137,7 +136,7 @@ u(0,t) &amp;= u_0(x), &amp; x\in [0,L]
 \end{alignat}
 !et</code></pre>
 <p>with the rendered result</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{alignat}{2}
 \frac{\partial u}{\partial t} &amp;= \nabla^2 u, &amp; x\in (0,L),
 \ t\in (0,T]\\ 
@@ -145,7 +144,7 @@ u(0,t) &amp;= u_0(x), &amp; x\in [0,L]
 \end{alignat}
 \]</span></p>
 <p>If DocOnce had not rewritten the above equations, they would be rendered in pandoc as</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{alignat}{2}
 \frac{\partial u}{\partial t} &amp;= \nabla^2 u, &amp; x\in (0,L),
 \ t\in (0,T]\\ 
@@ -161,7 +160,7 @@ v(t) - 1 &amp;=&amp; \frac{du}{dt}
 \end{eqnarray*}
 !et</code></pre>
 <p>which results in</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{eqnarray*}
 u(t)&amp;=&amp; e^{-at}\\ 
 v(t) - 1 &amp;=&amp; \frac{du}{dt}
@@ -178,12 +177,12 @@ v(t) - 1 &amp;=&amp; \frac{du}{dt}
 \end{eqnarray}
 !et</code></pre>
 <p>which results in</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{eqnarray}
-u(t)&amp;=&amp; e^{-at} \label{eq2c}\\ 
-v(t) - 1 &amp;=&amp; \frac{du}{dt} \label{eq3c}
+u(t)&amp;=&amp; e^{-at} \label{_eq2c}\\ 
+v(t) - 1 &amp;=&amp; \frac{du}{dt} \label{_eq3c}
 \end{eqnarray}
-\]</span> Can we refer to the last equations as the system \eqref{eq2c}-\eqref{eq3c} in the pandoc format?</p>
+\]</span> Can we refer to the last equations as the system (<a href="#_eq2c">_eq2c</a>)-(<a href="#_eq3c">_eq3c</a>) in the pandoc format?</p>
 <h3 id="test-9-the-multiline-environment-with-label-and-number">Test 9: The <code>multiline</code> environment with label and number</h3>
 <p>The LaTeX code</p>
 <pre><code>!bt
@@ -195,14 +194,14 @@ f(a+(j+1)h)) \\
 \end{multline}
 !et</code></pre>
 <p>gets rendered as</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{multline}
 \int_a^b f(x)dx = \sum_{j=0}^{n} \frac{1}{2} h(f(a+jh) +
 f(a+(j+1)h)) \\ 
 =\frac{h}{2}f(a) + \frac{h}{2}f(b) + \sum_{j=1}^n f(a+jh)
-\label{multiline:eq1}
+\label{_multiline:eq1}
 \end{multline}
-\]</span> and we can hopefully refer to the Trapezoidal rule as the formula \eqref{multiline:eq1}.</p>
+\]</span> and we can hopefully refer to the Trapezoidal rule as the formula (<a href="#_multiline:eq1">_multiline:eq1</a>).</p>
 <h3 id="test-10-splitting-equations-using-a-split-environment">Test 10: Splitting equations using a split environment</h3>
 <p>Although <code>align</code> can be used to split too long equations, a more obvious command is <code>split</code>:</p>
 <pre><code>!bt
@@ -215,7 +214,7 @@ f(a+(j+1)h)) \\
 \end{equation}
 !et</code></pre>
 <p>The result becomes</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{equation}
 \begin{split}
 \int_a^b f(x)dx = \sum_{j=0}^{n} \frac{1}{2} h(f(a+jh) +
@@ -232,25 +231,25 @@ f(a+(j+1)h)) \\
 \frac{1}{\varrho}\nabla p,\]
 !et</code></pre>
 <p>and the inline expression <code>$\nabla\pmb{u} (\pmb{x})\cdot\pmb{n}$</code> (with suitable newcommands using pmb) get rendered as</p>
-<p><span class="math">\[
+<p><span class="math display">\[
  \frac{\partial\pmb{u}}{\partial t} +
 \pmb{u}\cdot\nabla\pmb{u} = \nu\nabla^2\pmb{u} -
 \frac{1}{\varrho}\nabla p,
-\]</span> and <span class="math">\(\nabla\pmb{u} (\pmb{x})\cdot\pmb{n}\)</span>.</p>
+\]</span> and <span class="math inline">\(\nabla\pmb{u} (\pmb{x})\cdot\pmb{n}\)</span>.</p>
 <p>Somewhat nicer fonts may appear with the more modern <code>\bm</code> command:</p>
 <pre><code>!bt
 \[ \frac{\partial\ubm}{\partial t} +
 \ubm\cdot\nabla\ubm = \nu\nabla^2\ubm -
 \frac{1}{\varrho}\nabla p,\]
 !et</code></pre>
-<p>(backslash <code>ubm</code> is a newcommand for bold math <span class="math">\(u\)</span>), for which we get</p>
-<p><span class="math">\[
+<p>(backslash <code>ubm</code> is a newcommand for bold math <span class="math inline">\(u\)</span>), for which we get</p>
+<p><span class="math display">\[
  \frac{\partial\boldsymbol{u}}{\partial t} +
 \boldsymbol{u}\cdot\nabla\boldsymbol{u} = \nu\nabla^2\boldsymbol{u} -
 \frac{1}{\varrho}\nabla p.
 \]</span> Moreover,</p>
 <pre><code>$\nabla\boldsymbol{u}(\boldsymbol{x})\cdot\boldsymbol{n}$</code></pre>
-<p>becomes <span class="math">\(\nabla\boldsymbol{u}(\boldsymbol{x})\cdot\boldsymbol{n}\)</span>.</p>
+<p>becomes <span class="math inline">\(\nabla\boldsymbol{u}(\boldsymbol{x})\cdot\boldsymbol{n}\)</span>.</p>
 <p><em>Warning.</em> Note: for the pandoc format, <code>\bm</code> was substituted by DocOnce to <code>\boldsymbol</code>.</p>
 <h2 id="problematic-equations">Problematic equations</h2>
 <p>Finally, we collect some problematic formulas in MathJax. They all work fine in LaTeX. Most of them look fine in html too, but some fail in sphinx, ipynb, or markdown.</p>
@@ -262,7 +261,7 @@ f(a+(j+1)h)) \\
 \frac{1}{\varrho}\nabla p,\]
 !et</code></pre>
 <p>results in</p>
-<p><span class="math">\[
+<p><span class="math display">\[
  {\color{blue}\frac{\partial\pmb{u}}{\partial t}} +
 \nabla\cdot\nabla\pmb{u} = \nu\nabla^2\pmb{u} -
 \frac{1}{\varrho}\nabla p,
@@ -273,7 +272,7 @@ f(a+(j+1)h)) \\
 \[ \bar\f = f_c^{-1}\f,\]
 !et</code></pre>
 <p>which for pandoc output results in</p>
-<p><span class="math">\[
+<p><span class="math display">\[
  \bar\boldsymbol{f} = f_c^{-1}\boldsymbol{f}.
 \]</span></p>
 <p>With sphinx, this formula is not rendered. However, using curly braces for the bar,</p>
@@ -281,7 +280,7 @@ f(a+(j+1)h)) \\
 \[ \bar{\f} = f_c^{-1}\f,\]
 !et</code></pre>
 <p>makes the output correct also for sphinx:</p>
-<p><span class="math">\[
+<p><span class="math display">\[
  \bar{\boldsymbol{f}} = f_c^{-1}\boldsymbol{f},
 \]</span></p>
 <h3 id="matrix-formulas">Matrix formulas</h3>
@@ -325,7 +324,7 @@ v_4
 \end{align}
 !et</code></pre>
 <p>which becomes</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{align}
 \begin{pmatrix}
 G_2 + G_3 &amp; -G_3 &amp; -G_2 &amp; 0 \\ 
@@ -341,7 +340,7 @@ v_3 \\
 v_4
 \end{pmatrix}
 + \cdots
-\label{mymatrixeq}\\ 
+\label{_mymatrixeq}\\ 
 \begin{pmatrix}
 C_5 + C_6 &amp; -C_6 &amp; 0 &amp; 0 \\ 
 -C_6 &amp; C_6 &amp; 0 &amp; 0 \\ 
@@ -402,7 +401,7 @@ v_4
 \end{align*}
 !et</code></pre>
 <p>The rendered result becomes</p>
-<p><span class="math">\[
+<p><span class="math display">\[
 \begin{align*}
 \begin{pmatrix}
 G_2 + G_3 &amp; -G_3 &amp; -G_2 &amp; 0 \\ 

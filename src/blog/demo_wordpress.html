@@ -1,21 +1,14 @@
 <!--
-Automatically generated HTML file from DocOnce source (https://github.com/doconce/doconce/)
+HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/) doconce format html demo.do.txt -DBLOG=wordpress --wordpress
 -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 <title></title>
-
-
 <style type="text/css">
 /* blueish style */
-
-/* Color definitions:  http://www.december.com/html/spec/color0.html
-   CSS examples:       http://www.w3schools.com/css/css_examples.asp */
-
 body {
   margin-top: 1.0em;
   background-color: #ffffff;
@@ -25,13 +18,88 @@ body {
 h1 { font-size: 1.8em; color: #1e36ce; }
 h2 { font-size: 1.6em; color: #1e36ce; }
 h3 { font-size: 1.4em; color: #1e36ce; }
+h4 { font-size: 1.2em; color: #1e36ce; }
 a { color: #1e36ce; text-decoration:none; }
 tt { font-family: "Courier New", Courier; }
-/* pre style removed because it will interfer with pygments */
 p { text-indent: 0px; }
 hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 p.caption { width: 80%; font-style: normal; text-align: left; }
-hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
+/* pre style removed because it will interfer with pygments */
+div.highlight {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    line-height: 1.21429em;
+}
+div.cell {
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    outline: none;
+}
+div.input {
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.inner_cell {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-flex: 1;
+    flex: 1;
+}
+div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    background: #f7f7f7;
+    line-height: 1.21429em;
+}
+div.input_area > div.highlight {
+    margin: .4em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+div.output_wrapper {
+    position: relative;
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.output {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+div.output_area {
+    padding: 0;
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.output_subarea {
+    padding: .4em .4em 0 .4em;
+    box-flex: 1;
+    flex: 1;
+}
+div.output_text {
+    text-align: left;
+    color: #000;
+    line-height: 1.21429em;
+}
 .alert-text-small   { font-size: 80%;  }
 .alert-text-large   { font-size: 130%; }
 .alert-text-normal  { font-size: 90%;  }
@@ -54,25 +122,28 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_notice.png); }
-.alert-summary  { background-image:url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_summary.png); }
-.alert-warning { background-image: url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_warning.png); }
-.alert-question {background-image:url(https://cdn.rawgit.com/doconce/doconce/master/bundled/html_images/small_gray_question.png); }
-
+.alert-notice { background-image: url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_question.png); }
 div { text-align: justify; text-justify: inter-word; }
+.tab {
+  padding-left: 1.5em;
+}
+div.toc p,a {
+  line-height: 1.3;
+  margin-top: 1.1;
+  margin-bottom: 1.1;
+}
 </style>
-
-
 </head>
 
 
 
 <body>
 
-<p>
-Here is some simple mathematics:
+<p>Here is some simple mathematics:</p>
 
-<p>
 
 $latex 
 f(x) = \frac{1}{1 + x^2},
@@ -83,13 +154,16 @@ f'(x)  =-\frac{2x}{(1+x^2)^2}
 
  $
 
-
-which can be implemented in a computer code:
-
-<p>
+<p>which can be implemented in a computer code:</p>
 
 
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">__future__</span> <span style="color: #008000; font-weight: bold">import</span> division
+
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">__future__</span> <span style="color: #008000; font-weight: bold">import</span> division
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">__future__</span> <span style="color: #008000; font-weight: bold">import</span> print_function
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">past.utils</span> <span style="color: #008000; font-weight: bold">import</span> old_div
 <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">f</span>(x):
@@ -99,102 +173,117 @@ which can be implemented in a computer code:
 <span style="color: #408080; font-style: italic"># Plot f</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
-xcoor <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">-3</span>, <span style="color: #666666">3</span>, <span style="color: #666666">101</span>)
-ycoor <span style="color: #666666">=</span> f(xcoor)
-plt<span style="color: #666666">.</span>plot(xcoor, ycoor)
-plt<span style="color: #666666">.</span>savefig(<span style="color: #BA2121">&#39;f_plot.png&#39;</span>)
+xcoor <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">-3</span>, <span style="color: #666666">3</span>, <span style="color: #666666">101</span>) ycoor <span style="color: #666666">=</span> f(xcoor) plt<span style="color: #666666">.</span>plot(xcoor, ycoor) plt<span style="color: #666666">.</span>savefig(<span style="color: #BA2121">&#39;f_plot.png&#39;</span>)
 
 <span style="color: #408080; font-style: italic"># Compute f&#39;(x) symbolically and make a Python function out of it</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">sympy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">sm</span>
-x <span style="color: #666666">=</span> sm<span style="color: #666666">.</span>Symbol(<span style="color: #BA2121">&#39;x&#39;</span>)
-f_expr <span style="color: #666666">=</span> f(x)
-<span style="color: #008000">print</span>(f_expr)
-df_expr <span style="color: #666666">=</span> sm<span style="color: #666666">.</span>diff(f_expr, x)
-<span style="color: #008000">print</span>(df_expr)
-df <span style="color: #666666">=</span> sm<span style="color: #666666">.</span>lambdify(x, df_expr)  <span style="color: #408080; font-style: italic"># turn expression into Python function</span>
+x <span style="color: #666666">=</span> sm<span style="color: #666666">.</span>Symbol(<span style="color: #BA2121">&#39;x&#39;</span>) f_expr <span style="color: #666666">=</span> f(x)
+<span style="color: #008000">print</span>(f_expr) df_expr <span style="color: #666666">=</span> sm<span style="color: #666666">.</span>diff(f_expr, x)
+<span style="color: #008000">print</span>(df_expr) df <span style="color: #666666">=</span> sm<span style="color: #666666">.</span>lambdify(x, df_expr)  <span style="color: #408080; font-style: italic"># turn expression into Python function</span>
 
 <span style="color: #408080; font-style: italic"># Plot f&#39;(x)</span>
-plt<span style="color: #666666">.</span>figure()
-plt<span style="color: #666666">.</span>plot(xcoor, df(xcoor))
-plt<span style="color: #666666">.</span>savefig(<span style="color: #BA2121">&#39;df_plot.png&#39;</span>)
-plt<span style="color: #666666">.</span>show()
-</pre></div>
-<p>
-A plot of the function $latex f(x)$ 
+plt<span style="color: #666666">.</span>figure() plt<span style="color: #666666">.</span>plot(xcoor, df(xcoor)) plt<span style="color: #666666">.</span>savefig(<span style="color: #BA2121">&#39;df_plot.png&#39;</span>) plt<span style="color: #666666">.</span>show()
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-<br /><br /><center><p><img src="https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png" align="bottom" width=400></p></center><br /><br />
+<p>A plot of the function $latex f(x)$ 
+</p>
 
-<p>
-Here is the derivative $latex f'(x)$ (with figure caption and label, which enables referring to the figure later):
+<br/><br/>
+<center>
+<p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png" width="400" align="bottom"></p>
+</center>
+<br/><br/>
 
-<p>
+<p>Here is the derivative $latex f'(x)$ (with figure caption and label, which enables referring to the figure later):
+</p>
+
 <center>  <div id="fig:Runge:dfdx"></div> 
 <hr class="figure">
-<center><p class="caption">Figure 1:  The derivative of Runge's function.   </p></center>
-<p><img src="https://raw.github.com/doconce/doconce/master/doc/src/blog/df_plot.png" align="bottom" width=400></p>
+<center>
+<p class="caption">Figure 1:  The derivative of Runge's function.   </p>
+</center>
+<p><img src="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/df_plot.png" width="400" align="bottom"></p>
 </center>
 
-<p>
-Movies can also be embedded:
-
-<p>
+<p>Movies can also be embedded:</p>
 
 <iframe width="640" height="365" src="http://www.youtube.com/embed/75Ju0eM5T2c" frameborder="0" allowfullscreen></iframe>
 
-<p>
-The elements above are generated by the following <a href="https://github.com/doconce/doconce" target="_self">DocOnce</a> code.
-
-<p>
+<p>The elements above are generated by the following <a href="https://github.com/doconce/doconce" target="_self">DocOnce</a> code.
+</p>
 
 
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%; margin: 0;"><span></span>Here is some simple mathematics:
+
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">Here is some simple mathematics:
 
 !bt
 \begin{align}
-f(x) &amp;= \frac{1}{1 + x^2},
-label\{eq:f}\\
+f(x) &amp;= \frac{1}{1 + x^2}, label{eq:f}\\
 f&#39;(x) &amp; =-\frac{2x}{(1+x^2)^2}
-label\{eq:df}
+label{eq:df}
 \end{align}
-!et
-which can be implemented in a computer code:
+!et which can be implemented in a computer code:
 
 @@@CODE Runges_func.py
 
-A plot of the function $f(x)$
-defined in (ref\{eq:f})
-appears below.
+A plot of the function $f(x)$ defined in (ref{eq:f}) appears below.
 
-FIGURE: [https://raw.github.com/doconce/doconce/master/doc/src/blog/f_plot.png, width=400]
+FIGURE: [https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/f_plot.png, width=400]
 
-Here is the derivative $f&#39;(x)$ (with figure caption and label, which enables
-referring to the figure later):
+Here is the derivative $f&#39;(x)$ (with figure caption and label, which enables referring to the figure later):
 
-FIGURE: [https://raw.github.com/doconce/doconce/master/doc/src/blog/df_plot.png, width=400] The derivative of Runge&#39;s function. label\{fig:Runge:dfdx}
+FIGURE: [https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/df_plot.png, width=400] The derivative of Runge&#39;s function. label{fig:Runge:dfdx}
 
 Movies can also be embedded:
 
 MOVIE: [http://www.youtube.com/watch?v=75Ju0eM5T2c]
-</pre></div>
-<p>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="alert alert-block alert-notice alert-text-normal">
 <b>Notice</b>
 <p>
 
 <ol>
 <li> There must be no title, author, or date in the document.</li>
-<li> If the DocOnce code above is stored in a file    <a href="https://github.com/doconce/doconce/blob/master/doc/src/blog/demo.do.txt.html" target="_self"><tt>demo.do.txt</tt></a>, run    <code>doconce format html demo --wordpress</code> to produce the HTML code, stored in    <a href="https://github.com/doconce/doconce/blob/master/doc/src/blog/demo_wordpress.html.html" target="_self"><tt>demo.html</tt></a>.</li>
-<li> Copy the text in <code>demo.html</code> into the blog post's text area on    <a href="http://doconce.wordpress.com" target="_self"><tt>http://doconce.wordpress.com</tt></a> site, using <em>Text</em> mode (not <em>Visual</em>!).</li>
-<li> Remember to first choose the <em>HTML-code</em> tab (and not just <em>Write</em>)    and to place the copied text between the <code>div</code> tags.</li>
+<li> If the DocOnce code above is stored in a file <a href="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/demo.do.txt.html" target="_self"><tt>demo.do.txt</tt></a>, run <code>doconce format html demo --wordpress</code> to produce the HTML code, stored in <a href="https://raw.githubusercontent.com/doconce/doconce_doc/main/src/blog/demo_wordpress.html" target="_self"><tt>demo.html</tt></a>.</li>
+<li> Copy the text in <code>demo.html</code> into the blog post's text area on <a href="http://doconce.wordpress.com" target="_self"><tt>http://doconce.wordpress.com</tt></a> site, using <em>Text</em> mode (not <em>Visual</em>!).</li>
+<li> Remember to first choose the <em>HTML-code</em> tab (and not just <em>Write</em>) and to place the copied text between the <code>div</code> tags.</li>
 </ol>
 </div>
 
 
-
-
-
 </body>
 </html>
-    
 

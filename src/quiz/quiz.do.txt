@@ -654,7 +654,7 @@ and then calling `D(f, 2)`.
 
 E: `f(x)` is defined as a lambda function, which is a short-hand for
 defining functions as an expression, in a function call as here, or
-in the right-hand side of an assignment, e.g.,
+in the right-hand side of an assignment, e.g. 
 
 !bc pycod
 f = lambda x: return 2*x
@@ -793,7 +793,7 @@ of text, like this document) is translated to some format by the
 and written to `.mydoc.quiz`.
 Each list element represents one quiz as
 a dictionary. Such `.quiz` files holds all the information in a collection
-of quizzes and can be given to, e.g.,
+of quizzes and can be given to, e.g. 
 "Quiztools": "https://github.com/doconce/quiztools"
 for automatic generation of
 "Kahoot!":
@@ -941,7 +941,7 @@ is adopted,
 Terminal> doconce format html myquiz --html_style=bootstrap
 !ec
 Other variations of this class of styles are `bootswatch`, and
-`bootswatch_X`, where `X` is the name of a Bootswatch style, e.g.,
+`bootswatch_X`, where `X` is the name of a Bootswatch style, e.g. 
 `journal`.
 
 The Bootstrap-based styles have a striking red color for inline computer

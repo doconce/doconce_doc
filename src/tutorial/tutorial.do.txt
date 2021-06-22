@@ -73,7 +73,7 @@ the formating. Here are some examples.
   * Words from computer code are enclosed in backticks and
     then typeset `verbatim (in a monospace font)`.
   * Section headings are recognized by special
-    decorating characters `=` before and after the heading, e.g.,
+    decorating characters `=` before and after the heading, e.g. 
     `===== Here is a subsection heading =====`.
   * The abstract of a document starts with *Abstract* as paragraph
     heading, and all text up to the next heading makes up the abstract,
@@ -178,7 +178,7 @@ the plain text format which does not support hyperlinks.
 
 __Inline comments.__
 DocOnce also allows inline comments of the form [name: comment] (with
-a space after `name:`), e.g., such as [hpl: here I will make some
+a space after `name:`), e.g. such as [hpl: here I will make some
 remarks to the text]. Inline comments can be removed from the output
 by a command-line argument (see Section ref{doconce2formats} for an
 example). Inline comments can also be used for detailed editing of
@@ -193,7 +193,7 @@ __Footnotes.__ Adding a footnote[^footnote] is also possible.
 [^footnote]: The syntax for footnotes is borrowed from Extended Markdown.
 
 __Tables.__
-Tables are also written in the plain text way, e.g.,
+Tables are also written in the plain text way, e.g. 
 
   |--c--------c-----------c--------|
   |time  | velocity | acceleration |
@@ -266,7 +266,7 @@ the plain text format which does not support hyperlinks.
 
 __Inline comments.__
 DocOnce also allows inline comments of the form [name: comment] (with
-a space after `name:`), e.g., such as [hpl: here I will make some
+a space after `name:`), e.g. such as [hpl: here I will make some
 remarks to the text]. Inline comments can be removed from the output
 by a command-line argument (see Section ref{doconce2formats} for an
 example). Inline comments can also be used for detailed editing of
@@ -281,7 +281,7 @@ __Footnotes.__ Adding a footnote[^footnote] is also possible.
 [^footnote]: The syntax for footnotes is borrowed from Extended Markdown.
 
 __Tables.__
-Tables are also written in the plain text way, e.g.,
+Tables are also written in the plain text way, e.g. 
 
   |--c--------c-----------c--------|
   |time  | velocity | acceleration |
@@ -503,8 +503,8 @@ syntax. The Preprocess program allows you to include other files
 possible). You can also have if-else branching based on variables set
 on the command line. The Mako preprocessor is (much) more advanced
 and features if-else tests, loops, variables, and function calls.
-You can, e.g., write Python functions in Mako to make quite intelligent
-output (e.g., copy computer code from a certain directory based on a
+You can, e.g. write Python functions in Mako to make quite intelligent
+output (e.g. copy computer code from a certain directory based on a
 variable that tells which computer language the document is to apply).
 The preprocessors are definitely one of the strongest features of
 DocOnce.

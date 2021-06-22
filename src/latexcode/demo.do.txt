@@ -40,7 +40,7 @@ new implementation.
 [^ptex2tex]: The `ptex2tex` program is not yet made completely
 redundant by the new implemention. In fact, there is no exact support for
 colored backgrounds with a *thin vertical bar* on the left, to
-indicate a complete program, and as specified by, e.g., the `BlueBar`
+indicate a complete program, and as specified by, e.g. the `BlueBar`
 environment in the `ptex2tex` configuration file.  Two styles in the
 new implementation come close: 1) the `blue1` style for `lst` gives
 a darker-color rectangular *frame*, and 2) the `vrb-blue1` (or
@@ -149,7 +149,7 @@ Terminal> pdflatex -shell-escape mydoc
 !ewarning
 
 The `minted` style to be used can be
-specified by the `--minted_latex_style=` option, e.g.,
+specified by the `--minted_latex_style=` option, e.g. 
 
 !bc sys
 Terminal> doconce format pdflatex mydoc --latex_code_style=vrb --minted_latex_style=perldoc
@@ -248,7 +248,7 @@ Terminal> doconce replace \
 === Blue backgrounds with a darker bar for complete programs ===
 
 Typical blueish code environments mimicing those in the author's latest
-books (e.g., *A Primer on Scientific Programming with Python*) can
+books (e.g. *A Primer on Scientific Programming with Python*) can
 be produced by 1) blue background combined with plain verbatim text
 (see "PDF": "doc_vrb_style_primer.pdf"),
 
@@ -339,7 +339,7 @@ Terminal> doconce format pdflatex doc \
 !ec
 That is, we specify  the default choice (`default`) and the `sys`
 environment. The specifications are separated by `@`. One can
-add parameters to the LaTeX environments, e.g.,
+add parameters to the LaTeX environments, e.g. 
 
 !bc sys
 Terminal> doconce format pdflatex doc \

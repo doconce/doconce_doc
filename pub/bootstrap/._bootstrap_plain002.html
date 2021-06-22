@@ -1,62 +1,65 @@
 <!--
-Automatically generated HTML file from DocOnce source
-(https://github.com/hplgit/doconce/)
+HTML file automatically generated from DocOnce source
+(https://github.com/doconce/doconce/)
+doconce format html bootstrap_demo.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_panel --html_output=bootstrap_plain --debug
 -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Demo of the Bootstrap style">
-
 <title>Demo of the Bootstrap style</title>
-
 <!-- Bootstrap style: bootstrap -->
-<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- doconce format html bootstrap_demo.do.txt --html_style=bootstrap --pygments_html_style=default --html_admon=bootstrap_panel --html_output=bootstrap_plain --debug -->
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- not necessary
-<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 -->
-
 <style type="text/css">
-
 /* Add scrollbar to dropdown menus in bootstrap navigation bar */
 .dropdown-menu {
    height: auto;
    max-height: 400px;
    overflow-x: hidden;
 }
-
 /* Adds an invisible element before each target to offset for the navigation
    bar */
 .anchor::before {
   content:"";
   display:block;
-  height:50px; /* fixed header height*/
+  height:50px;      /* fixed header height for style bootstrap */
   margin:-50px 0 0; /* negative fixed header height */
 }
 </style>
-
-
 </head>
 
 <!-- tocinfo
 {'highest level': 0,
- 'sections': [('More details on writing DocOnce documents with Bootstrap layout',
+ 'sections': [('More details on writing DocOnce documents with Bootstrap '
+               'layout',
                0,
                None,
-               '___sec0'),
-              ('Navigation', 1, None, '___sec1'),
-              ('Themes', 1, None, '___sec2'),
-              ('Demonstrations of admons', 1, None, '___sec3'),
+               'more-details-on-writing-doconce-documents-with-bootstrap-layout'),
+              ('Navigation', 1, None, 'navigation'),
+              ('Themes', 1, None, 'themes'),
+              ('Demonstrations of admons', 1, None, 'demonstrations-of-admons'),
               ('Horizontal alignment of document elements',
                1,
                'sec:examples',
                'sec:examples'),
-              ('Principles of grid structures', 2, None, '___sec5'),
-              ('Example on a 1x3 grid structure', 2, None, '___sec6'),
+              ('Principles of grid structures',
+               2,
+               None,
+               'principles-of-grid-structures'),
+              ('Example on a 1x3 grid structure',
+               2,
+               None,
+               'example-on-a-1x3-grid-structure'),
               ('Variation of the previous grid structure using admons',
                2,
                None,
-               '___sec7')]}
+               'variation-of-the-previous-grid-structure-using-admons')]}
 end of tocinfo -->
 
 <body>
@@ -76,8 +79,6 @@ MathJax.Hub.Config({
 </script>
 
 
-
-    
 <!-- Bootstrap navigation bar -->
 <div class="navbar navbar-default navbar-fixed-top">
   <div class="navbar-header">
@@ -88,20 +89,19 @@ MathJax.Hub.Config({
     </button>
     <a class="navbar-brand" href="bootstrap_plain.html">Demo of the Bootstrap style</a>
   </div>
-
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
         <ul class="dropdown-menu">
-     <!-- navigation toc: --> <li><a href="._bootstrap_plain001.html#___sec0" style="font-size: 80%;"><b>More details on writing DocOnce documents with Bootstrap layout</b></a></li>
-     <!-- navigation toc: --> <li><a href="._bootstrap_plain001.html#___sec1" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Navigation</a></li>
-     <!-- navigation toc: --> <li><a href="._bootstrap_plain001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Themes</a></li>
-     <!-- navigation toc: --> <li><a href="._bootstrap_plain001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Demonstrations of admons</a></li>
+     <!-- navigation toc: --> <li><a href="._bootstrap_plain001.html#more-details-on-writing-doconce-documents-with-bootstrap-layout" style="font-size: 80%;"><b>More details on writing DocOnce documents with Bootstrap layout</b></a></li>
+     <!-- navigation toc: --> <li><a href="._bootstrap_plain001.html#navigation" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Navigation</a></li>
+     <!-- navigation toc: --> <li><a href="._bootstrap_plain001.html#themes" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Themes</a></li>
+     <!-- navigation toc: --> <li><a href="._bootstrap_plain001.html#demonstrations-of-admons" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Demonstrations of admons</a></li>
      <!-- navigation toc: --> <li><a href="#sec:examples" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Horizontal alignment of document elements</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Principles of grid structures</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example on a 1x3 grid structure</a></li>
-     <!-- navigation toc: --> <li><a href="#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variation of the previous grid structure using admons</a></li>
+     <!-- navigation toc: --> <li><a href="#principles-of-grid-structures" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Principles of grid structures</a></li>
+     <!-- navigation toc: --> <li><a href="#example-on-a-1x3-grid-structure" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Example on a 1x3 grid structure</a></li>
+     <!-- navigation toc: --> <li><a href="#variation-of-the-previous-grid-structure-using-admons" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variation of the previous grid structure using admons</a></li>
 
         </ul>
       </li>
@@ -109,26 +109,25 @@ MathJax.Hub.Config({
   </div>
 </div>
 </div> <!-- end of navigation bar -->
-
 <div class="container">
-
 <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
-
 <a name="part0002"></a>
 <!-- !split -->
-
 <h1 id="sec:examples" class="anchor">Horizontal alignment of document elements</h1>
+<h2 id="principles-of-grid-structures" class="anchor">Principles of grid structures </h2>
 
-<h2 id="___sec5" class="anchor">Principles of grid structures </h2>
-
-<p>
-The HTML page can feature a grid structure of cells, defined by
+<p>The HTML page can feature a grid structure of cells, defined by
 the following syntax in case of a 1x3 grid:
+</p>
 
-<p>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span># begin-grid-area
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"># begin-grid-area
 
 !bslidecell 00
 ...
@@ -143,33 +142,48 @@ the following syntax in case of a 1x3 grid:
 !eslidecell
 
 # end-grid-area
-</pre></div>
-<p>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="panel panel-warning">
   <div class="panel-heading">
   <h3 class="panel-title">Important rule</h3>
   </div>
 <div class="panel-body">
-<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
-
+<!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
 <ul>
- <li> The <code># begin/end-grid-area</code> directives mark the beginning and end of
-   a region where we can have horizontal elements stacked in a grid.</li>
- <li> Only text <em>inside</em> the slidecell environments is typeset in the output HTML
-   document.</li>
+ <li> The <code># begin/end-grid-area</code> directives mark the beginning and end of a region where we can have horizontal elements stacked in a grid.</li>
+ <li> Only text <em>inside</em> the slidecell environments is typeset in the output HTML document.</li>
 </ul>
 </div>
 </div>
 
 
-<p>
-For example, the mathematics in the following 2x2 grid structure will
+<p>For example, the mathematics in the following 2x2 grid structure will
 be lost because it appears outside the slidecell environments:
+</p>
 
-<p>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span># begin-grid-area
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"># begin-grid-area
 
 !bslidecell 00
 ...
@@ -194,54 +208,90 @@ We consider
 !eslidecell
 
 # end-grid-area
-</pre></div>
-<p>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="panel panel-primary">
   <div class="panel-heading">
   <h3 class="panel-title">It is easy to shuffle cells around in the grid structure.</h3>
   </div>
 <div class="panel-body">
-<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
-A nice feature is that the coordinates of the cells, here <code>00</code>, <code>01</code>,
+<!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+<p>A nice feature is that the coordinates of the cells, here <code>00</code>, <code>01</code>,
 and <code>02</code> can be given in any desired order. For example, if we want
 to reverse the sequence of the three elements in the three columns
 of this grid, we simply change <code>00</code> by <code>02</code> and <code>02</code> by <code>00</code>.
+</p>
 </div>
 </div>
 
+<h2 id="example-on-a-1x3-grid-structure" class="anchor">Example on a 1x3 grid structure </h2>
 
-<h2 id="___sec6" class="anchor">Example on a 1x3 grid structure </h2>
-
-<p>
 <div class="row"> <!-- begin cell row -->
   <div class="col-sm-4">
 
 <p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+<p>
 <b>Mathematics.</b>
 Given a function
+</p>
 
 $$ f(x) = e^{-ax}\sin wx\thinspace .$$
 
-Write a program for evaluating \( f(x) \), and test the program
+<p>Write a program for evaluating \( f(x) \), and test the program
 for the value of \( f(0) \).
+</p>
   </div> <!-- column col-sm-4 -->
   <div class="col-sm-4">
 
 <p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+<p>
 <b>Implementation.</b>
 The Python implementation reads
+</p>
 
-<p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">math</span> <span style="color: #008000; font-weight: bold">import</span> exp, sin
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">math</span> <span style="color: #008000; font-weight: bold">import</span> exp, sin
 
 <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">f</span>(x):
     <span style="color: #008000; font-weight: bold">return</span> exp(<span style="color: #666666">-</span>a<span style="color: #666666">*</span>x)<span style="color: #666666">*</span>sin(w<span style="color: #666666">*</span>x)
-</pre></div>
-<p>
-where <code>a</code> and <code>w</code> must be <em>global variables</em>, initialized in the
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>where <code>a</code> and <code>w</code> must be <em>global variables</em>, initialized in the
 main program.
+</p>
   </div> <!-- column col-sm-4 -->
   <div class="col-sm-4">
 
@@ -250,34 +300,66 @@ main program.
 <p>
 <b>Computational experiment.</b>
 With a main program
+</p>
 
-<p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>a <span style="color: #666666">=</span> <span style="color: #666666">1</span>
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">a <span style="color: #666666">=</span> <span style="color: #666666">1</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">math</span> <span style="color: #008000; font-weight: bold">import</span> pi
 w <span style="color: #666666">=</span> pi
-<span style="color: #008000; font-weight: bold">print</span> f(<span style="color: #666666">0</span>)
-</pre></div>
-<p>
-we can run the program:
+<span style="color: #008000">print</span> f(<span style="color: #666666">0</span>)
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
+<p>we can run the program:</p>
+
 
 <!-- code=text (!bc sys) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>Terminal&gt; python prog.py
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">Terminal&gt; python prog.py
 0
-</pre></div>
-<p>
-</div> <!-- column col-sm-4 -->
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div> <!-- column col-sm-4 -->
 </div> <!-- end cell row -->
+<h2 id="variation-of-the-previous-grid-structure-using-admons" class="anchor">Variation of the previous grid structure using admons </h2>
 
-<h2 id="___sec7" class="anchor">Variation of the previous grid structure using admons </h2>
-
-<p>
 <!-- Note: panels are realized as admons, using --admon_style=bootstrap_panel -->
 
-<p>
 <div class="row"> <!-- begin cell row -->
   <div class="col-sm-4">
 
@@ -287,13 +369,14 @@ we can run the program:
   <h3 class="panel-title">Mathematics</h3>
   </div>
 <div class="panel-body">
-<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
-Given a function
+<!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+<p>Given a function</p>
 
 $$ f(x) = e^{-ax}\sin wx\thinspace .$$
 
-Write a program for evaluating \( f(x) \), and test the program
+<p>Write a program for evaluating \( f(x) \), and test the program
 for the value of \( f(0) \).
+</p>
 </div>
 </div>
 
@@ -306,20 +389,38 @@ for the value of \( f(0) \).
   <h3 class="panel-title">Implementation</h3>
   </div>
 <div class="panel-body">
-<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
-The Python implementation reads
+<!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+<p>The Python implementation reads</p>
 
-<p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">math</span> <span style="color: #008000; font-weight: bold">import</span> exp, sin
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">math</span> <span style="color: #008000; font-weight: bold">import</span> exp, sin
 
 <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">f</span>(x):
     <span style="color: #008000; font-weight: bold">return</span> exp(<span style="color: #666666">-</span>a<span style="color: #666666">*</span>x)<span style="color: #666666">*</span>sin(w<span style="color: #666666">*</span>x)
-</pre></div>
-<p>
-where <code>a</code> and <code>w</code> must be <em>global variables</em>, initialized in the
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>where <code>a</code> and <code>w</code> must be <em>global variables</em>, initialized in the
 main program.
+</p>
 </div>
 </div>
 
@@ -332,33 +433,65 @@ main program.
   <h3 class="panel-title">Computational experiment</h3>
   </div>
 <div class="panel-body">
-<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
-With a main program
+<!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+<p>With a main program</p>
 
-<p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>a <span style="color: #666666">=</span> <span style="color: #666666">1</span>
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">a <span style="color: #666666">=</span> <span style="color: #666666">1</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">math</span> <span style="color: #008000; font-weight: bold">import</span> pi
 w <span style="color: #666666">=</span> pi
-<span style="color: #008000; font-weight: bold">print</span> f(<span style="color: #666666">0</span>)
-</pre></div>
-<p>
-we can run the program:
+<span style="color: #008000">print</span> f(<span style="color: #666666">0</span>)
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
+<p>we can run the program:</p>
+
 
 <!-- code=text (!bc sys) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>Terminal&gt; python prog.py
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">Terminal&gt; python prog.py
 0
-</pre></div>
-<p>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 </div>
 
   </div> <!-- column col-sm-4 -->
 </div> <!-- end cell row -->
-
 
 <p>
 <!-- navigation buttons at the bottom of the page -->
@@ -369,20 +502,15 @@ we can run the program:
   <li class="active"><a href="._bootstrap_plain002.html">3</a></li>
 </ul>
 <!-- ------------------- end of main content --------------- -->
-
 </div>  <!-- end container -->
 <!-- include javascript, jQuery *first* -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <!-- Bootstrap footer
 <footer>
-<a href="http://..."><img width="250" align=right src="http://..."></a>
+<a href="https://..."><img width="250" align=right src="https://..."></a>
 </footer>
 -->
-
-
 </body>
 </html>
-    
 

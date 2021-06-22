@@ -27,7 +27,7 @@ The most fundamental shape is the line in Figure ref{line}. See the
 "https://github.com/doconce/doconce/blob/master/doc/src/pgf_tikz/fig/line.tikz"
 for how this TikZ figure is defined in LaTeX as a file `line.tikz`
 (and included in DocOnce through `FIGURE: [line, width=500] caption`).  Such
-lines can be combined to form other shapes, e.g., a square. However, Figure ref{square}
+lines can be combined to form other shapes, e.g. a square. However, Figure ref{square}
 was created using the "`rectangle`":
 "https://github.com/doconce/doconce/blob/master/doc/src/pgf_tikz/fig/square.tikz"
 TikZ command.

@@ -310,7 +310,7 @@ from DocOnce. One example is figure filenames when transforming
 DocOnce to reStructuredText. Since DocOnce does not know if the
 `.rst` file is going to be filtered to LaTeX or HTML, it cannot know
 if `.eps` or `.png` is the most appropriate image filename.
-The solution is to use a text substitution command or code with, e.g., sed,
+The solution is to use a text substitution command or code with, e.g. sed,
 perl, python, or scitools subst, to automatically edit the output file
 from DocOnce. It is then wise to run DocOnce and the editing commands
 from a script to automate all steps in going from DocOnce to the final
@@ -327,7 +327,7 @@ additional checks:
 
  * `--labelcheck=on` (or `off`) to check that every `ref` reference
    has a corresponding `label` definition within the document (this check
-   may lead to wrong diagnostics, e.g., when a label is defined in an
+   may lead to wrong diagnostics, e.g. when a label is defined in an
    external document and referred via generalized references, so the
    check must be used with care)
  * `--urlcheck` checks that all URLs referred to in the document are valid.
@@ -342,7 +342,7 @@ Other useful options are
  * `--figure_prefix=X` and `--movie_prefix=X` prefix figure/movie file
    names with a path or URL
  * `--sections_down` and `--sections_up` move all sections down or up
-   (e.g., sections become subsections or chapters).
+   (e.g. sections become subsections or chapters).
  * `--tables2csv` translates each table to a CSV file.
  * `--short_title=X` sets a short title `X` for the document.
  * `--toc_depth=X`: controls the depth of the table of contents
@@ -394,7 +394,7 @@ and the HTML code tries to load as many versions among MP4, WebM,
 and Ogg as exist (and the files are loaded in the mentioned order).
 If just the specified file is to be loaded, use the
 `--no_mp4_webm_ogg_alternatives` command-line option.
-Other movie formats, e.g., `.flv`, `.mpeg` and `.avi`, are embedded via
+Other movie formats, e.g. `.flv`, `.mpeg` and `.avi`, are embedded via
 the older `embed` tag.
 
 idx{HTML layouts}
@@ -628,7 +628,7 @@ for demonstrations of blog posts at `blogspot.no`.
 !bwarning
 The comment field after the blog post does not recognize MathJax (LaTeX)
 mathematics or code with indentation. However, using a MathJax
-bookmarklet, e.g., at URL: "http://checkmyworking.com/misc/mathjax-bookmarklet/", one can get the mathematics properly rendered. The comment fields are
+bookmarklet, e.g. at URL: "http://checkmyworking.com/misc/mathjax-bookmarklet/", one can get the mathematics properly rendered. The comment fields are
 not suitable for computer code, though, as HTML tags are not allowed.
 !ewarning
 
@@ -855,7 +855,7 @@ found on the "Strapdown page": "http://strapdownjs.com".
 
 ===== Using Pandoc to go from LaTeX to MS Word or HTML =====
 
-Pandoc is useful to go from LaTeX mathematics to, e.g., HTML or MS
+Pandoc is useful to go from LaTeX mathematics to, e.g. HTML or MS
 Word.  There are two ways (experiment to find the best one for your
 document): `doconce format pandoc` and then translating using `doconce
 md2latex` (which runs `pandoc`), or `doconce format latex`, and then
@@ -1073,7 +1073,7 @@ be used to set the journal name, and the style requires
 
 [^varioref]: Listing `varioref` in as package
 automatically leads to references with page numbers, if the element referred to
-is not on the same page. This is often very helpful, e.g., ``see
+is not on the same page. This is often very helpful, e.g. ``see
 Figure 5.3 on page 67''.
 
 idx{LaTeX syntax highlighting}
@@ -1179,9 +1179,9 @@ present in `myfile`). Otherwise, `myfile` is assumed to contain
 The `ptex2tex` tool makes it possible to easily switch between many
 different fancy formattings of computer code in LaTeX documents. After
 any `!bc` command in the DocOnce source you can insert verbatim block
-styles as defined in your `.ptex2tex.cfg` file, e.g., `!bc sys` for a
+styles as defined in your `.ptex2tex.cfg` file, e.g. `!bc sys` for a
 terminal session, where `sys` is set to a certain environment in
-`.ptex2tex.cfg` (e.g., `CodeTerminal`).  There are about 40 styles to
+`.ptex2tex.cfg` (e.g. `CodeTerminal`).  There are about 40 styles to
 choose from, and you can easily add new ones.
 
 The `doconce ptex2tex` allows specifications
@@ -1196,7 +1196,7 @@ commands, unless only the environment name is given (such as `minted`
 above, which implies `\begin{minted}{fortran}` and `\end{minted}` as
 begin and end for blocks inside `!bc fpro` and `!ec`).  Specifying
 `envir=ans:nt` means that all other environments are typeset with the
-`anslistings.sty` package, e.g., `!bc cppcod` will then result in
+`anslistings.sty` package, e.g. `!bc cppcod` will then result in
 `\begin{c++}`. A predefined shortcut as in `shcod=Verbatim-0.85`
 results in denser
 vertical spacing (baselinestretch 0.85 in LaTeX terminology), and

@@ -194,14 +194,14 @@ cp demo.html demo_remark_dark.html
 
 # LaTeX Beamer slides
 #Note: it fails on cbc and simula
-themes="blue_plain blue_shadow red_plain red_shadow dark_gradient vintage cbc simula"
+themes="blue_plain blue_shadow red_plain red_shadow dark_gradient vintage" #cbc simula
 for theme in $themes; do
-system doconce format pdflatex demo SLIDE_TYPE="beamer" SLIDE_THEME="$theme" --latex_title_layout=beamer --latex_code_style=pyg
-#system doconce ptex2tex demo envir=minted
-system doconce slides_beamer demo --beamer_slide_theme=$theme
-cp demo.tex demo_${theme}.tex
-system pdflatex -shell-escape -halt-on-error demo_${theme}
-system pdflatex -shell-escape -halt-on-error demo_${theme}
+  system doconce format pdflatex demo SLIDE_TYPE="beamer" SLIDE_THEME="$theme" --latex_title_layout=beamer --latex_code_style=pyg
+  #system doconce ptex2tex demo envir=minted
+  system doconce slides_beamer demo --beamer_slide_theme=$theme
+  cp demo.tex demo_${theme}.tex
+  system pdflatex -shell-escape -halt-on-error demo_${theme}
+  system pdflatex -shell-escape -halt-on-error demo_${theme}
 done
 
 # Simple boxes around admons and blocks

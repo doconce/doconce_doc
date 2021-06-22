@@ -33,14 +33,14 @@ attention.
 
 Improvement: Embed the HTML code in the text instead.
 (Will probably destroy the possibilities of `nbconvert` to
-convert to various other formats, e.g., what to do with such
+convert to various other formats, e.g. what to do with such
 movies in LaTeX?)
 
 ===== Tables =====
 
 Markdown do not support tables. The remedy is to typeset tables as
 HTML code. This can easily be done of one has a simple script for
-taking a compact description of the table, e.g., in CSV format,
+taking a compact description of the table, e.g. in CSV format,
 and automatically generating the necessary HTML code.
 For me this works fine, but again, will `nbconvert` be able to
 handle it?

@@ -100,5 +100,5 @@ layout in the DocOnce document is obviously limited (at least compared
 to LaTeX and HTML) since the text can be converted to all sorts of markup
 languages. This disadvantage can be quite easily compensated, however,
 by clever use of the programmable Mako preprocessor used by DocOnce
-and by automatic editing of the generated output (e.g., via regular
+and by automatic editing of the generated output (e.g. via regular
 expressions).

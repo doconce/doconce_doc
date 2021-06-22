@@ -47,4 +47,6 @@ dest=../../pub/quiz
 cp -r $name*.pdf $name*.html ._$name*.html fig index.html $dest
 rm -rf $dest/sphinx*
 cp -r sphinx/_build/html $dest/sphinx
-cp -r sphinx-rs/RunestoneTools/build $dest/sphinx-rs
+if [ -a sphinx-rs/RunestoneTools/build ]; then
+	cp -r sphinx-rs/RunestoneTools/build $dest/sphinx-rs
+fi

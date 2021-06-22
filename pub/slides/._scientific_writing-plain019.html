@@ -1,6 +1,7 @@
 <!--
-Automatically generated HTML file from DocOnce source
+HTML file automatically generated from DocOnce source
 (https://github.com/doconce/doconce/)
+doconce format html scientific_writing.do.txt --pygments_html_style=default --html_style=bloodish --html_links_in_new_window --html_output=scientific_writing-plain --html_raw_github_url=raw.github
 -->
 <html>
 <head>
@@ -9,29 +10,97 @@ Automatically generated HTML file from DocOnce source
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Scientific Writing and Publishing for the Future">
 <meta name="keywords" content="key word1,key word2,key equation,$\u$ conservation,keyword">
-
 <title>Scientific Writing and Publishing for the Future</title>
-
-
 <style type="text/css">
 /* bloodish style */
-
 body {
   font-family: Helvetica, Verdana, Arial, Sans-serif;
   color: #404040;
   background: #ffffff;
 }
-h1 { font-size: 1.8em;  color: #8A0808; }
-h2 { font-size: 1.6em;  color: #8A0808; }
-h3 { font-size: 1.4em;  color: #8A0808; }
-h4 { color: #8A0808; }
+h1 { font-size: 1.8em; color: #8A0808; }
+h2 { font-size: 1.6em; color: #8A0808; }
+h3 { font-size: 1.4em; color: #8A0808; }
+h4 { font-size: 1.2em; color: #8A0808; }
 a { color: #8A0808; text-decoration:none; }
 tt { font-family: "Courier New", Courier; }
-/* pre style removed because it will interfer with pygments */
 p { text-indent: 0px; }
 hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 p.caption { width: 80%; font-style: normal; text-align: left; }
-hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }div.highlight {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    line-height: 1.21429em;
+}
+div.cell {
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    outline: none;
+}
+div.input {
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.inner_cell {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-flex: 1;
+    flex: 1;
+}
+div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    background: #f7f7f7;
+    line-height: 1.21429em;
+}
+div.input_area > div.highlight {
+    margin: .4em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+div.output_wrapper {
+    position: relative;
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.output {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+div.output_area {
+    padding: 0;
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.output_subarea {
+    padding: .4em .4em 0 .4em;
+    box-flex: 1;
+    flex: 1;
+}
+div.output_text {
+    text-align: left;
+    color: #000;
+    line-height: 1.21429em;
+}
 .alert-text-small   { font-size: 80%;  }
 .alert-text-large   { font-size: 130%; }
 .alert-text-normal  { font-size: 90%;  }
@@ -54,30 +123,31 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_notice.png); }
-.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_summary.png); }
-.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_warning.png); }
-.alert-question {background-image:url(https://raw.github.com/doconce/doconce/master/bundled/html_images/small_gray_question.png); }
-
+.alert-notice { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://raw.github.com/doconce/doconce/blob/main/bundled/html_images/small_gray_question.png); }
 div { text-align: justify; text-justify: inter-word; }
+.tab {
+  padding-left: 1.5em;
+}
+div.toc p,a {
+  line-height: 1.3;
+  margin-top: 1.1;
+  margin-bottom: 1.1;
+}
 </style>
-
-
 <script src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
 <script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script>
 <link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
 <script>
 $(function () {
-    // Make the div with id 'mycell' a Sage cell
-    sagecell.makeSagecell({inputLocation:  '#mycell',
-                           template:       sagecell.templates.minimal,
-                           evalButtonText: 'Activate'});
-    // Make *any* div with class 'compute' a Sage cell
-    sagecell.makeSagecell({inputLocation: 'div.compute',
-                           evalButtonText: 'Evaluate'});
+   // Make *any* div with class "sage_compute" a Sage cell
+   sagecell.makeSagecell({inputLocation: "div.sage_compute",
+                          evalButtonText: "Evaluate"});
+   document.getElementsByClassName("sage_compute")[0].closest(".input").style.paddingBottom=95;
 });
 </script>
-
 </head>
 
 <!-- tocinfo
@@ -85,94 +155,133 @@ $(function () {
  'sections': [('Challenges with tools for scientific writing',
                1,
                None,
-               '___sec0'),
-              ('Scientific writing = LaTeX', 2, None, '___sec1'),
+               'challenges-with-tools-for-scientific-writing'),
+              ('Scientific writing = LaTeX',
+               2,
+               None,
+               'scientific-writing-latex'),
               ('LaTeX PDF is mostly suboptimal for the new devices',
                2,
                None,
-               '___sec2'),
-              ('The book will survive (LaTeX is ideal)', 2, None, '___sec3'),
+               'latex-pdf-is-mostly-suboptimal-for-the-new-devices'),
+              ('The book will survive (LaTeX is ideal)',
+               2,
+               None,
+               'the-book-will-survive-latex-is-ideal'),
               ('The classical report/paper will survive (LaTeX is ideal)',
                2,
                None,
-               '___sec4'),
+               'the-classical-report-paper-will-survive-latex-is-ideal'),
               ('But there is an explosion of new platforms for digital '
                'learning systems!',
                2,
                None,
-               '___sec5'),
+               'but-there-is-an-explosion-of-new-platforms-for-digital-learning-systems'),
               ('My headache: How to write scientific material that can be '
                'easily published through old and new media?',
                2,
                None,
-               '___sec6'),
+               'my-headache-how-to-write-scientific-material-that-can-be-easily-published-through-old-and-new-media'),
               ('Scope: documents with *much* math and computer code',
                2,
                None,
-               '___sec7'),
+               'scope-documents-with-much-math-and-computer-code'),
               ('There is a jungle of outlets your scientific writings should '
                'address',
                2,
                None,
-               '___sec8'),
+               'there-is-a-jungle-of-outlets-your-scientific-writings-should-address'),
               ('Can I assemble lots of different writings to a new future '
                'document (book)?',
                2,
                None,
-               '___sec9'),
-              ('Pros and cons of various tools', 1, None, '___sec10'),
+               'can-i-assemble-lots-of-different-writings-to-a-new-future-document-book'),
+              ('Pros and cons of various tools',
+               1,
+               None,
+               'pros-and-cons-of-various-tools'),
               ('Popular tools anno 2014 and their math support',
                2,
                None,
-               '___sec11'),
+               'popular-tools-anno-2014-and-their-math-support'),
               ('LaTeX is very rich; other tools support much less',
                2,
                None,
-               '___sec12'),
+               'latex-is-very-rich-other-tools-support-much-less'),
               ('LaTeX is very rich; other tools support much less',
                2,
                None,
-               '___sec13'),
+               'latex-is-very-rich-other-tools-support-much-less'),
               ('LaTeX is very rich; other tools support much less',
                2,
                None,
-               '___sec14'),
+               'latex-is-very-rich-other-tools-support-much-less'),
               ('My colleagues face fundamental problem with going from LaTeX '
                'to IPython notebook (=Markdown)',
                2,
                None,
-               '___sec15'),
-              ('Examples on typesetting concerns (1)', 2, None, '___sec16'),
-              ('Examples on typesetting concerns (2)', 2, None, '___sec17'),
-              ('Examples on typesetting concerns (3)', 2, None, '___sec18'),
+               'my-colleagues-face-fundamental-problem-with-going-from-latex-to-ipython-notebook-markdown'),
+              ('Examples on typesetting concerns (1)',
+               2,
+               None,
+               'examples-on-typesetting-concerns-1'),
+              ('Examples on typesetting concerns (2)',
+               2,
+               None,
+               'examples-on-typesetting-concerns-2'),
+              ('Examples on typesetting concerns (3)',
+               2,
+               None,
+               'examples-on-typesetting-concerns-3'),
               ('Solution I: Use a format that translates to many',
                2,
                None,
-               '___sec19'),
-              ('Solution II: Use DocOnce', 2, None, '___sec20'),
-              ('DocOnce: Write once, include anywhere', 1, None, '___sec21'),
-              ('DocOnce demos', 2, None, '___sec22'),
-              ('DocOnce disclaimer', 2, None, '___sec23'),
-              ('DocOnce experience', 2, None, '___sec24'),
-              ('A tour of DocOnce', 1, None, '___sec25'),
-              ('Title, authors, date, toc', 2, None, '___sec26'),
-              ('Abstract', 2, None, '___sec27'),
-              ('Section headings', 2, None, '___sec28'),
-              ('This is an H1/chapter heading', 1, None, '___sec29'),
-              ('This is an H2/section heading', 2, None, '___sec30'),
-              ('This is an H3/subsection heading', 2, None, '___sec31'),
-              ('This is an H4/paragraph heading', 3, None, '___sec32'),
-              ('Markup and lists', 2, None, '___sec33'),
-              ('Labels, references, index items', 2, None, '___sec34'),
-              ('Figures and movies', 2, None, '___sec35'),
-              ('Math', 2, None, '___sec36'),
-              ('Math flexibility', 2, None, '___sec37'),
-              ('Displaying code', 2, None, '___sec38'),
-              ('Copying code from source files', 2, None, '___sec39'),
+               'solution-i-use-a-format-that-translates-to-many'),
+              ('Solution II: Use DocOnce', 2, None, 'solution-ii-use-doconce'),
+              ('DocOnce: Write once, include anywhere',
+               1,
+               None,
+               'doconce-write-once-include-anywhere'),
+              ('DocOnce demos', 2, None, 'doconce-demos'),
+              ('DocOnce disclaimer', 2, None, 'doconce-disclaimer'),
+              ('DocOnce experience', 2, None, 'doconce-experience'),
+              ('A tour of DocOnce', 1, None, 'a-tour-of-doconce'),
+              ('Title, authors, date, toc', 2, None, 'title-authors-date-toc'),
+              ('Abstract', 2, None, 'abstract'),
+              ('Section headings', 2, None, 'section-headings'),
+              ('This is an H1/chapter heading',
+               1,
+               None,
+               'this-is-an-h1-chapter-heading'),
+              ('This is an H2/section heading',
+               2,
+               None,
+               'this-is-an-h2-section-heading'),
+              ('This is an H3/subsection heading',
+               2,
+               None,
+               'this-is-an-h3-subsection-heading'),
+              ('This is an H4/paragraph heading',
+               3,
+               None,
+               'this-is-an-h4-paragraph-heading'),
+              ('Markup and lists', 2, None, 'markup-and-lists'),
+              ('Labels, references, index items',
+               2,
+               None,
+               'labels-references-index-items'),
+              ('Figures and movies', 2, None, 'figures-and-movies'),
+              ('Math', 2, None, 'math'),
+              ('Math flexibility', 2, None, 'math-flexibility'),
+              ('Displaying code', 2, None, 'displaying-code'),
+              ('Copying code from source files',
+               2,
+               None,
+               'copying-code-from-source-files'),
               ('Typesetting of code is implied by the file extension',
                2,
                None,
-               '___sec40'),
+               'typesetting-of-code-is-implied-by-the-file-extension'),
               ('Demonstrating code execution; Online Python Tutor',
                2,
                'slide:opt',
@@ -185,43 +294,55 @@ $(function () {
                2,
                'slide:ipynb',
                'slide:ipynb'),
-              ('Tables', 2, None, '___sec44'),
-              ('Newcommands for math', 2, None, '___sec45'),
-              ('Labels, citations, index, bibliography', 2, None, '___sec46'),
-              ('Exercises', 2, None, '___sec47'),
-              ('Rendering of the previous page', 2, None, '___sec48'),
-              ('Problem 1: Flip a Coin', 2, None, '___sec49'),
-              ('Exercises', 2, None, '___sec50'),
-              ('Use of preprocessors', 2, None, '___sec51'),
-              ('DocOnce admonitions', 2, None, '___sec52'),
-              ('Generalized references', 2, None, '___sec53'),
-              ('Slides', 2, None, '___sec54'),
-              ('Example on slide code', 2, None, '___sec55'),
-              ('Example on slide code', 2, None, '___sec56'),
-              ('Headline', 2, None, '___sec57'),
-              ('Grid layout of slide: MxN cells', 2, None, '___sec58'),
-              ('Grid layout of slide: MxN cells', 2, None, '___sec59'),
-              ('Headline', 2, None, '___sec60'),
-              ('Classic slide types', 2, None, '___sec61'),
-              ('HTML5 slide types', 2, None, '___sec62'),
-              ('DocOnce to HTML', 2, None, '___sec63'),
-              ('Output for blog posts', 2, None, '___sec64'),
-              ('DocOnce to pdfLaTeX', 2, None, '___sec65'),
-              ('DocOnce to Sphinx', 2, None, '___sec66'),
-              ('Output for wiki', 2, None, '___sec67'),
-              ('DocOnce to other formats', 2, None, '___sec68'),
-              ('Installation', 2, None, '___sec69'),
+              ('Tables', 2, None, 'tables'),
+              ('Newcommands for math', 2, None, 'newcommands-for-math'),
+              ('Labels, citations, index, bibliography',
+               2,
+               None,
+               'labels-citations-index-bibliography'),
+              ('Exercises', 2, None, 'exercises'),
+              ('Rendering of the previous page',
+               2,
+               None,
+               'rendering-of-the-previous-page'),
+              ('Problem 1: Flip a Coin', 2, None, 'problem-1-flip-a-coin'),
+              ('Exercises', 2, None, 'exercises'),
+              ('Use of preprocessors', 2, None, 'use-of-preprocessors'),
+              ('DocOnce admonitions', 2, None, 'doconce-admonitions'),
+              ('Generalized references', 2, None, 'generalized-references'),
+              ('Slides', 2, None, 'slides'),
+              ('Example on slide code', 2, None, 'example-on-slide-code'),
+              ('Example on slide code', 2, None, 'example-on-slide-code'),
+              ('Headline', 2, None, 'headline'),
+              ('Grid layout of slide: MxN cells',
+               2,
+               None,
+               'grid-layout-of-slide-mxn-cells'),
+              ('Grid layout of slide: MxN cells',
+               2,
+               None,
+               'grid-layout-of-slide-mxn-cells'),
+              ('Headline', 2, None, 'headline'),
+              ('Classic slide types', 2, None, 'classic-slide-types'),
+              ('HTML5 slide types', 2, None, 'html5-slide-types'),
+              ('DocOnce to HTML', 2, None, 'doconce-to-html'),
+              ('Output for blog posts', 2, None, 'output-for-blog-posts'),
+              ('DocOnce to pdfLaTeX', 2, None, 'doconce-to-pdflatex'),
+              ('DocOnce to Sphinx', 2, None, 'doconce-to-sphinx'),
+              ('Output for wiki', 2, None, 'output-for-wiki'),
+              ('DocOnce to other formats', 2, None, 'doconce-to-other-formats'),
+              ('Installation', 2, None, 'installation'),
               ('Writing tips for LaTeX writers who want to convert to DocOnce '
                '*and generate other formats*',
                2,
                None,
-               '___sec70'),
-              ('DocOnce writing tips', 2, None, '___sec71'),
-              ('DocOnce writing tips', 2, None, '___sec72'),
+               'writing-tips-for-latex-writers-who-want-to-convert-to-doconce-and-generate-other-formats'),
+              ('DocOnce writing tips', 2, None, 'doconce-writing-tips'),
+              ('DocOnce writing tips', 2, None, 'doconce-writing-tips'),
               ('Writing tips for sphinx and other formats',
                2,
                None,
-               '___sec73')]}
+               'writing-tips-for-sphinx-and-other-formats')]}
 end of tocinfo -->
 
 <body>
@@ -241,65 +362,42 @@ MathJax.Hub.Config({
 </script>
 
 
-
-    
 <a name="part0019"></a>
 <p>
 <!-- begin top navigation -->
 <table style="width: 100%"><tr><td>
-\
 <div style="text-align: left;"><a href="._scientific_writing-plain018.html">&laquo; Previous</a></div>
 </td><td>
-\
-<div style="text-align: right;"><a href="._scientific_writing-plain020.html">Next &raquo;</a></div>
-</td></tr></table>
+<div style="text-align: right;"><a href="._scientific_writing-plain020.html">Next &raquo;</a></div></td></tr></table>
 <!-- end top navigation -->
 </p>
 
 <p>
 <!-- !split -->
+<h2 id="examples-on-typesetting-concerns-3">Examples on typesetting concerns (3) </h2>
 
-<h2 id="___sec18">Examples on typesetting concerns (3) </h2>
-
-<p>
 <!-- !bpop -->
-
 <ul>
- <li> Index words can appear anywhere in LaTeX, but should be outside
-   paragraphs in other tools.</li>
- <li> References to tables, program code and algorithms can only be
-   made in LaTeX.</li>
- <li> Figures are floating in LaTeX, but fixed in other tools, so place
-   figures exactly where they are needed the first time.</li>
- <li> Curve plots with color lines do not work well in black-and-white
-   printing. Make sure plots makes sense in color and BW (e.g., by
-   using colors <em>and</em> markers).</li>
+ <li> Index words can appear anywhere in LaTeX, but should be outside paragraphs in other tools.</li>
+ <li> References to tables, program code and algorithms can only be made in LaTeX.</li>
+ <li> Figures are floating in LaTeX, but fixed in other tools, so place figures exactly where they are needed the first time.</li>
+ <li> Curve plots with color lines do not work well in black-and-white printing. Make sure plots makes sense in color and BW (e.g. by using colors <em>and</em> markers).</li>
 </ul>
-
 <!-- !epop -->
 
 <p>
-<p>
 <!-- begin bottom navigation -->
 <table style="width: 100%"><tr><td>
-\
-<div style="text-align: left;"><a href="._scientific_writing-plain018.html">&laquo; Previous</a></div>
-</td><td>
-\
+<div style="text-align: left;"><a href="._scientific_writing-plain018.html">&laquo; Previous</a></div>\n</td><td>
 <div style="text-align: right;"><a href="._scientific_writing-plain020.html">Next &raquo;</a></div>
 </td></tr></table>
 <!-- end bottom navigation -->
 </p>
 
 <!-- ------------------- end of main content --------------- -->
-
-
 <center style="font-size:80%">
 <!-- copyright only on the titlepage -->
 </center>
-
-
 </body>
 </html>
-    
 

@@ -5,9 +5,9 @@
 <title>On Schemes for Exponential Decay</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <style type="text/css">
-   @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-   @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-   @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+  @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+  @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
 body { font-family: 'Droid Serif'; }
 h1, h2, h3 {
@@ -48,6 +48,7 @@ code {
 .inverse { background: #272822; color: #777872; text-shadow: 0 0 20px #333; }
 .inverse h1, .inverse h2 {color: #f3f3f3; line-height: 0.8em; }
 
+
 </style>
 </head>
 
@@ -80,14 +81,13 @@ class: center, middle, inverse
 ### **Hans Petter Langtangen** at Center for Biomedical Computing, Simula Research Laboratory and Department of Informatics, University of Oslo
 
 
-### Jul 8, 2020
+### Jun 22, 2021
 
-Copyright 2020, Hans Petter Langtangen. Released under CC Attribution 4.0 license
+Copyright 2021, Hans Petter Langtangen. Released under CC Attribution 4.0 license
 
 
 
-.center[<img src="fig/CN_logo.png" width=300>]
-
+.center[<img src="fig/CN_logo.png" width="300">]
 
 <!-- Each slide starts with !split and a title inside 5 = on each side -->
 <!-- (i.e., DocOnce subsections are used to specify slide titles, -->
@@ -105,24 +105,18 @@ and get them rendered in numerous HTML formats.
 
 
 
-
-
-
-
 ---
 class: inverse
 
 # Problem setting and methods
 <!-- Short title: Problem -->
 
-.center[<img src="fig/method.png" width=600>]
-
+.center[<img src="fig/method.png" width="600">]
 
 ---
 class: inverse
 
 ## We aim to solve the (almost) simplest possible differential equation problem
-
 
 $$
 \begin{align}
@@ -140,12 +134,11 @@ Here,
  * \\( u(t) \\) is the unknown function
  * The ODE ([ode](#ode)) has the initial condition ([initial:value](#initial:value))
 
-.center[<img src="fig/teacher2.jpg" width=250>]
+.center[<img src="fig/teacher2.jpg" width="250">]
 ---
 class: inverse
 
 ## The ODE problem is solved by a finite difference scheme
-
 
 * Mesh in time: \\( 0= t_0< t_1 \cdots < t_N=T \\)
  * Assume constant \\( \Delta t = t_{n}-t_{n-1} \\)
@@ -169,9 +162,7 @@ class: inverse
 ## The Forward Euler scheme explained
 
 
-
-<iframe width="640" height="480" src="http://www.youtube.com/embed/PtJrPEIHNJw" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="640" height="480" src="http://youtube.com/embed/PtJrPEIHNJw" frameborder="0" allowfullscreen></iframe>
 
 
 
@@ -206,7 +197,6 @@ class: inverse
 
 ## How to use the solver function
 
-
 *A complete main program.* 
 
 ```python
@@ -235,15 +225,14 @@ class: inverse
 
 # Results
 
-.center[<img src="fig/results.jpg" width=600>]
+.center[<img src="fig/results.jpg" width="600">]
 
 ---
 class: inverse
 
 ## The Crank-Nicolson method shows oscillatory behavior for not sufficiently small time steps, while the solution should be monotone
 
-
-.center[<img src="fig/CN.png" width=600>]
+.center[<img src="fig/CN.png" width="600">]
 
 ---
 class: inverse
@@ -271,10 +260,11 @@ qualitatively correct results.
 
 
 </textarea>
-<script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript">
+<script src="https://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript">
 </script>
 <script type="text/javascript">
   var slideshow = remark.create();
 </script>
 </body>
 </html>
+

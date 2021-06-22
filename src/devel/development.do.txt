@@ -44,15 +44,25 @@ I suggest navigating through the scripts by using an IDE with debugger. See the
 Section ref{section:IDE}.
 
 
+===== Synching the `docs` and `test` folders =====
+
+The documentation and tests for DocOnce are stored in their own GitHub repositories: "doconce_doc": "https://github.com/doconce/doconce_doc" and "doconce_tests": "https://github.com/doconce/doconce_tests", respectively. 
+These two repositories are "git-submodules": "https://git-scm.com/book/en/v2/Git-Tools-Submodules", i.e. they are included in the main "doconce": "https://github.com/doconce/doconce" repository as subdirectories. 
+The subdirectories for "doconce_doc": "https://github.com/doconce/doconce_doc" and "doconce_tests": "https://github.com/doconce/doconce_tests" are the `doc` and `test` folders, respectively. 
+This structure was chosen to improve modularization and the disk footprint of the main "doconce": "https://github.com/doconce/doconce" repository.
+
+The content of the `doc` and `test` folders can be downloaded by running this command after cloning the "doconce": "https://github.com/doconce/doconce" repository:
+
+!bc shcod-t
+git submodule update --init
+!ec
+
+
 ===== Running Tests =====
 
-Tests are written in the `test/` folder. See the instructions in the `README` file. 
+Tests are implemented in the "doconce_tests": "https://github.com/doconce/doconce_tests" "git-submodule": "https://git-scm.com/book/en/v2/Git-Tools-Submodule", which can be downloaded as explained above to the `test` folder. 
 
-New tests using `pytest` library are currently under development. They can be run with 
-
-!bc pycod-t
-pytest -v test_run.py
-!ec
+See the instructions in the `test/README.md` file to install additional requirements for the tests and how to run them.
 
 
 ======= Running DocOnce in a IDE =======
@@ -103,17 +113,20 @@ os.system('xreader execute.pdf');
 
 As an example for PyCharm, see the guide "Create and edit run/debug configurations﻿": "https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html" to set up create and edit run/debug configurations﻿. I suggest using a virtual environment as "Python interpreter": "https://www.jetbrains.com/help/pycharm/python-interpreters.html". Also install DocOnce in development mode so that the `doconce` command will get updated when you edit its code:
 
-```
+!bc shcod-t
 # Create a virtual environment
 python -m venv venv
 source venv/bin/activate
 # Install dependencies and DocOnce in development mode
 (venv) pip install -r requirements.txt
 (venv) pip install -e .
-```
+!ec
 
 
 ======= Compiling the Documentation =======
+
+
+The documentation is implemented in the "doconce_doc": "https://github.com/doconce/doconce_doc" "git-submodule": "https://git-scm.com/book/en/v2/Git-Tools-Submodule", which can be downloaded as explained above to the `doc` folder. 
 
 The documentation is written as DocOnce `.do.txt` files in different folder inside `doc/src/`, for example `doc/src/manual/`, `doc/src/quickref/`, `doc/src/tutorial/`. These folders contains a `make.sh` file that can be run in `bash` to create documentation in  different formats: 
 

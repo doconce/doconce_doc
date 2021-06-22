@@ -108,7 +108,7 @@ pages for different things, just
 !enotice
 
 [^admons]: ``Admon'' is a short form for admonition: a
-box that highlights some text, e.g., as extra material or as
+box that highlights some text, e.g. as extra material or as
 particularly important material. DocOnce supports different types
 of admonitions: notice, question, summary, and warning. These
 can have an optional title, and some admonition styles will also

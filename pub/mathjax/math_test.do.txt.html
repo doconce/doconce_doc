@@ -1,4 +1,4 @@
-<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">TITLE: How various formats can deal with LaTeX math</span>
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%;"><span></span><span style="color: #000080; font-weight: bold">TITLE: How various formats can deal with LaTeX math</span>
 <span style="color: #000080; font-weight: bold">AUTHOR:</span> Hans Petter Langtangen at Simula Research Laboratory &amp; University of Oslo
 <span style="color: #000080; font-weight: bold">DATE:</span> today
 
@@ -8,7 +8,7 @@ various output formats.  Most LaTeX math constructions are renedered
 correctly by MathJax in plain HTML, but some combinations of
 constructions may fail.  Unfortunately, only a subset of what works in
 html MathJax also works in sphinx MathJax. The same is true for
-markdown MathJax expresions (e.g., Jupyter notebooks).  Tests and
+markdown MathJax expresions (e.g. Jupyter notebooks).  Tests and
 examples are provided to illustrate what may go wrong.
 
 The recommendation for writing math that translates to MathJax in
@@ -39,7 +39,7 @@ An equation with number,
 looks like
 
 <span style="color: #8B008B; font-weight: bold">!bt</span>
-<span style="color: #658b00">\begin{equation}</span> u(t)=e^{-at} label{eq1a}\end{equation}
+<span style="color: #658b00">\begin{equation}</span> u(t)=e^{-at} label{_eq1a}\end{equation}
 <span style="color: #8B008B; font-weight: bold">!et</span>
 Maybe this multi-line version is what we actually prefer to write:
 
@@ -55,10 +55,10 @@ The result is the same:
 
 <span style="color: #8B008B; font-weight: bold">!bt</span>
 <span style="color: #658b00">\begin{equation}</span>
-u(t)=e^{-at} label{eq1b}
+u(t)=e^{-at} label{_eq1b}
 <span style="color: #658b00">\end{equation}</span>
 <span style="color: #8B008B; font-weight: bold">!et</span>
-We can refer to this equation through its label `eq1b`: (ref{eq1b}).
+We can refer to this equation through its label `eq1b`: (ref{_eq1b}).
 
 
 <span style="color: #000080; font-weight: bold">===== Test 3: Multiple, aligned equations without label and number =====</span>
@@ -103,12 +103,12 @@ Result:
 <span style="color: #8B008B; font-weight: bold">!bt</span>
 <span style="color: #658b00">\begin{align}</span>
 u(t)&amp;=e^{-at}
-<span style="color: #658b00">label{eq2b}</span>\\
+<span style="color: #658b00">label{_eq2b}</span>\\
 v(t) - 1 &amp;= \frac{du}{dt}
-<span style="color: #658b00">label{eq3b}</span>
+<span style="color: #658b00">label{_eq3b}</span>
 <span style="color: #658b00">\end{align}</span>
 <span style="color: #8B008B; font-weight: bold">!et</span>
-We can refer to the last equations as the system (ref{eq2b})-(ref{eq3b}).
+We can refer to the last equations as the system (ref{_eq2b})-(ref{_eq3b}).
 
 <span style="color: #228B22"># #if FORMAT == &quot;sphinx&quot;</span>
 <span style="color: #8B008B; font-weight: bold">!bwarning</span> Note: align/alignat environments with labels are anti-aligned in sphinx!
@@ -147,9 +147,9 @@ we had used the `align*` environment):
 
         \begin{align}
         u(t)&amp;=e^{-at}
-        \label{eq2b}\\
+        \label{__eq2b}\\
         v(t) - 1 &amp;= \frac{du}{dt}
-        \label{eq3b}
+        \label{__eq3b}
         \end{align}
 <span style="color: #228B22"># #endif</span>
 
@@ -200,7 +200,7 @@ v(t) - 1 &amp;= \frac{du}{dt}
 
 <span style="color: #000080; font-weight: bold">===== Test 6: Multiple, aligned equations with multiple alignments =====</span>
 
-The `align` environment can be used with two `&amp;` alignment characters, e.g.,
+The `align` environment can be used with two `&amp;` alignment characters, e.g. 
 
 <span style="color: #8B008B; font-weight: bold">!bc</span> latexcod
 |bt
@@ -338,11 +338,11 @@ which results in
 
 <span style="color: #8B008B; font-weight: bold">!bt</span>
 <span style="color: #658b00">\begin{eqnarray}</span>
-u(t)&amp;=&amp; e^{-at} label{eq2c}\\
-v(t) - 1 &amp;=&amp; \frac{du}{dt} label{eq3c}
+u(t)&amp;=&amp; e^{-at} label{_eq2c}\\
+v(t) - 1 &amp;=&amp; \frac{du}{dt} label{_eq3c}
 <span style="color: #658b00">\end{eqnarray}</span>
 <span style="color: #8B008B; font-weight: bold">!et</span>
-Can we refer to the last equations as the system (ref{eq2c})-(ref{eq3c})
+Can we refer to the last equations as the system (ref{_eq2c})-(ref{_eq3c})
 in the ${FORMAT} format?
 <span style="color: #228B22"># #if FORMAT == &quot;sphinx&quot;</span>
 No, unfortunately not. Sphinx cannot deal with equation numbers in
@@ -372,11 +372,11 @@ gets rendered as
 \int_a^b f(x)dx = \sum_{j=0}^{n} \frac{1}{2} h(f(a+jh) +
 f(a+(j+1)h)) \\
 =\frac{h}{2}f(a) + \frac{h}{2}f(b) + \sum_{j=1}^n f(a+jh)
-<span style="color: #658b00">label{multiline:eq1}</span>
+<span style="color: #658b00">label{_multiline:eq1}</span>
 <span style="color: #658b00">\end{multline}</span>
 <span style="color: #8B008B; font-weight: bold">!et</span>
 and we can hopefully refer to the Trapezoidal rule
-as the formula (ref{multiline:eq1}).
+as the formula (ref{_multiline:eq1}).
 
 <span style="color: #228B22"># #if FORMAT == &quot;sphinx&quot;</span>
 This equation will not render in sphinx unless we remove the `multiline`
@@ -604,7 +604,7 @@ v_3 \\
 v_4
 <span style="color: #658b00">\end{pmatrix}</span>
 + \cdots
-<span style="color: #658b00">label{mymatrixeq}</span>\\
+<span style="color: #658b00">label{_mymatrixeq}</span>\\
 <span style="color: #658b00">\begin{pmatrix}</span>
 C_5 + C_6 &amp; -C_6 &amp; 0 &amp; 0 \\
 -C_6 &amp; C_6 &amp; 0 &amp; 0 \\

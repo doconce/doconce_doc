@@ -283,7 +283,7 @@ and then calling `D(f, 2)`.
 
 E: `f(x)` is defined as a lambda function, which is a short-hand for
 defining functions as an expression, in a function call as here, or
-in the right-hand side of an assignment, e.g.,
+in the right-hand side of an assignment, e.g. 
 
 !bc pycod
 f = lambda x: return 2*x

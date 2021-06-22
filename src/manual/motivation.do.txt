@@ -192,7 +192,7 @@ http://www.pault.com/xmlalternatives.html<Other minimum-tagged markup languages 
 
   - Flexibility:
     Epydoc and Sphinx produce complete module/package documentation.
-    DocOnce can work with small pieces of documentation, e.g.,
+    DocOnce can work with small pieces of documentation, e.g. 
     module doc strings to be filtered to and used by Epydoc or Sphinx, and
     also included in a LaTeX thesis or a Word document.
 
@@ -208,7 +208,7 @@ http://www.pault.com/xmlalternatives.html<Other minimum-tagged markup languages 
     LaTeX is to be built from some building blocks in a more general
     format and the LaTeX output needs some tweeking before it can
     qualify for a book/manual context. Typically, one wants parts of
-    the book/manual to be available in several formats, e.g., through
+    the book/manual to be available in several formats, e.g. through
     Sphinx. DocOnce may then be a better source for these building
     blocks than reStructuredText.
 
@@ -226,7 +226,7 @@ http://www.pault.com/xmlalternatives.html<Other minimum-tagged markup languages 
     documentation.  The plain untagged ASCII text is very suitable for
     online manuals intended to be read in terminal windows, or for
     emails.  Especially for emails, plain untagged text handy since
-    many who are unfamiliar with, e.g., reStructuredText may to be
+    many who are unfamiliar with, e.g. reStructuredText may to be
     annoyed by the tagging and even start "correcting" the text.
 
     A page of code, containing definitions of how emphasized text, 

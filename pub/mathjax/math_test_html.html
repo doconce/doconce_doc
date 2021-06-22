@@ -1,22 +1,17 @@
 <!--
-Automatically generated HTML file from DocOnce source
-(https://github.com/hplgit/doconce/)
+HTML file automatically generated from DocOnce source
+(https://github.com/doconce/doconce/)
+doconce format html math_test.do.txt --html_output=math_test_html --no_abort
 -->
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="How various formats can deal with LaTeX math">
-
 <title>How various formats can deal with LaTeX math</title>
-
-
 <style type="text/css">
 /* blueish style */
-
-/* Color definitions:  http://www.december.com/html/spec/color0.html
-   CSS examples:       http://www.w3schools.com/css/css_examples.asp */
-
 body {
   margin-top: 1.0em;
   background-color: #ffffff;
@@ -26,13 +21,88 @@ body {
 h1 { font-size: 1.8em; color: #1e36ce; }
 h2 { font-size: 1.6em; color: #1e36ce; }
 h3 { font-size: 1.4em; color: #1e36ce; }
+h4 { font-size: 1.2em; color: #1e36ce; }
 a { color: #1e36ce; text-decoration:none; }
 tt { font-family: "Courier New", Courier; }
-/* pre style removed because it will interfer with pygments */
 p { text-indent: 0px; }
 hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 p.caption { width: 80%; font-style: normal; text-align: left; }
-hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
+/* pre style removed because it will interfer with pygments */
+div.highlight {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    line-height: 1.21429em;
+}
+div.cell {
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    outline: none;
+}
+div.input {
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.inner_cell {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-flex: 1;
+    flex: 1;
+}
+div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    background: #f7f7f7;
+    line-height: 1.21429em;
+}
+div.input_area > div.highlight {
+    margin: .4em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+div.output_wrapper {
+    position: relative;
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.output {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+div.output_area {
+    padding: 0;
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.output_subarea {
+    padding: .4em .4em 0 .4em;
+    box-flex: 1;
+    flex: 1;
+}
+div.output_text {
+    text-align: left;
+    color: #000;
+    line-height: 1.21429em;
+}
 .alert-text-small   { font-size: 80%;  }
 .alert-text-large   { font-size: 130%; }
 .alert-text-normal  { font-size: 90%;  }
@@ -55,62 +125,76 @@ hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
 .alert-block > p, .alert-block > ul {margin-bottom:1em}
 .alert li {margin-top: 1em}
 .alert-block p+p {margin-top:5px}
-.alert-notice { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_notice.png); }
-.alert-summary  { background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_summary.png); }
-.alert-warning { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_warning.png); }
-.alert-question {background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_question.png); }
-
+.alert-notice { background-image: url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://cdn.rawgit.com/doconce/doconce/blob/main/bundled/html_images/small_gray_question.png); }
 div { text-align: justify; text-justify: inter-word; }
+.tab {
+  padding-left: 1.5em;
+}
+div.toc p,a {
+  line-height: 1.3;
+  margin-top: 1.1;
+  margin-bottom: 1.1;
+}
 </style>
-
-
 </head>
 
 <!-- tocinfo
 {'highest level': 1,
- 'sections': [('Test of equation environments', 1, None, '___sec0'),
-              ('Test 1: Inline math', 2, None, '___sec1'),
-              ('Test 2: A single equation with label', 2, None, '___sec2'),
+ 'sections': [('Test of equation environments',
+               1,
+               None,
+               'test-of-equation-environments'),
+              ('Test 1: Inline math', 2, None, 'test-1-inline-math'),
+              ('Test 2: A single equation with label',
+               2,
+               None,
+               'test-2-a-single-equation-with-label'),
               ('Test 3: Multiple, aligned equations without label and number',
                2,
                None,
-               '___sec3'),
+               'test-3-multiple-aligned-equations-without-label-and-number'),
               ('Test 4: Multiple, aligned equations with label',
                2,
                None,
-               '___sec4'),
+               'test-4-multiple-aligned-equations-with-label'),
               ('Test 5: Multiple, aligned equations without label',
                2,
                None,
-               '___sec5'),
+               'test-5-multiple-aligned-equations-without-label'),
               ('Test 6: Multiple, aligned equations with multiple alignments',
                2,
                None,
-               '___sec6'),
+               'test-6-multiple-aligned-equations-with-multiple-alignments'),
               ('Test 7: Multiple, aligned eqnarray equations without label',
                2,
                None,
-               '___sec7'),
+               'test-7-multiple-aligned-eqnarray-equations-without-label'),
               ('Test 8: Multiple, eqnarrayed equations with label',
                2,
                None,
-               '___sec8'),
+               'test-8-multiple-eqnarrayed-equations-with-label'),
               ('Test 9: The `multiline` environment with label and number',
                2,
                None,
-               '___sec9'),
+               'test-9-the-multiline-environment-with-label-and-number'),
               ('Test 10: Splitting equations using a split environment',
                2,
                None,
-               '___sec10'),
+               'test-10-splitting-equations-using-a-split-environment'),
               ('Test 11: Newcommands and boldface bm vs pmb',
                2,
                None,
-               '___sec11'),
-              ('Problematic equations', 1, None, '___sec12'),
-              ('Colored terms in equations', 2, None, '___sec13'),
-              ('Bar over symbols', 2, None, '___sec14'),
-              ('Matrix formulas', 2, None, '___sec15')]}
+               'test-11-newcommands-and-boldface-bm-vs-pmb'),
+              ('Problematic equations', 1, None, 'problematic-equations'),
+              ('Colored terms in equations',
+               2,
+               None,
+               'colored-terms-in-equations'),
+              ('Bar over symbols', 2, None, 'bar-over-symbols'),
+              ('Matrix formulas', 2, None, 'matrix-formulas')]}
 end of tocinfo -->
 
 <body>
@@ -140,119 +224,164 @@ $$
 
 
 
-
-    
 <!-- ------------------- main content ---------------------- -->
+<center>
+<h1>How various formats can deal with LaTeX math</h1>
+</center>  <!-- document title -->
 
-
-
-<center><h1>How various formats can deal with LaTeX math</h1></center>  <!-- document title -->
-
-<p>
 <!-- author(s): Hans Petter Langtangen -->
-
 <center>
 <b>Hans Petter Langtangen</b> [1, 2]
 </center>
-
-<p>
 <!-- institution(s) -->
+<center>
+[1] <b>Simula Research Laboratory</b>
+</center>
+<center>
+[2] <b>University of Oslo</b>
+</center>
+<br>
+<center>
+<h4>Jun 22, 2021</h4>
+</center> <!-- date -->
+<br>
 
-<center>[1] <b>Simula Research Laboratory</b></center>
-<center>[2] <b>University of Oslo</b></center>
-<br>
-<p>
-<center><h4>May 29, 2016</h4></center> <!-- date -->
-<br>
 <p>
 <b>Summary.</b> The purpose of this document is to test LaTeX math in DocOnce with
 various output formats.  Most LaTeX math constructions are renedered
 correctly by MathJax in plain HTML, but some combinations of
 constructions may fail.  Unfortunately, only a subset of what works in
 html MathJax also works in sphinx MathJax. The same is true for
-markdown MathJax expresions (e.g., Jupyter notebooks).  Tests and
+markdown MathJax expresions (e.g. Jupyter notebooks).  Tests and
 examples are provided to illustrate what may go wrong.
+</p>
 
-<p>
-The recommendation for writing math that translates to MathJax in
+<p>The recommendation for writing math that translates to MathJax in
 html, sphinx, and markdown is to stick to the environments <code>\[
 ... \]</code>, <code>equation</code>, <code>equation*</code>, <code>align</code>, <code>align*</code>, <code>alignat</code>, and
 <code>alignat*</code> only. Test the math with sphinx output; if it works in that
 format, it should work elsewhere too.
+</p>
 
-<p>
-The current version of the document is translated from DocOnce source
+<p>The current version of the document is translated from DocOnce source
 to the format <b>html</b>.
+</p>
+<h1 id="test-of-equation-environments">Test of equation environments </h1>
+<h2 id="test-1-inline-math">Test 1: Inline math </h2>
 
-<h1 id="___sec0">Test of equation environments </h1>
-
-<h2 id="___sec1">Test 1: Inline math </h2>
-
-<p>
-We can get an inline equation
+<p>We can get an inline equation
 <code>$u(t)=e^{-at}$</code> rendered as \( u(t)=e^{-at} \).
+</p>
+<h2 id="test-2-a-single-equation-with-label">Test 2: A single equation with label </h2>
 
-<h2 id="___sec2">Test 2: A single equation with label </h2>
+<p>An equation with number,</p>
 
-<p>
-An equation with number,
-
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>equation<span style="color: #008000">}</span> u(t)=e<span style="color: #008000">^{</span>-at<span style="color: #008000">}</span> label<span style="color: #008000">{</span>eq1a<span style="color: #008000">}</span><span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>equation<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-looks like
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>looks like</p>
 
 $$
-\begin{equation} u(t)=e^{-at} \label{eq1a}\end{equation}
+\begin{equation} u(t)=e^{-at} \label{_eq1a}\end{equation}
 $$
 
-Maybe this multi-line version is what we actually prefer to write:
+<p>Maybe this multi-line version is what we actually prefer to write:</p>
 
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>equation<span style="color: #008000">}</span>
 u(t)=e<span style="color: #008000">^{</span>-at<span style="color: #008000">}</span>
 label<span style="color: #008000">{</span>eq1b<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>equation<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-The result is the same:
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>The result is the same:</p>
 
 $$
 \begin{equation}
-u(t)=e^{-at} \label{eq1b}
+u(t)=e^{-at} \label{_eq1b}
 \end{equation}
 $$
 
-We can refer to this equation through its label <code>eq1b</code>: \eqref{eq1b}.
+<p>We can refer to this equation through its label <code>eq1b</code>: \eqref{_eq1b}.</p>
+<h2 id="test-3-multiple-aligned-equations-without-label-and-number">Test 3: Multiple, aligned equations without label and number </h2>
 
-<h2 id="___sec3">Test 3: Multiple, aligned equations without label and number </h2>
-
-<p>
-MathJax has historically had some problems with rendering many LaTeX
+<p>MathJax has historically had some problems with rendering many LaTeX
 math environments, but the <code>align*</code> and <code>align</code> environments have
 always worked.
+</p>
 
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>align*<span style="color: #008000">}</span>
 u(t)<span style="color: #008000">&amp;</span>=e<span style="color: #008000">^{</span>-at<span style="color: #008000">}</span><span style="color: #008000; font-weight: bold">\\</span> 
 v(t) - 1 <span style="color: #008000">&amp;</span>= <span style="color: #008000; font-weight: bold">\frac</span><span style="color: #008000">{</span>du<span style="color: #008000">}{</span>dt<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>align*<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-Result:
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Result:</p>
 
 $$
 \begin{align*}
@@ -260,16 +389,18 @@ u(t)&=e^{-at}\\
 v(t) - 1 &= \frac{du}{dt}
 \end{align*}
 $$
+<h2 id="test-4-multiple-aligned-equations-with-label">Test 4: Multiple, aligned equations with label </h2>
 
-<h2 id="___sec4">Test 4: Multiple, aligned equations with label </h2>
+<p>Here, we use <code>align</code> with user-prescribed labels:</p>
 
-<p>
-Here, we use <code>align</code> with user-prescribed labels:
-
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>align<span style="color: #008000">}</span>
 u(t)<span style="color: #008000">&amp;</span>=e<span style="color: #008000">^{</span>-at<span style="color: #008000">}</span>
 label<span style="color: #008000">{</span>eq2b<span style="color: #008000">}</span><span style="color: #008000; font-weight: bold">\\</span> 
@@ -277,48 +408,81 @@ v(t) - 1 <span style="color: #008000">&amp;</span>= <span style="color: #008000;
 label<span style="color: #008000">{</span>eq3b<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>align<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-Result:
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Result:</p>
 
 $$
 \begin{align}
 u(t)&=e^{-at}
-\label{eq2b}\\ 
+\label{_eq2b}\\ 
 v(t) - 1 &= \frac{du}{dt}
-\label{eq3b}
+\label{_eq3b}
 \end{align}
 $$
 
-We can refer to the last equations as the system \eqref{eq2b}-\eqref{eq3b}.
+<p>We can refer to the last equations as the system \eqref{_eq2b}-\eqref{_eq3b}.</p>
+<h2 id="test-5-multiple-aligned-equations-without-label">Test 5: Multiple, aligned equations without label </h2>
 
-<h2 id="___sec5">Test 5: Multiple, aligned equations without label </h2>
-
-<p>
-In LaTeX, equations within an <code>align</code> environment is automatically
+<p>In LaTeX, equations within an <code>align</code> environment is automatically
 given numbers.  To ensure that an html document with MathJax gets the
 same equation numbers as its latex/pdflatex companion, DocOnce
 generates labels in equations where there is no label prescribed. For
 example,
+</p>
 
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>align<span style="color: #008000">}</span>
 u(t)<span style="color: #008000">&amp;</span>=e<span style="color: #008000">^{</span>-at<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\\</span> 
 v(t) - 1 <span style="color: #008000">&amp;</span>= <span style="color: #008000; font-weight: bold">\frac</span><span style="color: #008000">{</span>du<span style="color: #008000">}{</span>dt<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>align<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-is edited to something like
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
+<p>is edited to something like</p>
+
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>align<span style="color: #008000">}</span>
 u(t)<span style="color: #008000">&amp;</span>=e<span style="color: #008000">^{</span>-at<span style="color: #008000">}</span>
 label<span style="color: #008000">{_</span>auto5<span style="color: #008000">}</span><span style="color: #008000; font-weight: bold">\\</span> 
@@ -326,9 +490,22 @@ v(t) - 1 <span style="color: #008000">&amp;</span>= <span style="color: #008000;
 label<span style="color: #008000">{_</span>auto6<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>align<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-and the output gets the two equation numbered.
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>and the output gets the two equation numbered.</p>
 
 $$
 \begin{align}
@@ -338,25 +515,40 @@ v(t) - 1 &= \frac{du}{dt}
 \label{_auto2}
 \end{align}
 $$
+<h2 id="test-6-multiple-aligned-equations-with-multiple-alignments">Test 6: Multiple, aligned equations with multiple alignments </h2>
 
-<h2 id="___sec6">Test 6: Multiple, aligned equations with multiple alignments </h2>
+<p>The <code>align</code> environment can be used with two <code>&</code> alignment characters, e.g. </p>
 
-<p>
-The <code>align</code> environment can be used with two <code>&</code> alignment characters, e.g.,
-
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>align<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\frac</span><span style="color: #008000">{</span><span style="color: #008000; font-weight: bold">\partial</span> u<span style="color: #008000">}{</span><span style="color: #008000; font-weight: bold">\partial</span> t<span style="color: #008000">}</span> <span style="color: #008000">&amp;</span>= <span style="color: #008000; font-weight: bold">\nabla</span><span style="color: #008000">^</span>2 u, <span style="color: #008000">&amp;</span> x<span style="color: #008000; font-weight: bold">\in</span> (0,L),
 <span style="color: #008000; font-weight: bold">\ </span>t<span style="color: #008000; font-weight: bold">\in</span> (0,T]<span style="color: #008000; font-weight: bold">\\</span> 
 u(0,t) <span style="color: #008000">&amp;</span>= u<span style="color: #008000">_</span>0(x), <span style="color: #008000">&amp;</span> x<span style="color: #008000; font-weight: bold">\in</span> [0,L]
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>align<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-The result in html becomes
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>The result in html becomes</p>
 
 $$
 \begin{align}
@@ -368,22 +560,38 @@ u(0,t) &= u_0(x), & x\in [0,L]
 \end{align}
 $$
 
-<p>
-A better solution is usually to use an <code>alignat</code> environment:
+<p>A better solution is usually to use an <code>alignat</code> environment:</p>
 
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>alignat<span style="color: #008000">}{</span>2<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\frac</span><span style="color: #008000">{</span><span style="color: #008000; font-weight: bold">\partial</span> u<span style="color: #008000">}{</span><span style="color: #008000; font-weight: bold">\partial</span> t<span style="color: #008000">}</span> <span style="color: #008000">&amp;</span>= <span style="color: #008000; font-weight: bold">\nabla</span><span style="color: #008000">^</span>2 u, <span style="color: #008000">&amp;</span> x<span style="color: #008000; font-weight: bold">\in</span> (0,L),
 <span style="color: #008000; font-weight: bold">\ </span>t<span style="color: #008000; font-weight: bold">\in</span> (0,T]<span style="color: #008000; font-weight: bold">\\</span> 
 u(0,t) <span style="color: #008000">&amp;</span>= u<span style="color: #008000">_</span>0(x), <span style="color: #008000">&amp;</span> x<span style="color: #008000; font-weight: bold">\in</span> [0,L]
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>alignat<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-with the rendered result
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>with the rendered result</p>
 
 $$
 \begin{alignat}{2}
@@ -392,24 +600,39 @@ $$
 u(0,t) &= u_0(x), & x\in [0,L]
 \end{alignat}
 $$
+<h2 id="test-7-multiple-aligned-eqnarray-equations-without-label">Test 7: Multiple, aligned eqnarray equations without label </h2>
 
-<h2 id="___sec7">Test 7: Multiple, aligned eqnarray equations without label </h2>
+<p>Let us try the old <code>eqnarray*</code> environment.</p>
 
-<p>
-Let us try the old <code>eqnarray*</code> environment.
-
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>eqnarray*<span style="color: #008000">}</span>
 u(t)<span style="color: #008000">&amp;</span>=<span style="color: #008000">&amp;</span> e<span style="color: #008000">^{</span>-at<span style="color: #008000">}</span><span style="color: #008000; font-weight: bold">\\</span> 
 v(t) - 1 <span style="color: #008000">&amp;</span>=<span style="color: #008000">&amp;</span> <span style="color: #008000; font-weight: bold">\frac</span><span style="color: #008000">{</span>du<span style="color: #008000">}{</span>dt<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>eqnarray*<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-which results in
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>which results in</p>
 
 $$
 \begin{eqnarray*}
@@ -417,16 +640,18 @@ u(t)&=& e^{-at}\\
 v(t) - 1 &=& \frac{du}{dt}
 \end{eqnarray*}
 $$
+<h2 id="test-8-multiple-eqnarrayed-equations-with-label">Test 8: Multiple, eqnarrayed equations with label </h2>
 
-<h2 id="___sec8">Test 8: Multiple, eqnarrayed equations with label </h2>
+<p>Here we use <code>eqnarray</code> with labels:</p>
 
-<p>
-Here we use <code>eqnarray</code> with labels:
-
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>eqnarray<span style="color: #008000">}</span>
 u(t)<span style="color: #008000">&amp;</span>=<span style="color: #008000">&amp;</span> e<span style="color: #008000">^{</span>-at<span style="color: #008000">}</span>
 label<span style="color: #008000">{</span>eq2c<span style="color: #008000">}</span><span style="color: #008000; font-weight: bold">\\</span> 
@@ -434,29 +659,45 @@ v(t) - 1 <span style="color: #008000">&amp;</span>=<span style="color: #008000">
 label<span style="color: #008000">{</span>eq3c<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>eqnarray<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-which results in
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>which results in</p>
 
 $$
 \begin{eqnarray}
-u(t)&=& e^{-at} \label{eq2c}\\ 
-v(t) - 1 &=& \frac{du}{dt} \label{eq3c}
+u(t)&=& e^{-at} \label{_eq2c}\\ 
+v(t) - 1 &=& \frac{du}{dt} \label{_eq3c}
 \end{eqnarray}
 $$
 
-Can we refer to the last equations as the system \eqref{eq2c}-\eqref{eq3c}
+<p>Can we refer to the last equations as the system \eqref{_eq2c}-\eqref{_eq3c}
 in the html format?
+</p>
+<h2 id="test-9-the-multiline-environment-with-label-and-number">Test 9: The <code>multiline</code> environment with label and number </h2>
 
-<h2 id="___sec9">Test 9: The <code>multiline</code> environment with label and number </h2>
+<p>The LaTeX code</p>
 
-<p>
-The LaTeX code
-
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>multline<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\int</span><span style="color: #008000">_</span>a<span style="color: #008000">^</span>b f(x)dx = <span style="color: #008000; font-weight: bold">\sum</span><span style="color: #008000">_{</span>j=0<span style="color: #008000">}^{</span>n<span style="color: #008000">}</span> <span style="color: #008000; font-weight: bold">\frac</span><span style="color: #008000">{</span>1<span style="color: #008000">}{</span>2<span style="color: #008000">}</span> h(f(a+jh) +
 f(a+(j+1)h)) <span style="color: #008000; font-weight: bold">\\</span> 
@@ -464,32 +705,49 @@ f(a+(j+1)h)) <span style="color: #008000; font-weight: bold">\\</span>
 label<span style="color: #008000">{</span>multiline:eq1<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>multline<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-gets rendered as
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>gets rendered as</p>
 
 $$
 \begin{multline}
 \int_a^b f(x)dx = \sum_{j=0}^{n} \frac{1}{2} h(f(a+jh) +
 f(a+(j+1)h)) \\ 
 =\frac{h}{2}f(a) + \frac{h}{2}f(b) + \sum_{j=1}^n f(a+jh)
-\label{multiline:eq1}
+\label{_multiline:eq1}
 \end{multline}
 $$
 
-and we can hopefully refer to the Trapezoidal rule
-as the formula \eqref{multiline:eq1}.
+<p>and we can hopefully refer to the Trapezoidal rule
+as the formula \eqref{_multiline:eq1}.
+</p>
+<h2 id="test-10-splitting-equations-using-a-split-environment">Test 10: Splitting equations using a split environment </h2>
 
-<h2 id="___sec10">Test 10: Splitting equations using a split environment </h2>
-
-<p>
-Although <code>align</code> can be used to split too long equations, a more obvious
+<p>Although <code>align</code> can be used to split too long equations, a more obvious
 command is <code>split</code>:
+</p>
 
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>equation<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>split<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\int</span><span style="color: #008000">_</span>a<span style="color: #008000">^</span>b f(x)dx = <span style="color: #008000; font-weight: bold">\sum</span><span style="color: #008000">_{</span>j=0<span style="color: #008000">}^{</span>n<span style="color: #008000">}</span> <span style="color: #008000; font-weight: bold">\frac</span><span style="color: #008000">{</span>1<span style="color: #008000">}{</span>2<span style="color: #008000">}</span> h(f(a+jh) +
@@ -498,9 +756,22 @@ f(a+(j+1)h)) <span style="color: #008000; font-weight: bold">\\</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>split<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>equation<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-The result becomes
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>The result becomes</p>
 
 $$
 \begin{equation}
@@ -512,142 +783,240 @@ f(a+(j+1)h)) \\
 \label{_auto5}
 \end{equation}
 $$
+<h2 id="test-11-newcommands-and-boldface-bm-vs-pmb">Test 11: Newcommands and boldface bm vs pmb </h2>
 
-<h2 id="___sec11">Test 11: Newcommands and boldface bm vs pmb </h2>
+<p>First we use the plain old pmb package for bold math. The formula</p>
 
-<p>
-First we use the plain old pmb package for bold math. The formula
-
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #BA2121">\[</span><span style="color: #008000"> </span><span style="color: #19177C">\frac</span><span style="color: #008000">{</span><span style="color: #19177C">\partial\u</span><span style="color: #008000">}{</span><span style="color: #19177C">\partial</span><span style="color: #008000"> t} </span><span style="color: #666666">+</span><span style="color: #008000"></span>
 <span style="color: #19177C">\u\cdot\nabla\u</span><span style="color: #008000"> </span><span style="color: #666666">=</span><span style="color: #008000"> </span><span style="color: #19177C">\nu\nabla</span><span style="color: #008000">^</span><span style="color: #666666">2</span><span style="color: #19177C">\u</span><span style="color: #008000"> </span><span style="color: #666666">-</span><span style="color: #008000"></span>
 <span style="color: #19177C">\frac</span><span style="color: #008000">{</span><span style="color: #666666">1</span><span style="color: #008000">}{</span><span style="color: #19177C">\varrho</span><span style="color: #008000">}</span><span style="color: #19177C">\nabla</span><span style="color: #008000"> p,</span><span style="color: #BA2121">\]</span>
 !et
-</pre></div>
-<p>
-and the inline expression <code>$\nabla\u (\x)\cdot\normalvec$</code>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>and the inline expression <code>$\nabla\u (\x)\cdot\normalvec$</code>
 (with suitable newcommands using pmb)
 get rendered as
+</p>
 
 $$ \frac{\partial\u}{\partial t} +
 \u\cdot\nabla\u = \nu\nabla^2\u -
 \frac{1}{\varrho}\nabla p,$$
 
-and \( \nabla\u (\x)\cdot\normalvec \).
+<p>and \( \nabla\u (\x)\cdot\normalvec \).</p>
 
-<p>
-Somewhat nicer fonts may appear with the more modern <code>\bm</code> command:
+<p>Somewhat nicer fonts may appear with the more modern <code>\bm</code> command:</p>
 
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #BA2121">\[</span><span style="color: #008000"> </span><span style="color: #19177C">\frac</span><span style="color: #008000">{</span><span style="color: #19177C">\partial\ubm</span><span style="color: #008000">}{</span><span style="color: #19177C">\partial</span><span style="color: #008000"> t} </span><span style="color: #666666">+</span><span style="color: #008000"></span>
 <span style="color: #19177C">\ubm\cdot\nabla\ubm</span><span style="color: #008000"> </span><span style="color: #666666">=</span><span style="color: #008000"> </span><span style="color: #19177C">\nu\nabla</span><span style="color: #008000">^</span><span style="color: #666666">2</span><span style="color: #19177C">\ubm</span><span style="color: #008000"> </span><span style="color: #666666">-</span><span style="color: #008000"></span>
 <span style="color: #19177C">\frac</span><span style="color: #008000">{</span><span style="color: #666666">1</span><span style="color: #008000">}{</span><span style="color: #19177C">\varrho</span><span style="color: #008000">}</span><span style="color: #19177C">\nabla</span><span style="color: #008000"> p,</span><span style="color: #BA2121">\]</span>
 !et
-</pre></div>
-<p>
-(backslash <code>ubm</code> is a newcommand for bold math \( u \)), for which we get
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>(backslash <code>ubm</code> is a newcommand for bold math \( u \)), for which we get</p>
 
 $$ \frac{\partial\ubm}{\partial t} +
 \ubm\cdot\nabla\ubm = \nu\nabla^2\ubm -
 \frac{1}{\varrho}\nabla p.$$
 
-Moreover,
+<p>Moreover,</p>
 
-<p>
 
-<!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>$\nabla\boldsymbol{u}(\boldsymbol{x})\cdot\boldsymbol{n}$
-</pre></div>
-<p>
-becomes \( \nabla\boldsymbol{u}(\boldsymbol{x})\cdot\boldsymbol{n} \).
-
-<p>
-<div class="alert alert-block alert-warning alert-text-normal">
-<b>Warning.</b>
-<p>
-Note: for the html format, <code>\bm</code> was substituted by DocOnce
-to <code>\boldsymbol</code>.
+<!-- code=text (!bc dat) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">$\nabla\boldsymbol{u}(\boldsymbol{x})\cdot\boldsymbol{n}$
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
+<p>becomes \( \nabla\boldsymbol{u}(\boldsymbol{x})\cdot\boldsymbol{n} \).</p>
 
-<h1 id="___sec12">Problematic equations </h1>
-
+<div class="alert alert-block alert-warning alert-text-normal">
+<b>Warning</b>
 <p>
-Finally, we collect some problematic formulas in MathJax. They all work
+<p>Note: for the html format, <code>\bm</code> was substituted by DocOnce
+to <code>\boldsymbol</code>.
+</p>
+</div>
+
+<h1 id="problematic-equations">Problematic equations </h1>
+
+<p>Finally, we collect some problematic formulas in MathJax. They all work
 fine in LaTeX. Most of them look fine in html too, but some fail in
 sphinx, ipynb, or markdown.
+</p>
+<h2 id="colored-terms-in-equations">Colored terms in equations </h2>
 
-<h2 id="___sec13">Colored terms in equations </h2>
+<p>The LaTeX code</p>
 
-<p>
-The LaTeX code
-
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #BA2121">\[</span><span style="color: #008000"> {</span><span style="color: #19177C">\color</span><span style="color: #008000">{blue}</span><span style="color: #19177C">\frac</span><span style="color: #008000">{</span><span style="color: #19177C">\partial\u</span><span style="color: #008000">}{</span><span style="color: #19177C">\partial</span><span style="color: #008000"> t}} </span><span style="color: #666666">+</span><span style="color: #008000"></span>
 <span style="color: #19177C">\nabla\cdot\nabla\u</span><span style="color: #008000"> </span><span style="color: #666666">=</span><span style="color: #008000"> </span><span style="color: #19177C">\nu\nabla</span><span style="color: #008000">^</span><span style="color: #666666">2</span><span style="color: #19177C">\u</span><span style="color: #008000"> </span><span style="color: #666666">-</span><span style="color: #008000"></span>
 <span style="color: #19177C">\frac</span><span style="color: #008000">{</span><span style="color: #666666">1</span><span style="color: #008000">}{</span><span style="color: #19177C">\varrho</span><span style="color: #008000">}</span><span style="color: #19177C">\nabla</span><span style="color: #008000"> p,</span><span style="color: #BA2121">\]</span>
 !et
-</pre></div>
-<p>
-results in
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>results in</p>
 
 $$ {\color{blue}\frac{\partial\u}{\partial t}} +
 \nabla\cdot\nabla\u = \nu\nabla^2\u -
 \frac{1}{\varrho}\nabla p,$$
+<h2 id="bar-over-symbols">Bar over symbols </h2>
 
-<h2 id="___sec14">Bar over symbols </h2>
-
-<p>
-Sometimes one must be extra careful with the LaTeX syntax to get sphinx MathJax
+<p>Sometimes one must be extra careful with the LaTeX syntax to get sphinx MathJax
 to render a formula correctly. Consider the combination of a bar over a
 bold math symbol:
+</p>
 
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #BA2121">\[</span><span style="color: #008000"> </span><span style="color: #19177C">\bar\f</span><span style="color: #008000"> </span><span style="color: #666666">=</span><span style="color: #008000"> f_c^{</span><span style="color: #666666">-1</span><span style="color: #008000">}</span><span style="color: #19177C">\f</span><span style="color: #008000">,</span><span style="color: #BA2121">\]</span>
 !et
-</pre></div>
-<p>
-which for html output results in
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>which for html output results in</p>
 
 $$ \bar\f = f_c^{-1}\f.$$
 
-<p>
-With sphinx, this formula is not rendered. However, using curly braces for the bar,
+<p>With sphinx, this formula is not rendered. However, using curly braces for the bar,</p>
 
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #BA2121">\[</span><span style="color: #008000"> </span><span style="color: #19177C">\bar</span><span style="color: #008000">{</span><span style="color: #19177C">\f</span><span style="color: #008000">} </span><span style="color: #666666">=</span><span style="color: #008000"> f_c^{</span><span style="color: #666666">-1</span><span style="color: #008000">}</span><span style="color: #19177C">\f</span><span style="color: #008000">,</span><span style="color: #BA2121">\]</span>
 !et
-</pre></div>
-<p>
-makes the output correct also for sphinx:
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>makes the output correct also for sphinx:</p>
 
 $$ \bar{\f} = f_c^{-1}\f,$$
+<h2 id="matrix-formulas">Matrix formulas </h2>
 
-<h2 id="___sec15">Matrix formulas </h2>
-
-<p>
-Here is an <code>align</code> environment with a label and the <code>pmatrix</code>
+<p>Here is an <code>align</code> environment with a label and the <code>pmatrix</code>
 environment for matrices and vectors in LaTeX.
+</p>
 
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>align<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>pmatrix<span style="color: #008000">}</span>
 G<span style="color: #008000">_</span>2 + G<span style="color: #008000">_</span>3 <span style="color: #008000">&amp;</span> -G<span style="color: #008000">_</span>3 <span style="color: #008000">&amp;</span> -G<span style="color: #008000">_</span>2 <span style="color: #008000">&amp;</span> 0 <span style="color: #008000; font-weight: bold">\\</span> 
@@ -685,9 +1054,22 @@ v<span style="color: #008000">_</span>4
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>pmatrix<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>align<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-which becomes
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>which becomes</p>
 
 $$
 \begin{align}
@@ -705,7 +1087,7 @@ v_3 \\
 v_4
 \end{pmatrix}
 + \cdots
-\label{mymatrixeq}\\ 
+\label{_mymatrixeq}\\ 
 \begin{pmatrix}
 C_5 + C_6 & -C_6 & 0 & 0 \\ 
 -C_6 & C_6 & 0 & 0 \\ 
@@ -727,13 +1109,16 @@ v_4
 \end{pmatrix}
 \end{align}$$
 
-<p>
-The same matrices without labels in an <code>align*</code> environment:
+<p>The same matrices without labels in an <code>align*</code> environment:</p>
 
-<p>
 
 <!-- code=latex (!bc latexcod) typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>!bt
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">!bt
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>align*<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\begin</span><span style="color: #008000">{</span>pmatrix<span style="color: #008000">}</span>
 G<span style="color: #008000">_</span>2 + G<span style="color: #008000">_</span>3 <span style="color: #008000">&amp;</span> -G<span style="color: #008000">_</span>3 <span style="color: #008000">&amp;</span> -G<span style="color: #008000">_</span>2 <span style="color: #008000">&amp;</span> 0 <span style="color: #008000; font-weight: bold">\\</span> 
@@ -770,9 +1155,22 @@ v<span style="color: #008000">_</span>4
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>pmatrix<span style="color: #008000">}</span>
 <span style="color: #008000; font-weight: bold">\end</span><span style="color: #008000">{</span>align*<span style="color: #008000">}</span>
 !et
-</pre></div>
-<p>
-The rendered result becomes
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>The rendered result becomes</p>
 
 $$
 \begin{align*}
@@ -812,11 +1210,7 @@ v_4
 \end{align*}
 $$
 
-
 <!-- ------------------- end of main content --------------- -->
-
-
 </body>
 </html>
-    
 

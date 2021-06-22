@@ -65,7 +65,7 @@ followed when translating the text to `sphinx`, `pandoc`,
  * Footnotes can be used as usual in LaTeX, but some HTML formats are not
    able to display mathematics or inline verbatim or other formatted
    code (emphasis, boldface, color) in footnotes - keep that in mind.
- * Use plain `cite` for references (e.g., `\citeauthor` has no counterpart
+ * Use plain `cite` for references (e.g. `\citeauthor` has no counterpart
    in DocOnce). The bibliography must be prepared in the Publish format,
    but import from (clean) BibTeX is possible.
  * Use `idx` for index entries, but put the definitions between paragraphs,
@@ -82,7 +82,7 @@ followed when translating the text to `sphinx`, `pandoc`,
    Learn about the exercise support in DocOnce for typesetting
    exercises, problems, and projects.
  * Learn about the preprocessors Preprocess and Mako - these are smart
-   tools for, e.g., commenting out/in large portions of text and creating
+   tools for, e.g. commenting out/in large portions of text and creating
    macros.
  * Use *generalized references* when referring to companion documents
    that may later become part of this document (or migrated out of this document).
@@ -104,7 +104,7 @@ of using Preprocess or Mako
 allows you to use advanced LaTeX features (or HTML features for the HTML formats)
 to fine tune the resulting
 document. More tuning can be done by automatic editing of the
-output file (e.g., `.tex` or `.html`) produced by DocOnce using
+output file (e.g. `.tex` or `.html`) produced by DocOnce using
 your own scripts or the `doconce replace` and `doconce subst` commands.
 !enotice
 

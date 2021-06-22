@@ -229,7 +229,7 @@ idx{underscores}
 Underscores in plain text are not tolerated by LaTeX, but works fine in
 other formats. In LaTeX, such underscores can give different obscure
 error messages, depending on the context. The remedy is to *typeset all
-words with underscores in inline verbatim*, e.g.,
+words with underscores in inline verbatim*, e.g. 
 
 !bc do
 If you choose the `Enable_access` menu, ...
@@ -468,7 +468,7 @@ DocOnce documents can be written in any language, but figure captions
 typically contain the English word ``Figure''. This must be fixed
 by auto-editing the output file after translation by `doconce format`.
 
-In LaTeX you can use your native language package, e.g.,
+In LaTeX you can use your native language package, e.g. 
 
 !bc sys
 doconce replace '% insert custom LaTeX commands...' '\\usepackage[norsk]{babel} mydoc.tex
@@ -507,7 +507,7 @@ try to find it in the doconce source code. Very often, strange misspellings
 come from a syntax typo that has led to a strange word in the stripped
 version.
 
-Wrong typesetting of mathematics can lead to strange errors, e.g.,
+Wrong typesetting of mathematics can lead to strange errors, e.g. 
 misspellings such as `iu` because of some math `f_iu_i` that is
 not properly typeset between dollar signs. Here are some useful grep
 commands to search for such errors:
@@ -745,7 +745,7 @@ idx{Google docs support}
 
  * Transform the DocOnce document to HTML, upload to Google Drive,
    right-click the file and open as Google Docs.
- * It might be necessary to adjust formatting, e.g., insert an extra
+ * It might be necessary to adjust formatting, e.g. insert an extra
    line between paragraphs.
  * MathJax code is not converted to the Google Docs LaTeX counterpart
    and appears verbatim.
@@ -946,7 +946,7 @@ Some other points of importance:
    language-specific wording.
    Use `doconce replace` or `doconce search` modify the
    `.tex` file (see the Bash script referred to below for examples).
- * Some DocOnce-generated headings are in English, e.g.,
+ * Some DocOnce-generated headings are in English, e.g. 
    ``Table of Contents'', which must be edited by `doconce replace`.
  * For Sphinx output, two edits in files in the Sphinx root directory
    (`sphinx-rootdir` by default) are necessary (see Bash script below for
@@ -1510,7 +1510,7 @@ text in a column, the `ltablex` package is automatically added by DocOnce.
 
 ===== Table inside user-defined environment does not work =====
 
-If the table appears at the end of the environment (e.g., a theorem or
+If the table appears at the end of the environment (e.g. a theorem or
 example environment), add a sentence between the table and
 the end-of-environment command.
 
@@ -1577,7 +1577,7 @@ Terminal> pdflatex -shell-escape mydoc
 LaTeX requires prefixing underscores by a backslash. Either typeset
 words with underscores in inline verbatim text (so you do not need
 the backslash) or use the preprocessor
-to insert LaTeX-specific text with a backslash, e.g.,
+to insert LaTeX-specific text with a backslash, e.g. 
 
 !bc do
 Here is a word underscore:
@@ -1896,7 +1896,7 @@ Make sure you have a `!split` before every slide heading.
 
 ===== Inline verbatim gives error  =====
 
-Check if the inline verbatim contains typical LaTeX commands, e.g.,
+Check if the inline verbatim contains typical LaTeX commands, e.g. 
 
 !bc
 some text with `\usepackage{mypack}` is difficult because

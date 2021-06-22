@@ -1,51 +1,24 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="1.0">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Testing PGF and TikZ support in DocOnce</title>
-    
-    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing PGF and TikZ support in DocOnce &#8212; _ Kristian Gregorius Hustad documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="_static/sidebar.js"></script>
-
-        <script src="http://sagecell.sagemath.org/static/jquery.min.js"></script>
-        <script src="http://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
-
-        <script>sagecell.makeSagecell({inputLocation: ".sage"});</script>
-
-        <style type="text/css">
-                .sagecell .CodeMirror-scroll {
-                        overflow-y: hidden;
-                        overflow-x: auto;
-                }
-                .sagecell .CodeMirror {
-                        height: auto;
-                }
-        </style>
-
-    
-    <link rel="top" title="Testing PGF and TikZ support in DocOnce" href="index.html" />
-    <link rel="prev" title="Testing PGF and TikZ support in DocOnce" href="index.html" />
- 
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/sidebar.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Testing PGF and TikZ support in DocOnce" href="index.html" /> 
   
        <style type="text/css">
          div.admonition {
@@ -54,8 +27,7 @@
          }
        </style>
       </head>
-    
-  <body role="document">
+    <body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -65,7 +37,8 @@
         <li class="right" >
           <a href="index.html" title="Testing PGF and TikZ support in DocOnce"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Testing PGF and TikZ support in DocOnce</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">_ Kristian Gregorius Hustad documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Testing PGF and TikZ support in DocOnce</a></li> 
       </ul>
     </div>  
 
@@ -80,88 +53,86 @@ $(document).ready(function() {
 });
 </script><div class="section" id="testing-pgf-and-tikz-support-in-doconce">
 <h1>Testing PGF and TikZ support in DocOnce<a class="headerlink" href="#testing-pgf-and-tikz-support-in-doconce" title="Permalink to this headline">¶</a></h1>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body">Kristian Gregorius Hustad (krihus at ifi.uio.no)</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Date:</th><td class="field-body">Aug 5, 2016</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Authors</dt>
+<dd class="field-odd"><p>Kristian Gregorius Hustad (krihus at ifi.uio.no)</p>
+</dd>
+<dt class="field-even">Date</dt>
+<dd class="field-even"><p>Jun 22, 2021</p>
+</dd>
+</dl>
 <p><em>Summary.</em> Quick demo of how to make figures with TikZ in DocOnce.</p>
 <div class="section" id="ideas">
 <h2>Ideas<a class="headerlink" href="#ideas" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://www.math.uni-leipzig.de/~hellmund/LaTeX/pgf-tut.pdf">TikZ</a>
-is a very strong tool for making figures in LaTeX. DocOnce supports
-such figures: if a figure file <code class="docutils literal"><span class="pre">myfig</span></code> exists in a version
-<code class="docutils literal"><span class="pre">myfig.tikz</span></code>, DocOnce will, in case of <code class="docutils literal"><span class="pre">latex</span></code> or <code class="docutils literal"><span class="pre">pdflatex</span></code> output,
-utilize the <code class="docutils literal"><span class="pre">myfig.tikz</span></code> figure directly. The problem is what do to
-with other output formats. In <code class="docutils literal"><span class="pre">html</span></code> format one can use a
-corresponding SVG version of the figure, and for other formats, one
-needs a plain PNG file.  DocOnce will automatically create such
-versions of the figure and store them along with <code class="docutils literal"><span class="pre">myfig.tikz</span></code>, as is
-done when other figure formats need automatic conversion.</p>
+is a useful tool for making figures in LaTeX, and DocOnce supports
+these figures. If a figure file <code class="docutils literal notranslate"><span class="pre">myfig</span></code> exists in a version
+<code class="docutils literal notranslate"><span class="pre">myfig.tikz</span></code>, DocOnce will, for <code class="docutils literal notranslate"><span class="pre">latex</span></code> or <code class="docutils literal notranslate"><span class="pre">pdflatex</span></code> output,
+use the <code class="docutils literal notranslate"><span class="pre">myfig.tikz</span></code> figure directly. The problem is what do to
+with other output formats? In <code class="docutils literal notranslate"><span class="pre">html</span></code> format one can use a
+corresponding SVG version of the figure; for other formats, one
+needs a plain PNG file.  DocOnce will automatically create these figure
+versions and store them with the <code class="docutils literal notranslate"><span class="pre">myfig.tikz</span></code> figure, as is
+done when other figure formats are automatically generated.</p>
 </div>
 <div class="section" id="a-modest-beginning">
 <h2>A modest beginning<a class="headerlink" href="#a-modest-beginning" title="Permalink to this headline">¶</a></h2>
-<div class="figure" id="id1">
-<span id="line"></span><a class="reference internal image-reference" href="_images/line.png"><img alt="_images/line.png" src="_images/line.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-text">This shape is commonly referred to as a <em>straight line</em></span></p>
+<div class="figure align-default" id="id1">
+<span id="line"></span><a class="reference internal image-reference" href="_images/line_tikzrender.png"><img alt="_images/line_tikzrender.png" src="_images/line_tikzrender.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">This shape is commonly referred to as a <em>straight line</em></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <p>The most fundamental shape is the line in Figure <a class="reference internal" href="#line"><span class="std std-ref">This shape is commonly referred to as a straight line</span></a>. See the
-<a class="reference external" href="https://github.com/hplgit/doconce/blob/master/doc/src/pgf_tikz/fig/line.tikz">source code</a>
-for how this TikZ figure is defined in LaTeX as a file <code class="docutils literal"><span class="pre">line.tikz</span></code>
-(and included in DocOnce through <code class="docutils literal"><span class="pre">FIGURE:</span> <span class="pre">[line,</span> <span class="pre">width=500]</span> <span class="pre">caption</span></code>).  Such
-lines can be combined to form other shapes, e.g., a square
-as in Figure <a class="reference internal" href="#square"><span class="std std-ref">This square is formed by four straight lines</span></a>, but that figure was created directly by
-the <a class="reference external" href="https://github.com/hplgit/doconce/blob/master/doc/src/pgf_tikz/fig/square.tikz">rectangle</a>
+<a class="reference external" href="https://github.com/doconce/doconce/blob/master/doc/src/pgf_tikz/fig/line.tikz">source code</a>
+for how this TikZ figure is defined in LaTeX as a file <code class="docutils literal notranslate"><span class="pre">line.tikz</span></code>
+(and included in DocOnce through <code class="docutils literal notranslate"><span class="pre">FIGURE:</span> <span class="pre">[line,</span> <span class="pre">width=500]</span> <span class="pre">caption</span></code>).  Such
+lines can be combined to form other shapes, e.g. a square. However, Figure <a class="reference internal" href="#square"><span class="std std-ref">This square is formed by four straight lines</span></a>
+was created using the <a class="reference external" href="https://github.com/doconce/doconce/blob/master/doc/src/pgf_tikz/fig/square.tikz">rectangle</a>
 TikZ command.</p>
-<div class="figure" id="id2">
-<span id="square"></span><a class="reference internal image-reference" href="_images/square.png"><img alt="_images/square.png" src="_images/square.png" style="width: 300px;" /></a>
-<p class="caption"><span class="caption-text"><em>This square is formed by four straight lines</em></span></p>
+<div class="figure align-default" id="id2">
+<span id="square"></span><a class="reference internal image-reference" href="_images/square_tikzrender.png"><img alt="_images/square_tikzrender.png" src="_images/square_tikzrender.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text"><em>This square is formed by four straight lines</em></span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
-<p>A <a class="reference external" href="https://github.com/hplgit/doconce/blob/master/doc/src/pgf_tikz/fig/grid.tikz">grid</a>
+<p>A <a class="reference external" href="https://github.com/doconce/doconce/blob/master/doc/src/pgf_tikz/fig/grid.tikz">grid</a>
 can also be easily made.</p>
-<div class="figure" id="id3">
-<a class="reference internal image-reference" href="_images/grid.png"><img alt="_images/grid.png" src="_images/grid.png" style="width: 300px;" /></a>
-<p class="caption"><span class="caption-text">This is a grid with 5 x 5 cells</span></p>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="_images/grid_tikzrender.png"><img alt="_images/grid_tikzrender.png" src="_images/grid_tikzrender.png" style="width: 300px;" /></a>
+<p class="caption"><span class="caption-text">This is a grid with 5 x 5 cells</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 <p>A circle, however, cannot be formed by a finite number of straight lines.
-It requires <a class="reference external" href="https://github.com/hplgit/doconce/blob/master/doc/src/pgf_tikz/fig/circle.tikz">special code</a>.</p>
-<div class="figure" id="id4">
-<img alt="_images/circle.png" src="_images/circle.png" />
-<p class="caption"><span class="caption-text">This circle is drawn in blue with a dashed line</span></p>
+It requires <a class="reference external" href="https://github.com/doconce/doconce/blob/master/doc/src/pgf_tikz/fig/circle.tikz">special code</a>.</p>
+<div class="figure align-default" id="id4">
+<img alt="_images/circle_tikzrender.png" src="_images/circle_tikzrender.png" />
+<p class="caption"><span class="caption-text">This circle is drawn in blue with a dashed line</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="more-advanced-figures">
 <h2>More advanced figures<a class="headerlink" href="#more-advanced-figures" title="Permalink to this headline">¶</a></h2>
-<div class="figure" id="id5">
-<a class="reference internal image-reference" href="_images/maze.png"><img alt="_images/maze.png" src="_images/maze.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-text">A <a class="reference external" href="https://github.com/hplgit/doconce/blob/master/doc/src/pgf_tikz/fig/maze.tikz">maze</a> can be drawn by combining rectangle elements</span></p>
+<div class="figure align-default" id="id5">
+<a class="reference internal image-reference" href="_images/maze_tikzrender.png"><img alt="_images/maze_tikzrender.png" src="_images/maze_tikzrender.png" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-text">A <a class="reference external" href="https://github.com/doconce/doconce/blob/master/doc/src/pgf_tikz/fig/maze.tikz">maze</a> can be drawn by combining rectangle elements</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
-<div class="figure" id="id6">
-<img alt="_images/graph.png" src="_images/graph.png" />
-<p class="caption"><span class="caption-text">TikZ is quite well suited to draw <a class="reference external" href="https://github.com/hplgit/doconce/blob/master/doc/src/pgf_tikz/fig/graph.tikz">graphs</a></span></p>
+<div class="figure align-default" id="id6">
+<img alt="_images/graph_tikzrender.png" src="_images/graph_tikzrender.png" />
+<p class="caption"><span class="caption-text">TikZ is well suited to draw <a class="reference external" href="https://github.com/doconce/doconce/blob/master/doc/src/pgf_tikz/fig/graph.tikz">graphs</a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="plotting-functions">
 <h2>Plotting functions<a class="headerlink" href="#plotting-functions" title="Permalink to this headline">¶</a></h2>
 <p>TikZ can be used to plot functions. The next figure will be inlined.</p>
-<div class="figure">
-<a class="reference internal image-reference" href="_images/plot1.png"><img alt="_images/plot1.png" src="_images/plot1.png" style="width: 600px;" /></a>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="_images/plot1_tikzrender.png"><img alt="_images/plot1_tikzrender.png" src="_images/plot1_tikzrender.png" style="width: 600px;" /></a>
 </div>
-<p>See the <a class="reference external" href="https://github.com/hplgit/doconce/blob/master/doc/src/pgf_tikz/fig/plot1.tikz">source code</a> for how you make this figure.</p>
-<div class="figure" id="id7">
-<a class="reference internal image-reference" href="_images/plot2.png"><img alt="_images/plot2.png" src="_images/plot2.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-text">The functions can even be labeled!</span></p>
+<p>See the <a class="reference external" href="https://github.com/doconce/doconce/blob/master/doc/src/pgf_tikz/fig/plot1.tikz">source code</a> for how you make this figure.</p>
+<div class="figure align-default" id="id7">
+<a class="reference internal image-reference" href="_images/plot2_tikzrender.png"><img alt="_images/plot2_tikzrender.png" src="_images/plot2_tikzrender.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">The functions can even be labeled!</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </div>
-<p>All details are in the <a class="reference external" href="https://github.com/hplgit/doconce/blob/master/doc/src/pgf_tikz/fig/plot2.tikz">source code</a>.</p>
+<p>All details are in the <a class="reference external" href="https://github.com/doconce/doconce/blob/master/doc/src/pgf_tikz/fig/plot2.tikz">source code</a>.</p>
 </div>
 </div>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
@@ -172,7 +143,7 @@ It requires <a class="reference external" href="https://github.com/hplgit/doconc
               <img class="logo" src="_static/cbc_logo.png" alt="Logo"/>
             </a></p>
             </center>
-  <h3><a href="index.html">Table Of Contents</a></h3>
+  <h3><a href="index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Testing PGF and TikZ support in DocOnce</a><ul>
 <li><a class="reference internal" href="#ideas">Ideas</a></li>
@@ -189,20 +160,20 @@ It requires <a class="reference external" href="https://github.com/hplgit/doconc
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/pgf_tikz.txt"
+      <li><a href="_sources/pgf_tikz.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>$('#searchbox').show(0);</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -216,7 +187,8 @@ It requires <a class="reference external" href="https://github.com/hplgit/doconc
         <li class="right" >
           <a href="index.html" title="Testing PGF and TikZ support in DocOnce"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Testing PGF and TikZ support in DocOnce</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">_ Kristian Gregorius Hustad documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Testing PGF and TikZ support in DocOnce</a></li> 
       </ul>
     </div>
 <div class="wrapper">
@@ -224,7 +196,7 @@ It requires <a class="reference external" href="https://github.com/hplgit/doconc
     <a href="http://cbc.simula.no"><img src="_static/cbc_banner.png" width="100%"><a>
     <br />
     <br />
-      &copy;2016, Kristian Gregorius Hustad.
+      &copy;2021, Testing PGF and TikZ support in DocOnce.
   </div>
 </div>
 
