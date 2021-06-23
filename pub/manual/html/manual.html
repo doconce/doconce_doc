@@ -310,7 +310,6 @@
 <li><a class="reference internal" href="#filenames">Filenames</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#url-to-files-hosted-on-github">URL to files hosted on GitHub</a></li>
 <li><a class="reference internal" href="#other-html-options">Other HTML options</a></li>
 <li><a class="reference internal" href="#blog-posts">Blog Posts</a></li>
 </ul>
@@ -457,7 +456,7 @@
 <dd class="field-odd"><p>Hans Petter Langtangen, Kristian Gregorius Hustad</p>
 </dd>
 <dt class="field-even">Date</dt>
-<dd class="field-even"><p>Jun 22, 2021</p>
+<dd class="field-even"><p>Jun 23, 2021</p>
 </dd>
 </dl>
 <div class="admonition warning">
@@ -6954,19 +6953,6 @@ Terminal&gt; doconce split_html mydoc_vagrant.html
 </div>
 </div>
 </div>
-<div class="section" id="url-to-files-hosted-on-github">
-<h3>URL to files hosted on GitHub<a class="headerlink" href="#url-to-files-hosted-on-github" title="Permalink to this headline">¶</a></h3>
-<p>The generated HTML code will have URLs to files in the DocOnce repo at GitHub.
-The type of URL is set with the <code class="docutils literal notranslate"><span class="pre">--html_raw_github_url=...</span></code> option:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">--html_raw_github_url=safe</span></code> or <code class="docutils literal notranslate"><span class="pre">--html_raw_github_url=cdn.rawgit</span></code>: safe URL for high traffic production sites (default)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--html_raw_github_url=test</span></code> or <code class="docutils literal notranslate"><span class="pre">--html_raw_github_url=rawgit</span></code>: recommended URL for low traffic development sites - use this when developing HTML pages and the DocOnce GitHub links in the HTML files are also developed and subject to changes</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--html_raw_github_url=github</span></code> or <code class="docutils literal notranslate"><span class="pre">--html_raw_github_url=raw.github</span></code>: URL directly to the raw GitHub file (<code class="docutils literal notranslate"><span class="pre">https://raw.github.com/doconce/doconce/...</span></code>) that may fail to load properly in (e.g.) Internet explorer</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">--html_raw_github_url=githubusercontent</span></code> or <code class="docutils literal notranslate"><span class="pre">--html_raw_github_url=raw.githubusercontent</span></code>: as the one above, but using <code class="docutils literal notranslate"><span class="pre">https://raw.githubusercontent.com</span></code> instead</p></li>
-</ul>
-</div></blockquote>
-</div>
 <div class="section" id="other-html-options">
 <h3>Other HTML options<a class="headerlink" href="#other-html-options" title="Permalink to this headline">¶</a></h3>
 <p>The Bootstrap family of styles have become very popular since they
@@ -8269,11 +8255,6 @@ Options:
 --html_share=...                    Specify URL and there will be Facebook, Twitter, etc. buttons at the end of the HTML document. --html_share=https://mysite.com/specials shares on email, Facebook, Google+, LinkedIn, Twitter, and enables a print button too. --html_share=https://mysite.com/specials,twitter,facebook shares on Twitter and Facebook only. Sites are separated by comma. The following names are allowed: email, facebook, google+, linkedin, twitter, print.
 --html_exercise_icon=...            Specify a question icon (as a filename in the bundled/html_images directory in the doconce repo) for being inserted to the right in exercises. default: turn on predefined question icons according to the chosen style. none: no icons (this is the default value).
 --html_exercise_icon_width=...      Width of the icon image in pixels (must be used with --html_exercise_icon).
---html_raw_github_url=...           URLs to files hosted on the doconce github account. Internet Explorer (and perhaps other browsers) will not show raw.github.com files. Instead on should use rawgit.com. For development of HTML sites in Safari and Chrome and can use rawgit.com.
-  Values of --html_raw_github_url=: safe or cdn.rawgit: use this for ready-made sites with potentially some traffic. The URL becomes https://cdn.rawgit.com/doconce/doconce/...
-  test or rawgit: use this for test purposes and development with low traffic. The URL becomes https://rawgit.com/doconce/doconce/...
-  github or raw.github: the URL becomes https://raw.github.com and may fail to load properly.
-  githubusercontent or raw.githubusercontent: The URL becomes https://raw.githubusercontent.com and may fail to load properly.
 --html_DOCTYPE                      Insert &lt;!DOCTYPE HTML&gt; in the top of the HTML file. This is required for Internet Explorer and Mozilla. However, some of the CSS files used by DocOnce may not load properly if they are not well formed. That is why no doctype is default in the generated HTML files.
 --html_links_in_new_window          Open HTML links in a new window/tab.
 --html_quiz_button_text=...         Text on buttons for collapsing/expanding answers and explanations in quizzes (with bootstrap styles). Default: Empty (just pencil glyphion).

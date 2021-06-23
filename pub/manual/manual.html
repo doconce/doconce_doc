@@ -451,10 +451,6 @@ in.collapse+a.btn.showdetails:before { content:'Hide details'; }
               ('Splitting HTML documents', 2, None, 'splitting-html-documents'),
               ('The HTML File Collection', 3, None, 'the-html-file-collection'),
               ('Filenames', 3, None, 'filenames'),
-              ('URL to files hosted on GitHub',
-               2,
-               None,
-               'url-to-files-hosted-on-github'),
               ('Other HTML options', 2, None, 'other-html-options'),
               ('Blog Posts', 2, 'do2any:blog', 'do2any:blog'),
               ('Pandoc and Markdown', 1, 'do2any:pandoc', 'do2any:pandoc'),
@@ -822,7 +818,6 @@ $$
      <!-- navigation toc: --> <li><a href="#splitting-html-documents" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Splitting HTML documents</a></li>
      <!-- navigation toc: --> <li><a href="#the-html-file-collection" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The HTML File Collection</a></li>
      <!-- navigation toc: --> <li><a href="#filenames" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Filenames</a></li>
-     <!-- navigation toc: --> <li><a href="#url-to-files-hosted-on-github" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;URL to files hosted on GitHub</a></li>
      <!-- navigation toc: --> <li><a href="#other-html-options" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Other HTML options</a></li>
      <!-- navigation toc: --> <li><a href="#do2any:blog" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Blog Posts</a></li>
      <!-- navigation toc: --> <li><a href="#do2any:pandoc" style="font-size: 80%;"><b>Pandoc and Markdown</b></a></li>
@@ -923,7 +918,7 @@ $$
 </center>
 <br>
 <center>
-<h4>Jun 22, 2021</h4>
+<h4>Jun 23, 2021</h4>
 </center> <!-- date -->
 <br>
 
@@ -1121,7 +1116,6 @@ expressions).
 <p><span class="tab"> <a href="#html-styles"> HTML Styles </a></p>
 <p><span class="tab"> <a href="#html-templates"> HTML templates </a></p>
 <p><span class="tab"> <a href="#splitting-html-documents"> Splitting HTML documents </a></p>
-<p><span class="tab"> <a href="#url-to-files-hosted-on-github"> URL to files hosted on GitHub </a></p>
 <p><span class="tab"> <a href="#other-html-options"> Other HTML options </a></p>
 <p><span class="tab"> <a href="#do2any:blog"> Blog Posts </a></p>
 <p><a href="#do2any:pandoc"> Pandoc and Markdown </a></p>
@@ -13650,18 +13644,6 @@ Terminal&gt; doconce split_html mydoc_vagrant.html
     </div>
   </div>
 </div>
-<h2 id="url-to-files-hosted-on-github" class="anchor">URL to files hosted on GitHub </h2>
-
-<p>The generated HTML code will have URLs to files in the DocOnce repo at GitHub.
-The type of URL is set with the <code>--html_raw_github_url=...</code> option:
-</p>
-
-<ul>
- <li> <code>--html_raw_github_url=safe</code> or <code>--html_raw_github_url=cdn.rawgit</code>: safe URL for high traffic production sites (default)</li>
- <li> <code>--html_raw_github_url=test</code> or <code>--html_raw_github_url=rawgit</code>: recommended URL for low traffic development sites - use this when developing HTML pages and the DocOnce GitHub links in the HTML files are also developed and subject to changes</li>
- <li> <code>--html_raw_github_url=github</code> or <code>--html_raw_github_url=raw.github</code>: URL directly to the raw GitHub file (<code>https://raw.github.com/doconce/doconce/...</code>) that may fail to load properly in (e.g.) Internet explorer</li>
- <li> <code>--html_raw_github_url=githubusercontent</code> or <code>--html_raw_github_url=raw.githubusercontent</code>: as the one above, but using <code>https://raw.githubusercontent.com</code> instead</li>
-</ul>
 <h2 id="other-html-options" class="anchor">Other HTML options </h2>
 
 <p>The Bootstrap family of styles have become very popular since they
@@ -16266,11 +16248,6 @@ Options:
 --html_share=...                    Specify URL and there will be Facebook, Twitter, etc. buttons at the end of the HTML document. --html_share=https://mysite.com/specials shares on email, Facebook, Google+, LinkedIn, Twitter, and enables a print button too. --html_share=https://mysite.com/specials,twitter,facebook shares on Twitter and Facebook only. Sites are separated by comma. The following names are allowed: email, facebook, google+, linkedin, twitter, print.
 --html_exercise_icon=...            Specify a question icon (as a filename in the bundled/html_images directory in the doconce repo) for being inserted to the right in exercises. default: turn on predefined question icons according to the chosen style. none: no icons (this is the default value).
 --html_exercise_icon_width=...      Width of the icon image in pixels (must be used with --html_exercise_icon).
---html_raw_github_url=...           URLs to files hosted on the doconce github account. Internet Explorer (and perhaps other browsers) will not show raw.github.com files. Instead on should use rawgit.com. For development of HTML sites in Safari and Chrome and can use rawgit.com. 
-  Values of --html_raw_github_url=: safe or cdn.rawgit: use this for ready-made sites with potentially some traffic. The URL becomes https://cdn.rawgit.com/doconce/doconce/...
-  test or rawgit: use this for test purposes and development with low traffic. The URL becomes https://rawgit.com/doconce/doconce/... 
-  github or raw.github: the URL becomes https://raw.github.com and may fail to load properly. 
-  githubusercontent or raw.githubusercontent: The URL becomes https://raw.githubusercontent.com and may fail to load properly.
 --html_DOCTYPE                      Insert &lt;!DOCTYPE HTML&gt; in the top of the HTML file. This is required for Internet Explorer and Mozilla. However, some of the CSS files used by DocOnce may not load properly if they are not well formed. That is why no doctype is default in the generated HTML files.
 --html_links_in_new_window          Open HTML links in a new window/tab.
 --html_quiz_button_text=...         Text on buttons for collapsing/expanding answers and explanations in quizzes (with bootstrap styles). Default: Empty (just pencil glyphion).

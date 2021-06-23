@@ -3,7 +3,7 @@
 <!-- TITLE: Scientific Writing and Publishing for the Future: How Can We Handle the eLearning Revolution? -->
 % Scientific Writing and Publishing for the Future
 % **Hans Petter Langtangen**
-% Jun 22, 2021
+% Jun 23, 2021
 
 Copyright 2021, Hans Petter Langtangen
 
