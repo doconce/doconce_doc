@@ -2714,8 +2714,8 @@ The commands `!anshide` and `!solhide` can be used to hide from the main text an
 |-------------------------------------------------------------|
 | Command             | Behavior                              |
 |-----------l-------------------------l-----------------------|
-| !anshide            | Hide answers until !solhide           |
-| !solhide            | Hide solutions until !solhide         |
+| !anshide            | Hide answers until !ansoff            |
+| !solhide            | Hide solutions until !soloff          |
 | !ansoff             | Restore answers' visibility           |
 | !soloff             | Restore solutions visibility          |
 | !ansdocend          | Answers in the end of the document    |
