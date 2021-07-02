@@ -218,4 +218,4 @@ dest=../../../../doconce.wiki
 cp demo/manual.md $dest
 
 echo "To remove untracked files run:"
-echo "git clean -fd ../../.."
+echo "git clean -fd ../.."

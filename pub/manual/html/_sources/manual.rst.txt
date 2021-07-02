@@ -8,8 +8,9 @@
   }
   </style>
 
-.. Automatically generated Sphinx-extended reStructuredText file from DocOnce source
-   (https://github.com/doconce/doconce/)
+.. File automatically generated using DocOnce (https://github.com/doconce/doconce/):
+
+.. doconce format sphinx manual.do.txt --no_mako --cite_doconce --no_abort
 
 .. |nbsp| unicode:: 0xA0
    :trim:
@@ -20,7 +21,7 @@ DocOnce Manual
 %%%%%%%%%%%%%%
 
 :Authors: Hans Petter Langtangen, Kristian Gregorius Hustad
-:Date: Jun 23, 2021
+:Date: Jul 2, 2021
 
 .. lines beginning with # are doconce comment lines
 
@@ -3688,8 +3689,8 @@ The commands ``!anshide`` and ``!solhide`` can be used to hide from the main tex
 ==========  ==================================  
  Command                 Behavior               
 ==========  ==================================  
-!anshide    Hide answers until !solhide         
-!solhide    Hide solutions until !solhide       
+!anshide    Hide answers until !ansoff          
+!solhide    Hide solutions until !soloff        
 !ansoff     Restore answers' visibility         
 !soloff     Restore solutions visibility        
 !ansdocend  Answers in the end of the document  
