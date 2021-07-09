@@ -140,17 +140,58 @@ All relevant output files are copied to `doc/pub` for publication on the github 
 
 ======= Add a New Language =======
 
-The translations are defined in the `lib/doconce/globals.py` file, and test files are in the [locale](https://github.com/doconce/doconce/tree/master/doc/src/locale) directory. Also read the [Support for non-English](https://doconce.github.io/doconce/doc/pub/manual/manual.html#support-for-non-english) section of the manual. 
+The translations are defined in the `lib/doconce/globals.py` file, and test files are in the "locale": "https://github.com/doconce/doconce/tree/master/doc/src/locale" directory. Also read the "Support for non-English": "https://doconce.github.io/doconce/doc/pub/manual/manual.html#support-for-non-english" section of the manual. 
 
 
 
-======= Send your code using git =======
+======= Push your code using git =======
 
 I suggest the following procedure
 
-* Creating a fork of the [doconce/doconce](https://github.com/doconce/doconce) repository in your GitHub account; 
-* Edit/develop new code there (you might want to use git branches); 
-* Run `git add .` and `git push`. Your forked repository should at this point get your commit;
-* Navigate to the [doconce/doconce](https://github.com/doconce/doconce) repository and create a Pull Request. In brief: Pull Request button > New pull request button > click on the "compare across forks" link > Use the boxes below the link to compare with your fork
+* Creating a fork of the "doconce/doconce": "https://github.com/doconce/doconce" repository in your GitHub account; 
+* Add "doconce/doconce": "https://github.com/doconce/doconce" as an upstream repository:
+!bc shcod-t
+git remote add upstream https://github.com/doconce/doconce.git
+git remote -v     # verify, there should be two `origin` and two `upstream`
+!ec
 
-You might want to read more about git online. 
+* Edit/develop new code there (you might want to use git branches); 
+* You might have creted new/untracked files. Decide which ons you want to keep, then delete the rest:
+
+!bc shcod-t
+# Keep some files
+git add -f keep_this_file.txt
+cd test
+git add -f keep_this_file_in_test.txt
+cd ..
+# This removes all new/untracked files
+git submodule foreach git clean -fd
+git clean -fd
+!ec
+
+* Run `git add .` and `git commit` on submodules, then on the superproject:
+
+!bc shcod-t
+msg="some description"
+# First add and commit on the submodules ..
+git submodule foreach git add -A .
+git submodule foreach git commit -am "$msg"
+# .. then do the same in the superproject
+git add -A .
+git commit -am "$msg"
+!ec
+
+* Push your commit to your forked repository:
+!bc shcod-t
+git push --recurse-submodules=on-demand
+!ec
+
+* Navigate to the "doconce/doconce": "https://github.com/doconce/doconce" repository and create a Pull Request. In brief: Pull Request button > New pull request button > click on the "compare across forks" link > Use the boxes below the link to compare with your fork
+
+* To update your local fork repository do the following:
+!bc shcod-t
+git checkout main     # Switch to the main branch
+git fetch upstream 
+git rebase upstream/main  Update the code to the remote version (the main DocOnce repository)
+git push              #Push the updates to my fork
+!ec

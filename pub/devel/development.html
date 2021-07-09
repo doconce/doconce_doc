@@ -1,6 +1,5 @@
 <!--
-HTML file automatically generated from DocOnce source
-(https://github.com/doconce/doconce/)
+File automatically generated using DocOnce (https://github.com/doconce/doconce/):
 doconce format html development.do.txt --html_style=bootswatch_readable --html_code_style=inherit --no_abort --no_mako
 -->
 <html>
@@ -58,10 +57,10 @@ code { color: inherit; background-color: transparent; }
                None,
                'compiling-the-documentation'),
               ('Add a New Language', 1, None, 'add-a-new-language'),
-              ('Send your code using git',
+              ('Push your code using git',
                1,
                None,
-               'send-your-code-using-git')]}
+               'push-your-code-using-git')]}
 end of tocinfo -->
 
 <body>
@@ -88,7 +87,7 @@ end of tocinfo -->
      <!-- navigation toc: --> <li><a href="#section:IDE" style="font-size: 80%;"><b>Running DocOnce in a IDE</b></a></li>
      <!-- navigation toc: --> <li><a href="#compiling-the-documentation" style="font-size: 80%;"><b>Compiling the Documentation</b></a></li>
      <!-- navigation toc: --> <li><a href="#add-a-new-language" style="font-size: 80%;"><b>Add a New Language</b></a></li>
-     <!-- navigation toc: --> <li><a href="#send-your-code-using-git" style="font-size: 80%;"><b>Send your code using git</b></a></li>
+     <!-- navigation toc: --> <li><a href="#push-your-code-using-git" style="font-size: 80%;"><b>Push your code using git</b></a></li>
 
         </ul>
       </li>
@@ -114,7 +113,7 @@ end of tocinfo -->
 </center>
 <br>
 <center>
-<h4>Jun 22, 2021</h4>
+<h4>Jul 9, 2021</h4>
 </center> <!-- date -->
 <br>
 
@@ -307,18 +306,120 @@ python -m venv venv
 <p>All relevant output files are copied to <code>doc/pub</code> for publication on the github website.</p>
 <h1 id="add-a-new-language" class="anchor">Add a New Language </h1>
 
-<p>The translations are defined in the <code>lib/doconce/globals.py</code> file, and test files are in the [locale](https://github.com/doconce/doconce/tree/master/doc/src/locale) directory. Also read the [Support for non-English](https://doconce.github.io/doconce/doc/pub/manual/manual.html#support-for-non-english) section of the manual. </p>
-<h1 id="send-your-code-using-git" class="anchor">Send your code using git </h1>
+<p>The translations are defined in the <code>lib/doconce/globals.py</code> file, and test files are in the <a href="https://github.com/doconce/doconce/tree/master/doc/src/locale" target="_self">locale</a> directory. Also read the <a href="https://doconce.github.io/doconce/doc/pub/manual/manual.html#support-for-non-english" target="_self">Support for non-English</a> section of the manual. </p>
+<h1 id="push-your-code-using-git" class="anchor">Push your code using git </h1>
 
 <p>I suggest the following procedure</p>
 
 <ul>
-<li> Creating a fork of the [doconce/doconce](https://github.com/doconce/doconce) repository in your GitHub account;</li> 
-<li> Edit/develop new code there (you might want to use git branches);</li> 
-<li> Run <code>git add .</code> and <code>git push</code>. Your forked repository should at this point get your commit;</li>
-<li> Navigate to the [doconce/doconce](https://github.com/doconce/doconce) repository and create a Pull Request. In brief: Pull Request button > New pull request button > click on the "compare across forks" link > Use the boxes below the link to compare with your fork</li>
+<li> Creating a fork of the <a href="https://github.com/doconce/doconce" target="_self">doconce/doconce</a> repository in your GitHub account;</li> 
+<li> Add <a href="https://github.com/doconce/doconce" target="_self">doconce/doconce</a> as an upstream repository:</li>
 </ul>
-<p>You might want to read more about git online. </p>
+
+<!-- code=bash (!bc shcod-t) typeset with pygments style "default-t" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">git remote add upstream https://github.com/doconce/doconce.git
+git remote -v     <span style="color: #408080; font-style: italic"># verify, there should be two `origin` and two `upstream`</span>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul>
+<li> Edit/develop new code there (you might want to use git branches);</li> 
+<li> You might have creted new/untracked files. Decide which ons you want to keep, then delete the rest:</li>
+</ul>
+
+<!-- code=bash (!bc shcod-t) typeset with pygments style "default-t" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic"># Keep some files</span>
+git add -f keep_this_file.txt
+<span style="color: #008000">cd</span> <span style="color: #008000">test</span>
+git add -f keep_this_file_in_test.txt
+<span style="color: #008000">cd</span> ..
+<span style="color: #408080; font-style: italic"># This removes all new/untracked files</span>
+git submodule foreach git clean -fd
+git clean -fd
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul>
+<li> Run <code>git add .</code> and <code>git commit</code> on submodules, then on the superproject:</li>
+</ul>
+
+<!-- code=bash (!bc shcod-t) typeset with pygments style "default-t" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;"><span style="color: #19177C">msg</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;some description&quot;</span>
+<span style="color: #408080; font-style: italic"># First add and commit on the submodules ..</span>
+git submodule foreach git add -A .
+git submodule foreach git commit -am <span style="color: #BA2121">&quot;</span><span style="color: #19177C">$msg</span><span style="color: #BA2121">&quot;</span>
+<span style="color: #408080; font-style: italic"># .. then do the same in the superproject</span>
+git add -A .
+git commit -am <span style="color: #BA2121">&quot;</span><span style="color: #19177C">$msg</span><span style="color: #BA2121">&quot;</span>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul>
+<li> Push your commit to your forked repository:</li>
+</ul>
+
+<!-- code=bash (!bc shcod-t) typeset with pygments style "default-t" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">git push --recurse-submodules<span style="color: #666666">=</span>on-demand
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul>
+<li> Navigate to the <a href="https://github.com/doconce/doconce" target="_self">doconce/doconce</a> repository and create a Pull Request. In brief: Pull Request button > New pull request button > click on the "compare across forks" link > Use the boxes below the link to compare with your fork</li>
+<li> To update your local fork repository do the following:</li>
+</ul>
+
+<!-- code=bash (!bc shcod-t) typeset with pygments style "default-t" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8">
+  <pre style="line-height: 125%;">git checkout main     <span style="color: #408080; font-style: italic"># Switch to the main branch</span>
+git fetch upstream 
+git rebase upstream/main  Update the code to the remote version <span style="color: #666666">(</span>the main DocOnce repository<span style="color: #666666">)</span>
+git push              <span style="color: #408080; font-style: italic">#Push the updates to my fork</span>
+</pre>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- ------------------- end of main content --------------- -->
 </div>  <!-- end container -->
 <!-- include javascript, jQuery *first* -->
