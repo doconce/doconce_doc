@@ -261,7 +261,18 @@ the copyright. The output is typically ``Copyright 2015, Joe Doe, Digital Compan
 !ec
 The output becomes ``Copyright 2015, Digital Company, Analog Company. Released under CC Attribution 4.0 license''.
 
+A copyright can also be included in a dot-file `.<mydoc>.copyright`, e.g.
+!bc do
+{'copyright': 'Some copyright, ', 
+'year':'2021', 'holder': ['John Doe'], 
+'license': 'Some License.', 
+'cite doconce': True}
+!ec
+will add the following string to several output files: 
 
+``Copyright: Some copyright, 2021, John Doe. Some License.
+
+Made with DocOnce''.
 
 ===== Table of contents =====
 idx{`TOC` keyword}
