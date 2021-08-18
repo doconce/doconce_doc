@@ -172,16 +172,21 @@ git clean -fd
 * Run `git add .` and `git commit` on submodules, then on the superproject:
 
 !bc shcod-t
-msg="some description"
-# First add and commit on the submodules ..
-git submodule foreach git add -A .
-git submodule foreach git commit -am "$msg"
+# First add and commit in submodules ..
+cd doc
+git add .
+git commit -am "commit changes in doc submodule"
+cd ..
+cd test
+git add . 
+git commit -am "commit changes in test submodule"
+cd ..
 # .. then do the same in the superproject
 git add -A .
-git commit -am "$msg"
+git commit -am "some description"
 !ec
 
-* Push your commit to your forked repository:
+* Push all commits to your forked repository:
 !bc shcod-t
 git push --recurse-submodules=on-demand
 !ec

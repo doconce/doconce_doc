@@ -21,7 +21,7 @@ DocOnce Manual
 %%%%%%%%%%%%%%
 
 :Authors: Hans Petter Langtangen, Kristian Gregorius Hustad
-:Date: Jul 9, 2021
+:Date: Aug 18, 2021
 
 .. lines beginning with # are doconce comment lines
 
@@ -748,7 +748,7 @@ always be prepared in both PDF and PNG formats.
 
 If we just specify the filestem of the figure file, DocOonce will pick the
 most appropriate version of the file for given output format. For HTML
-there is a preference for ``.svg``, thereafter comes ``.html`` (typically Bokeh
+there is a preference for ``.svg``, followed by ``.html`` (typically Bokeh
 plots), then ``.png``, then ``gif``, then ``.jpg``. Here is the preference list
 for the various formats:
 
@@ -4562,7 +4562,7 @@ The ``!bc`` tag takes arguments with the following syntax:
 
 .. code-block:: doconce
 
-    !bc LANG[cod|pro][postfix]
+    !bc LANG[cod|pro][POSTFIX][-err]
 
 The first argument ``LANG`` can be one of the predefined environments explained in the table below or a custom one defined in the config file ``.ptex2tex.cfg``. 
 
@@ -4594,15 +4594,17 @@ pysc        interactive Python SageMathCell in the html format
 
 The third ``posfix`` argument modifies the code block visibility or code execution when using the ``--execute`` option (see the next paragraphs).
 
-=======  =========================  ============  
-Postfix           Behavior            Example     
-=======  =========================  ============  
--t       Display as text            !bc py-t      
-out      Code output                !bc pyout     
-hid      Hide code                  !bc pycodhid  
--e       Hide code (also in ipynb)  !bc pycod-t   
--h       Toggle visibility in html  !bc pycod-h   
-=======  =========================  ============  
+=======  =========================  =============  
+POSTFIX           Behavior             Example     
+=======  =========================  =============  
+-t       Display as text            !bc py-t       
+-out     Code output                !bc py-out     
+-hid     Hide code                  !bc pycod-hid  
+-e       Hide code (also in ipynb)  !bc pycod-t    
+-h       Toggle visibility in html  !bc pycod-h    
+=======  =========================  =============  
+
+Finally, ``-err`` can be used to override the behavior of the ``--execute=abort`` option and ignore any code errors in the block. 
 
 .. index:: --latex_code_style=
 
@@ -4625,7 +4627,8 @@ For these programming languages, DocOnce tries to identify and use any available
 
 The postfix arguments override the effect of ``--execute`` at the code block level. 
 The ``-t`` postfix shows code rendered as text, i.e. code that is only meant to be displayed. 
-Thereafter, the ``out`` postfix can be used to display code output as text. This combination is useful, for example, to display as text a code snippet followed by an error:
+Following a text block, a block with the ``-out`` postfix can be used to display code output as text. 
+This combination is useful, for example, to display as text a code snippet followed by an error:
 
 .. code-block:: doconce
 
@@ -4643,7 +4646,7 @@ Hiding code blocks
 
 Notebooks and other executable code snippets in HTML or ipynb may need some
 initializing code before a snippet works. 
-The ``hid``, ``-e``, and ``-h`` postfixes can be used to hide such code, but still execute it using the ``--execute`` option in live code environments. 
+The ``-hid``, ``-e``, and ``-h`` postfixes can be used to hide such code, but still execute it using the ``--execute`` option in live code environments. 
 
 The ``-h`` postfix hides a code block in all formats except ipynb: 
 
@@ -9437,8 +9440,8 @@ having the code
 
 will not execute unless ``sys`` is imported. While a book may show such
 code and skip (potentially tedious) initializing statements, they must
-be present in the notebook. To this end, use the ``!bc *hid`` environment
-for hidden code. In the present example, we use ``!bc pyhid`` to specify
+be present in the notebook. To this end, use the ``!bc *-hid`` environment
+for hidden code. In the present example, we use ``!bc py-hid`` to specify
 Python code that needs to be executed, but that should normally be
 hidden (other formats, with the exception of certain interactive Sphinx
 documents, will hide such code).
@@ -10434,6 +10437,7 @@ here for convenience.
     --sphinx_figure_captions=...        Font style in figure captions: emphasize (default) or normal. If you use boldface or emphasize in the caption, the font style will be normal for that caption.
     --oneline_paragraphs                Combine paragraphs to one line (does not work well).
     --execute                           Automatically run code blocks and show output below the code block.
+    --execute=...                       continue (default), abort. Enable --execute and allow to abort execution on code errors.
     --verbose-execute                   Print output from execute cells.
     --ignore_output                     Ignore output cells. Useful when you want to use execute rather than predefined output cells.
     --html_responsive_figure_width      Use figure width as max-width, and set width to 100 percent so that figures can shrink to device width.

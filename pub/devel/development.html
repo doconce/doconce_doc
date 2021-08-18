@@ -113,7 +113,7 @@ end of tocinfo -->
 </center>
 <br>
 <center>
-<h4>Jul 9, 2021</h4>
+<h4>Aug 18, 2021</h4>
 </center> <!-- date -->
 <br>
 
@@ -367,13 +367,18 @@ git clean -fd
     <div class="inner_cell">
       <div class="input_area">
         <div class="highlight" style="background: #f8f8f8">
-  <pre style="line-height: 125%;"><span style="color: #19177C">msg</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;some description&quot;</span>
-<span style="color: #408080; font-style: italic"># First add and commit on the submodules ..</span>
-git submodule foreach git add -A .
-git submodule foreach git commit -am <span style="color: #BA2121">&quot;</span><span style="color: #19177C">$msg</span><span style="color: #BA2121">&quot;</span>
+  <pre style="line-height: 125%;"><span style="color: #408080; font-style: italic"># First add and commit in submodules ..</span>
+<span style="color: #008000">cd</span> doc
+git add .
+git commit -am <span style="color: #BA2121">&quot;commit changes in doc submodule&quot;</span>
+<span style="color: #008000">cd</span> ..
+<span style="color: #008000">cd</span> <span style="color: #008000">test</span>
+git add . 
+git commit -am <span style="color: #BA2121">&quot;commit changes in test submodule&quot;</span>
+<span style="color: #008000">cd</span> ..
 <span style="color: #408080; font-style: italic"># .. then do the same in the superproject</span>
 git add -A .
-git commit -am <span style="color: #BA2121">&quot;</span><span style="color: #19177C">$msg</span><span style="color: #BA2121">&quot;</span>
+git commit -am <span style="color: #BA2121">&quot;some description&quot;</span>
 </pre>
 </div>
       </div>
@@ -382,7 +387,7 @@ git commit -am <span style="color: #BA2121">&quot;</span><span style="color: #19
 </div>
 
 <ul>
-<li> Push your commit to your forked repository:</li>
+<li> Push all commits to your forked repository:</li>
 </ul>
 
 <!-- code=bash (!bc shcod-t) typeset with pygments style "default-t" -->

@@ -456,7 +456,7 @@
 <dd class="field-odd"><p>Hans Petter Langtangen, Kristian Gregorius Hustad</p>
 </dd>
 <dt class="field-even">Date</dt>
-<dd class="field-even"><p>Jul 9, 2021</p>
+<dd class="field-even"><p>Aug 18, 2021</p>
 </dd>
 </dl>
 <div class="admonition warning">
@@ -965,7 +965,7 @@ conversion by DocOnce - that gives the best quality. For example, plots should
 always be prepared in both PDF and PNG formats.</p>
 <p>If we just specify the filestem of the figure file, DocOonce will pick the
 most appropriate version of the file for given output format. For HTML
-there is a preference for <code class="docutils literal notranslate"><span class="pre">.svg</span></code>, thereafter comes <code class="docutils literal notranslate"><span class="pre">.html</span></code> (typically Bokeh
+there is a preference for <code class="docutils literal notranslate"><span class="pre">.svg</span></code>, followed by <code class="docutils literal notranslate"><span class="pre">.html</span></code> (typically Bokeh
 plots), then <code class="docutils literal notranslate"><span class="pre">.png</span></code>, then <code class="docutils literal notranslate"><span class="pre">gif</span></code>, then <code class="docutils literal notranslate"><span class="pre">.jpg</span></code>. Here is the preference list
 for the various formats:</p>
 <blockquote>
@@ -3812,7 +3812,7 @@ below or equal to 67 characters.</p>
 <div class="section" id="typesetting-styles">
 <h4>Typesetting Styles<a class="headerlink" href="#typesetting-styles" title="Permalink to this headline">¶</a></h4>
 <p>The <code class="docutils literal notranslate"><span class="pre">!bc</span></code> tag takes arguments with the following syntax:</p>
-<div class="highlight-doconce notranslate"><div class="highlight"><pre><span></span><span class="k">!bc</span> LANG[cod|pro][postfix]
+<div class="highlight-doconce notranslate"><div class="highlight"><pre><span></span><span class="k">!bc</span> LANG[cod|pro][POSTFIX][-err]
 </pre></div>
 </div>
 <p>The first argument <code class="docutils literal notranslate"><span class="pre">LANG</span></code> can be one of the predefined environments explained in the table below or a custom one defined in the config file <code class="docutils literal notranslate"><span class="pre">.ptex2tex.cfg</span></code>.</p>
@@ -3891,11 +3891,11 @@ below or equal to 67 characters.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 16%" />
-<col style="width: 57%" />
-<col style="width: 27%" />
+<col style="width: 56%" />
+<col style="width: 29%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Postfix</p></th>
+<tr class="row-odd"><th class="head"><p>POSTFIX</p></th>
 <th class="head"><p>Behavior</p></th>
 <th class="head"><p>Example</p></th>
 </tr>
@@ -3905,13 +3905,13 @@ below or equal to 67 characters.</p>
 <td><p>Display as text</p></td>
 <td><p>!bc py-t</p></td>
 </tr>
-<tr class="row-odd"><td><p>out</p></td>
+<tr class="row-odd"><td><p>-out</p></td>
 <td><p>Code output</p></td>
-<td><p>!bc pyout</p></td>
+<td><p>!bc py-out</p></td>
 </tr>
-<tr class="row-even"><td><p>hid</p></td>
+<tr class="row-even"><td><p>-hid</p></td>
 <td><p>Hide code</p></td>
-<td><p>!bc pycodhid</p></td>
+<td><p>!bc pycod-hid</p></td>
 </tr>
 <tr class="row-odd"><td><p>-e</p></td>
 <td><p>Hide code (also in ipynb)</p></td>
@@ -3923,6 +3923,7 @@ below or equal to 67 characters.</p>
 </tr>
 </tbody>
 </table>
+<p>Finally, <code class="docutils literal notranslate"><span class="pre">-err</span></code> can be used to override the behavior of the <code class="docutils literal notranslate"><span class="pre">--execute=abort</span></code> option and ignore any code errors in the block.</p>
 <p id="index-198">All these definitions of the arguments after <code class="docutils literal notranslate"><span class="pre">!bc</span></code> can be redefined
 in command-line arguments for the <code class="docutils literal notranslate"><span class="pre">--latex_code_style=</span></code> option,
 the <code class="docutils literal notranslate"><span class="pre">.ptex2tex.cfg</span></code> configuration file for <code class="docutils literal notranslate"><span class="pre">ptex2tex</span></code>, and in
@@ -3938,7 +3939,8 @@ the <code class="docutils literal notranslate"><span class="pre">sphinx</span> <
 For these programming languages, DocOnce tries to identify and use any available <a class="reference external" href="https://github.com/jupyter/jupyter/wiki/Jupyter-kernels">Jupyter kernel</a>. In this way different code blocks can share the same scope. If jupyter kernel is not installed, DocOnce executes each code block individually.</p>
 <p>The postfix arguments override the effect of <code class="docutils literal notranslate"><span class="pre">--execute</span></code> at the code block level.
 The <code class="docutils literal notranslate"><span class="pre">-t</span></code> postfix shows code rendered as text, i.e. code that is only meant to be displayed.
-Thereafter, the <code class="docutils literal notranslate"><span class="pre">out</span></code> postfix can be used to display code output as text. This combination is useful, for example, to display as text a code snippet followed by an error:</p>
+Following a text block, a block with the <code class="docutils literal notranslate"><span class="pre">-out</span></code> postfix can be used to display code output as text.
+This combination is useful, for example, to display as text a code snippet followed by an error:</p>
 <div class="highlight-doconce notranslate"><div class="highlight"><pre><span></span><span class="k">!bc</span> pycod-t
 10 / 0
 <span class="k">!ec</span>
@@ -3953,7 +3955,7 @@ ZeroDivisionError: division by zero
 <h4>Hiding code blocks<a class="headerlink" href="#hiding-code-blocks" title="Permalink to this headline">¶</a></h4>
 <p>Notebooks and other executable code snippets in HTML or ipynb may need some
 initializing code before a snippet works.
-The <code class="docutils literal notranslate"><span class="pre">hid</span></code>, <code class="docutils literal notranslate"><span class="pre">-e</span></code>, and <code class="docutils literal notranslate"><span class="pre">-h</span></code> postfixes can be used to hide such code, but still execute it using the <code class="docutils literal notranslate"><span class="pre">--execute</span></code> option in live code environments.</p>
+The <code class="docutils literal notranslate"><span class="pre">-hid</span></code>, <code class="docutils literal notranslate"><span class="pre">-e</span></code>, and <code class="docutils literal notranslate"><span class="pre">-h</span></code> postfixes can be used to hide such code, but still execute it using the <code class="docutils literal notranslate"><span class="pre">--execute</span></code> option in live code environments.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">-h</span></code> postfix hides a code block in all formats except ipynb:</p>
 <div class="highlight-doconce notranslate"><div class="highlight"><pre><span></span><span class="k">!bc</span> pyhid
 import sys, os
@@ -7613,8 +7615,8 @@ having the code</p>
 </div>
 <p>will not execute unless <code class="docutils literal notranslate"><span class="pre">sys</span></code> is imported. While a book may show such
 code and skip (potentially tedious) initializing statements, they must
-be present in the notebook. To this end, use the <code class="docutils literal notranslate"><span class="pre">!bc</span> <span class="pre">*hid</span></code> environment
-for hidden code. In the present example, we use <code class="docutils literal notranslate"><span class="pre">!bc</span> <span class="pre">pyhid</span></code> to specify
+be present in the notebook. To this end, use the <code class="docutils literal notranslate"><span class="pre">!bc</span> <span class="pre">*-hid</span></code> environment
+for hidden code. In the present example, we use <code class="docutils literal notranslate"><span class="pre">!bc</span> <span class="pre">py-hid</span></code> to specify
 Python code that needs to be executed, but that should normally be
 hidden (other formats, with the exception of certain interactive Sphinx
 documents, will hide such code).</p>
@@ -8417,6 +8419,7 @@ Options:
 --sphinx_figure_captions=...        Font style in figure captions: emphasize (default) or normal. If you use boldface or emphasize in the caption, the font style will be normal for that caption.
 --oneline_paragraphs                Combine paragraphs to one line (does not work well).
 --execute                           Automatically run code blocks and show output below the code block.
+--execute=...                       continue (default), abort. Enable --execute and allow to abort execution on code errors.
 --verbose-execute                   Print output from execute cells.
 --ignore_output                     Ignore output cells. Useful when you want to use execute rather than predefined output cells.
 --html_responsive_figure_width      Use figure width as max-width, and set width to 100 percent so that figures can shrink to device width.

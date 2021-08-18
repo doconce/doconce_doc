@@ -1326,8 +1326,8 @@ print(sys.version)
 !ec
 will not execute unless `sys` is imported. While a book may show such
 code and skip (potentially tedious) initializing statements, they must
-be present in the notebook. To this end, use the `!bc *hid` environment
-for hidden code. In the present example, we use `!bc pyhid` to specify
+be present in the notebook. To this end, use the `!bc *-hid` environment
+for hidden code. In the present example, we use `!bc py-hid` to specify
 Python code that needs to be executed, but that should normally be
 hidden (other formats, with the exception of certain interactive Sphinx
 documents, will hide such code).
