@@ -197,6 +197,6 @@ git push --recurse-submodules=on-demand
 !bc shcod-t
 git checkout main     # Switch to the main branch
 git fetch upstream 
-git rebase upstream/main  Update the code to the remote version (the main DocOnce repository)
+git rebase upstream/main  #Update the code to the remote version (the main DocOnce repository)
 git push              #Push the updates to my fork
 !ec
