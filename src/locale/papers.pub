@@ -12,6 +12,12 @@
    status:    published
    url:       http://doconce.test.net
    entrytype: misc
+** Przykładowa pozycja literaturowa w języku polskim
+   key:       polski_tekst
+   author:    J. Kowalski
+   status:    published
+   url:       http://doconce.test.net
+   entrytype: misc
 * articles
 ** Einige {Dinge}, die in deutscher {Sprache} abgefasst sein müssen
    key:       Deutsh_Sprache
@@ -23,3 +29,4 @@
    year:      1984
    status:    published
    entrytype: misc
+   

@@ -1,5 +1,5 @@
-Demo of DocOnce for a document in various languages: English, Norwegian, and
-German.
+Demo of DocOnce for a document in various languages: English, Norwegian,
+German and Polish.
 
 ```
 doconce format html Norwegian --encoding=utf-8 --language=Norwegian

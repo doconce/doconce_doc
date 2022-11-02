@@ -1,0 +1,84 @@
+TITLE: DocOnce i język polski
+AUTHOR: Gall Anonim
+DATE: today
+
+idx{abstract}
+
+__Abstract.__
+Ten dokument przedstawia działanie programu DocOnce z polskim tłumaczeniem cite{polski_tekst}.
+
+TOC: on
+
+======= Rozdział pierwszy: odrobina obliczeń =======
+
+idx{calculating}
+
+!bquote
+Pierwsze działanie na dziś to $0+0$. To niezbyt trudne...
+!equote
+
+!bnotice
+Właściwie $1 + 1 = 2$. Tego nie trzeba dowodzić.
+!enotice
+
+!bquestion
+Ile to $1 - 1$?
+!equestion
+
+!bsummary
+Dodawanie i odejmowanie to operacje odwrotne. 
+!esummary
+
+idx{admon demo}
+
+!bnotice Ramka z tytułem!
+A tu tekst po polsku...
+!enotice
+
+
+===== Problem: Dodawanie dwóch liczb =====
+file=add
+idx{addition}
+
+Oblicz $1+2$.
+
+!bsol
+Wystarczy policzyć na palcach: jeden palec oraz jeden i drugi palec. Policz wszystkie palce razem. 
+!esol
+
+!bans
+3.
+!eans
+
+===== Project: Mnożenie dwóch liczb =====
+file=multiply
+
+Oblicz $3\cdot 4$.
+
+!bhint
+To można policzyć przy pomocy kalkulatora.
+!ehint
+
+!bremarks
+Tak naprawdę to $3\cdot 4 = 4\cdot 3$.
+!eremarks
+
+===== Jeszcze bardziej zaawansowana matematyka =====
+
+Przyjrzyjmy się najsłynniejszemu równaniu na świecie
+
+!bbox
+!bt
+\[ E = mc^2 \]
+!et
+!ebox
+
+======= Rozdział drugi: Przyjrzyjmy się filmowi i rysunkowi =======
+
+MOVIE: [http://www.youtube.com/watch?v=bp3mCgrdMxU, width=420 height=315] Film z YouTube'a.
+
+FIGURE: [https://raw.github.com/hplgit/doconce/master/doc/src/blog/f_plot.png, width=500 frac=0.8] Oto wykres funkcji.
+
+======= Bibliografia =======
+
+BIBFILE: papers.pub
